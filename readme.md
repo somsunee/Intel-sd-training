@@ -36,6 +36,9 @@ Macros
 CBB - custom building block
 
 Snapshot:\
-![This is an image](https://github.com/somsunee/Intel-sd-training/blob/81eeeace715967709f340c5434be8b16a7ffa0c2/Note1.png)
+1) ![This is an image](https://github.com/somsunee/Intel-sd-training/blob/81eeeace715967709f340c5434be8b16a7ffa0c2/Note1.png)
+2) ![This is an image](https://github.com/somsunee/Intel-sd-training/blob/40853f785234db37cf3bbd711dfa5a6daa035e25/Notes2.png)
 
+
+Lab:\
 ![This is an image](https://github.com/somsunee/Intel-sd-training/blob/4bd3a17f4220f4f82107062dd5e2f01355473fc1/day-0.jpg)
