@@ -1,7 +1,7 @@
 Day 0\
-This is my first repository \
+This is my first repository\
 
-Quick notes: \
+Quick notes\
 Day0 Training
 
 chip --package
@@ -35,8 +35,8 @@ Macros
 
 CBB - custom building block
 
-Snapshot: \
-1) ![This is an image](https://github.com/somsunee/Intel-sd-training/blob/81eeeace715967709f340c5434be8b16a7ffa0c2/Note1.png)
+Snapshot\
+1) ![This is an image](https://github.com/somsunee/Intel-sd-training/blob/81eeeace715967709f340c5434be8b16a7ffa0c2/Note1.png)\
 2) ![This is an image](https://github.com/somsunee/Intel-sd-training/blob/40853f785234db37cf3bbd711dfa5a6daa035e25/Notes2.png)
 
 
