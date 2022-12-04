@@ -46,7 +46,7 @@ _**Lab:**_ \
 
 _**Quick notes & Lecture Session**_
 
-Part_1\ 
+Part_1\
 **Introduction to iverilog design test bench**
 
 _Simulator_
@@ -93,7 +93,7 @@ iii) Design verilog code and the testbench of the verilog
 
 
 Part_2\
-__**Introduction to yosys **__
+**Introduction to yosys**
 
 _Synthesizer_
 - tool used to convert RTL to netlist, while _yosys_ is the synthesizer
@@ -117,5 +117,7 @@ Why do need different flavours of gate?
 - Combinational delay in logic path which determines the max speed of operation of the digital logic circuit
 
 Tclk > TcQ_A + Tcombi + T setup_B
+
+**we need cells that works fast to meet the required performance, and need cells that works slow to meet HOLD
 
 
