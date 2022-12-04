@@ -102,4 +102,20 @@ _Yosys setup_
 ![day1_2_n1](https://user-images.githubusercontent.com/118953929/205484828-c5ea45ae-67f2-4cd4-9d23-f77894bf9747.jpeg)
 
 How to verify the synthesis?
+![day1_2_n2](https://user-images.githubusercontent.com/118953929/205484946-4d833972-1931-40ad-943a-95f80b379670.jpg)
+
+Logic synthesis
+- RTL Design
+	-behavioral representation of the required spec
+What is synthesis?
+- RTL to gate level translation
+
+What is .lib?
+- Collection of logical modules, inc basic logic gates 
+
+Why do need different flavours of gate?
+- Combinational delay in logic path which determines the max speed of operation of the digital logic circuit
+
+Tclk > TcQ_A + Tcombi + T setup_B
+
 
