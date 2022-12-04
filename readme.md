@@ -143,4 +143,4 @@ iv) to link, what is the module we are going to do synthesis: terminal > synth -
 v) command to generate the netlist ( convert the rtl file into a gate , and what gate will be link to): terminal > abc -liberty 
 ![day1_2_lab1_6](https://user-images.githubusercontent.com/118953929/205486800-399d8000-3ada-4e2b-b934-23f3c5e0417d.jpg)
 ![day1_2_lab1_7](https://user-images.githubusercontent.com/118953929/205486799-fff2516b-62fb-4d88-a454-f6165c4bee43.jpg)
-vi) 
+vi) write the netlist --> do write verilog
