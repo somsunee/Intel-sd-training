@@ -46,7 +46,7 @@ _**Lab:**_ \
 
 _**Quick notes & Lecture Session**_
 
-Part_1 
+Part_1\ 
 **Introduction to iverilog design test bench**
 
 _Simulator_
@@ -92,7 +92,7 @@ iii) Design verilog code and the testbench of the verilog
 ![lab2_4](https://user-images.githubusercontent.com/118953929/205483352-e18dcbec-a049-4c66-8ee6-879c6692b518.jpg)
 
 
-Part_2 
+Part_2\
 __**Introduction to yosys **__
 
 _Synthesizer_
