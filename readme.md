@@ -1,4 +1,4 @@
-Day 0\
+Day_0\
 This is my first repository.
 
 Quick notes\
@@ -41,4 +41,4 @@ Snapshot\
 
 
 Lab: \
-![This is an image](https://github.com/somsunee/Intel-sd-training/blob/4bd3a17f4220f4f82107062dd5e2f01355473fc1/day-0.jpg)
+![day-0](https://user-images.githubusercontent.com/118953929/205479043-0a05819e-ed14-4521-a34f-8da892d44c67.jpg)
