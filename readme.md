@@ -1,7 +1,8 @@
 **Contents:**
 
-i)  [Day_0 : System/Tool Setup Check & GitHub ID creation](https://github.com/somsunee/Intel-sd-training/edit/main/readme.md#day_0)\
-ii) [Day_1 : Introduction to RTL verilog design and analysis](https://github.com/somsunee/Intel-sd-training/edit/main/readme.md#day_1)
+i)   [Day_0 : System/Tool Setup Check & GitHub ID creation](https://github.com/somsunee/Intel-sd-training/edit/main/readme.md#day_0)\
+ii)  [Day_1 : Introduction to RTL verilog design and analysis](https://github.com/somsunee/Intel-sd-training/edit/main/readme.md#day_1)\
+iii) [Day_2 : Timing libs, hierarchical vs flat synthesis and efficient flop coding styles](https://github.com/somsunee/Intel-sd-training/edit/main/readme.md#day_2)
  
 ### Day_0
 
@@ -161,3 +162,5 @@ vi) write the netlist --> do write _verilog_
 Simplifying:
 ![day1_2_lab3_3](https://user-images.githubusercontent.com/118953929/205486794-76e68f97-3790-448c-b511-3a11c30b517f.jpg)
 ![day1_2_lab3_4](https://user-images.githubusercontent.com/118953929/205486793-aaf9ccda-eb3a-47a8-ad57-802b23199490.jpg)
+
+### Day_2
