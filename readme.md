@@ -1,10 +1,11 @@
-Contents:
+**Contents:**
 
 i)  [Day_0 : System/Tool Setup Check & GitHub ID creation](https://github.com/somsunee/Intel-sd-training/edit/main/readme.md#day_0)\
 ii) [Day_1 : Introduction to RTL verilog design and analysis](https://github.com/somsunee/Intel-sd-training/edit/main/readme.md#day_1)
+ 
+### Day_0
 
-Day_0\
-Quick notes
+**_Quick notes_**
 
 chip --package
 
@@ -38,7 +39,23 @@ Snapshot\
 ![Notes2](https://user-images.githubusercontent.com/118953929/205479032-fcff4233-6313-4fe5-ab9d-5338e53bbb1f.png)
 
 
-Lab: \
+_**Lab:**_ \
 ![day-0](https://user-images.githubusercontent.com/118953929/205479043-0a05819e-ed14-4521-a34f-8da892d44c67.jpg)
+
+### Day_1
+
+_**Quick notes & Lecture Session**_
+
+_Simulator_
+- is a tool to check the design
+	-iverilog - a compiler that translates Verilog source code into executable programs  
+
+_Design_
+- is the verilog codes that has the intended functionality to meet with required specification
+
+_TestBench_
+-is a setup tool to apply stimulus (to check whether the design is obey/align to required specifications) - by observing the outputs
+
+_**Lab_1:**_ \
 
 
