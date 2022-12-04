@@ -47,6 +47,7 @@ _**Lab:**_ \
 _**Quick notes & Lecture Session**_
 
 Part_1 
+**Introduction to iverilog design test bench**
 
 _Simulator_
 - is a tool to check the design
@@ -92,5 +93,10 @@ iii) Design verilog code and the testbench of the verilog
 
 
 Part_2 
+__**Introduction to yosys **__
 
-Synthesizer
+_Synthesizer_
+- tool used to convert RTL to netlist, while _yosys_ is the synthesizer
+
+_Yosys setup_
+
