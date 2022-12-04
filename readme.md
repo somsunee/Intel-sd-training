@@ -1,9 +1,10 @@
-[Day_0](https://github.com/somsunee/Intel-sd-training/edit/main/readme.md#day_0)
+Contents:
 
-This is my first repository.
+i)  [Day_0 : System/Tool Setup Check & GitHub ID creation](https://github.com/somsunee/Intel-sd-training/edit/main/readme.md#day_0)\
+ii) [Day_1 : Introduction to RTL verilog design and analysis](https://github.com/somsunee/Intel-sd-training/edit/main/readme.md#day_1)
+
 
 Quick notes\
-Day0 Training
 
 chip --package
 
@@ -41,4 +42,3 @@ Lab: \
 ![day-0](https://user-images.githubusercontent.com/118953929/205479043-0a05819e-ed14-4521-a34f-8da892d44c67.jpg)
 
 
-[Day_1](https://github.com/somsunee/Intel-sd-training/edit/main/readme.md#day_1)
