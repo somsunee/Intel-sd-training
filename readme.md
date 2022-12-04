@@ -3,8 +3,8 @@ Contents:
 i)  [Day_0 : System/Tool Setup Check & GitHub ID creation](https://github.com/somsunee/Intel-sd-training/edit/main/readme.md#day_0)\
 ii) [Day_1 : Introduction to RTL verilog design and analysis](https://github.com/somsunee/Intel-sd-training/edit/main/readme.md#day_1)
 
-
-Quick notes\
+Day_0\
+Quick notes
 
 chip --package
 
