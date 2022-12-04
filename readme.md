@@ -99,4 +99,7 @@ _Synthesizer_
 - tool used to convert RTL to netlist, while _yosys_ is the synthesizer
 
 _Yosys setup_
+![day1_2_n1](https://user-images.githubusercontent.com/118953929/205484828-c5ea45ae-67f2-4cd4-9d23-f77894bf9747.jpeg)
+
+How to verify the synthesis?
 
