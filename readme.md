@@ -120,4 +120,14 @@ Tclk > TcQ_A + Tcombi + T setup_B
 
 **we need cells that works fast to meet the required performance, and need cells that works slow to meet HOLD
 
+_Faster cells vs Slower cells_
+
+Faster the charging --> lesser the cell delay
+**Propagation delay here is , the time for the input to be fill up the output. 
+
+Transistors - charge/discharge the capacitance fast.
+Wider transistors -> low delay (more area and power)
+Narrow transistors -> More delay (less area and power)
+
+
 
