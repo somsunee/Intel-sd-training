@@ -93,3 +93,4 @@ iii) Design verilog code and the testbench of the verilog
 
 Part_2 
 
+Synthesizer
