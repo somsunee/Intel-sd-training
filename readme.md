@@ -54,8 +54,23 @@ _Design_
 - is the verilog codes that has the intended functionality to meet with required specification
 
 _TestBench_
--is a setup tool to apply stimulus (to check whether the design is obey/align to required specifications) - by observing the outputs
+- is a setup tool to apply stimulus (to check whether the design is obey/align to required specifications) - by observing the outputs
 
-_**Lab_1:**_ \
+**NOTES: testbench doesn't have a primary inputs/outputs, while Design may have one or more primary inputs/outputs
+
+_**Lab_1:**_ 
 
 
+i) Creating VLSI directory, do git clone [enter this full link path](https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop) to setup the lab with files. ( Make sure be in VLSI directory )
+![lab1_1](https://user-images.githubusercontent.com/118953929/205483354-1448f2fa-a5f2-45ee-9b8b-e91e0249bc07.jpg)
+
+ii) Checked if the git clone is cloning correctly. 
+- made sure all the files stated is in the path directory, respectively.
+![lab1_2](https://user-images.githubusercontent.com/118953929/205483355-a7722db1-d7f5-494a-80d4-1b6d640bf42d.jpg)
+![lab1_3](https://user-images.githubusercontent.com/118953929/205483357-a4652328-69df-435b-87f0-2835cd645a55.jpg)
+![lab1_4](https://user-images.githubusercontent.com/118953929/205483347-af26c122-cecf-4859-829b-3fdf39d6a439.jpg)
+
+**in verilog_files, make sure all the verilog files, comes along with tb (testbench) files, respectively. 
+Eg: rcs.v and tb_rca.v
+
+Lab_2:
