@@ -129,5 +129,18 @@ Transistors - charge/discharge the capacitance fast.
 Wider transistors -> low delay (more area and power)
 Narrow transistors -> More delay (less area and power)
 
+**_Labs:_**
 
-
+i) invoking yosys: terminal >_yosys_
+![day1_2_lab1_1](https://user-images.githubusercontent.com/118953929/205486805-7e6d67cb-4ce7-43ae-aff2-03e9b553ea26.jpg)
+ii) read the library file from my_lib/lib/sky*.lib
+![day1_2_lab1_2](https://user-images.githubusercontent.com/118953929/205486804-35069d18-56b8-4370-a3b6-a4d8e7027de1.jpg)
+iii) Read design --> read_verilog
+![day1_2_lab1_3](https://user-images.githubusercontent.com/118953929/205486803-4d05e8bc-45a7-4145-8f0e-a1e4aa492351.jpg)
+iv) to link, what is the module we are going to do synthesis: terminal > synth -top
+![day1_2_lab1_4](https://user-images.githubusercontent.com/118953929/205486802-00587b9b-a30e-44f8-ab28-d691bde694a6.jpg)
+![day1_2_lab1_5](https://user-images.githubusercontent.com/118953929/205486801-7a2c8b5a-09b7-4f4e-81fb-42472dfe7573.jpg)
+v) command to generate the netlist ( convert the rtl file into a gate , and what gate will be link to): terminal > abc -liberty 
+![day1_2_lab1_6](https://user-images.githubusercontent.com/118953929/205486800-399d8000-3ada-4e2b-b934-23f3c5e0417d.jpg)
+![day1_2_lab1_7](https://user-images.githubusercontent.com/118953929/205486799-fff2516b-62fb-4d88-a454-f6165c4bee43.jpg)
+vi) 
