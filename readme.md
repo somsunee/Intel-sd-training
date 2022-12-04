@@ -1,14 +1,11 @@
-Day_0\
+[Day_0](https://github.com/somsunee/Intel-sd-training/edit/main/readme.md#day_0)
+
 This is my first repository.
 
 Quick notes\
 Day0 Training
 
 chip --package
-
-chip inside package
-
-zoom in inside package
 
 wirebond - solid phase welding process, where two metallic materials (wire and pad surface) are brought into intimate contact
 
@@ -42,3 +39,6 @@ Snapshot\
 
 Lab: \
 ![day-0](https://user-images.githubusercontent.com/118953929/205479043-0a05819e-ed14-4521-a34f-8da892d44c67.jpg)
+
+
+[Day_1](https://github.com/somsunee/Intel-sd-training/edit/main/readme.md#day_1)
