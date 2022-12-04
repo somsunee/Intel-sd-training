@@ -73,4 +73,14 @@ ii) Checked if the git clone is cloning correctly.
 **in verilog_files, make sure all the verilog files, comes along with tb (testbench) files, respectively. 
 Eg: rcs.v and tb_rca.v
 
-Lab_2:
+**_Lab_2:_**
+
+i) Load iverilog: do _iverilog good_mux.v tb_good_mux.v_ , 
+After loaded, a.out file will be generated. Next, execute the a.out: do _./a.out_
+Then, will see a _tb_good_mux.vcd_ file being generated
+![lab2_1](https://user-images.githubusercontent.com/118953929/205483348-058652de-ccd4-49fc-ba64-14e0232c9937.jpg)
+
+ii) Launch waveform: do gtkwave tb_good_mux.vcd
+![lab2_2](https://user-images.githubusercontent.com/118953929/205483349-93639fed-df78-4124-8488-70b98adf17c0.jpg)
+![lab2_3](https://user-images.githubusercontent.com/118953929/205483351-457c63d4-79e2-468f-81e8-3eac230105df.jpg)
+![lab2_4](https://user-images.githubusercontent.com/118953929/205483352-e18dcbec-a049-4c66-8ee6-879c6692b518.jpg)
