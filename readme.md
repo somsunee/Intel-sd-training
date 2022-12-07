@@ -169,6 +169,33 @@ _**Lecture and notes**_
 
 **_Labs:_**
 
-_Lab 4: Introduction to dot lib _
+_Lab 4:Introduction to dot lib_ 
+
+i) Open up sky*.lib file from lib 
+![day2_lab4_1](https://user-images.githubusercontent.com/118953929/206072693-479941d2-ef25-4fb5-93ab-661817051570.jpg)
+ii) Observe and understand the lib file.
+	- tt - typical
+	- 025C - tempertature
+***3 important things inside library, for the design to work
+PVT - 
+Process - variation due to fabrication
+Voltage
+Temperature
+
+![day2_lab4_2](https://user-images.githubusercontent.com/118953929/206072690-9294af66-a21f-49ea-a8fc-4b2cc89ae32d.jpg)
+![day2_lab4_3](https://user-images.githubusercontent.com/118953929/206072689-c8dc990e-9483-47a5-b6e0-6f96551ba3ca.jpg)
+
+iii) Inside .lib, there will be a bucket of cells. Observe below:
+![day2_lab4_5](https://user-images.githubusercontent.com/118953929/206072688-17e07a26-f5b9-49f4-a890-486905d7f843.jpg)
+![day2_lab4_6](https://user-images.githubusercontent.com/118953929/206072685-5f2e27d9-8153-4e0c-81f6-38179ee0e5ae.jpg)
+![day2_lab4_7](https://user-images.githubusercontent.com/118953929/206072678-59662277-664d-4f2b-b81e-cbe9ab0534ff.jpg)
+Below you can see, as the area is wider, the power consume also higher.
+![day2_lab4_8](https://user-images.githubusercontent.com/118953929/206072695-15e657b1-bf42-4f32-8c0d-7c7357c7038e.jpg)
+
+_Lab5: Hierarchical vs Flat synthesis_
+
+
+
+
 
 
