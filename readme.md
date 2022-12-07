@@ -251,5 +251,9 @@ Show the design:
 
 Repeat again the steps to read the lib and design, but dor submodule1:
 ![day2_lab5 2__7](https://user-images.githubusercontent.com/118953929/206177486-789813bd-cb34-43bf-ab32-a9dd5d2b1662.jpg)
+
+***no more seeing hierarchy - only one single netlist
+- no more submodule seeing
+
 ![day2_lab5 2__8](https://user-images.githubusercontent.com/118953929/206177480-3896b78a-03fb-44c7-9fe4-61d2ac72489d.jpg)
 ![day2_lab5 2__9](https://user-images.githubusercontent.com/118953929/206177461-4a09cb1a-4295-42c3-a450-4a30d196f929.jpg)
