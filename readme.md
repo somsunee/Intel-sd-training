@@ -198,9 +198,14 @@ i) Invoke yosys, and read the lib file with the command as below:
 ![day2_lab5_1](https://user-images.githubusercontent.com/118953929/206074907-d5102e67-2230-4c7f-b637-30169d63b05c.jpg)
 ii) View the multiple_modules.v file, there is a simple verilog code on the module. Observe and try to understand it by drawing out the circuit.
 ![day2_lab5_1_1](https://user-images.githubusercontent.com/118953929/206074905-389eb76e-39f6-4f23-b8fa-65591de827c2.jpg)
-
-
-
-
-
+iii) do synth -top multiple_modules
+![day2_lab5_2](https://user-images.githubusercontent.com/118953929/206074899-0aa1ab2f-109d-455e-bb4d-aa909b46fc86.jpg)
+Observe, see if it matches how the module supposed to be ( multiple_modules.v )
+![day2_lab5_3](https://user-images.githubusercontent.com/118953929/206074897-5fc2fb33-97a1-4269-8dee-93b5993d234a.jpg)
+![day2_lab5_4](https://user-images.githubusercontent.com/118953929/206074894-634f758d-d905-425a-a183-4c857fa373a7.jpg)
+![day2_lab5_5](https://user-images.githubusercontent.com/118953929/206074890-02abee98-f60e-487e-85a7-8bc82b6e4438.jpg)
+iv) Show and observe the hierarchical design as below:
+![day2_lab4_6](https://user-images.githubusercontent.com/118953929/206074909-c645af7c-cedf-488a-9500-641756e15eb0.jpg)
+v) write_verilog multiple_modules.v and vim to view the code:
+![The full code is here]()
 
