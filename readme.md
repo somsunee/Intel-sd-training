@@ -164,3 +164,11 @@ Simplifying:
 ![day1_2_lab3_4](https://user-images.githubusercontent.com/118953929/205486793-aaf9ccda-eb3a-47a8-ad57-802b23199490.jpg)
 
 ### Day_2
+
+_**Lecture and notes**_
+
+**_Labs:_**
+
+_Lab 4: Introduction to dot lib _
+
+
