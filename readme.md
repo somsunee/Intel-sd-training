@@ -174,12 +174,12 @@ _Lab 4:Introduction to dot lib_
 i) Open up sky*.lib file from lib 
 ![day2_lab4_1](https://user-images.githubusercontent.com/118953929/206072693-479941d2-ef25-4fb5-93ab-661817051570.jpg)
 ii) Observe and understand the lib file.
-	- tt - typical
-	- 025C - tempertature
-***3 important things inside library, for the design to work
-PVT - 
-Process - variation due to fabrication
-Voltage
+- tt - typical
+- 025C - tempertature\
+***3 important things inside library, for the design to work\
+PVT\
+Process - variation due to fabrication\
+Voltage\
 Temperature
 
 ![day2_lab4_2](https://user-images.githubusercontent.com/118953929/206072690-9294af66-a21f-49ea-a8fc-4b2cc89ae32d.jpg)
