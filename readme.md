@@ -194,6 +194,10 @@ Below you can see, as the area is wider, the power consume also higher.
 
 _Lab5: Hierarchical vs Flat synthesis_
 
+i) Invoke yosys, and read the lib file with the command as below:
+![day2_lab5_1](https://user-images.githubusercontent.com/118953929/206074907-d5102e67-2230-4c7f-b637-30169d63b05c.jpg)
+ii) View the multiple_modules.v file, there is a simple verilog code on the module. Observe and try to understand it by drawing out the circuit.
+![day2_lab5_1_1](https://user-images.githubusercontent.com/118953929/206074905-389eb76e-39f6-4f23-b8fa-65591de827c2.jpg)
 
 
 
