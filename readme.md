@@ -208,12 +208,19 @@ Observe, see if it matches how the module supposed to be ( multiple_modules.v )
 ![day2_lab5_5](https://user-images.githubusercontent.com/118953929/206074890-02abee98-f60e-487e-85a7-8bc82b6e4438.jpg)
 
 iv) Show and observe the hierarchical design as below:
-![day2_lab4_6](https://user-images.githubusercontent.com/118953929/206074909-c645af7c-cedf-488a-9500-641756e15eb0.jpg)
+![day2_lab5_6](https://user-images.githubusercontent.com/118953929/206074918-c7c58973-9d94-4e71-a218-2ccc838250ea.jpg)
 
 v) write_verilog multiple_modules.v and vim to view the code:
+![day2_lab5_7](https://user-images.githubusercontent.com/118953929/206074916-e2e7c041-4d71-4300-99f2-1691b220fe30.jpg)
+
 The full code for multiple_modules: ![View here](https://github.com/somsunee/Intel-sd-training/blob/main/multiple_modules)
 
 vi) write_verilog -noattr multiple_modules.v for a simplifier code and vim to view it:
-The full code for simplified multiple_modules: ![View here](https://github.com/somsunee/Intel-sd-training/blob/main/multiple_modules)
+The full code for simplified multiple_modules: ![View here](https://github.com/somsunee/Intel-sd-training/blob/main/multiple_modules_simplified)
+
+![day2_lab5_9_2](https://user-images.githubusercontent.com/118953929/206074913-62e200f5-5178-4830-86d8-63419b139aa9.jpg)
+
+
+
 
 
