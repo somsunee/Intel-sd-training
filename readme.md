@@ -167,10 +167,24 @@ Simplifying:
 
 _**Lecture and notes**_
 
+_CMOS (complementary metal-oxide-semiconductor) _
+- has enabled massive scaling in a variety of semiconductor devices. Combining the CMOS process with VLSI has helped push packages to smaller levels while keeping costs reasonable
+
+_FLOPS_ 
+-Propagation delay - the time required for the input to be propagated to the output
+
+_Glitch_
+A glitch can be an issue if it propagates to the resultant logic or gets captured by a flip-flop. There can be two cases here:
+**Synchronous timing paths:** (even has glitch) it will be within the limits of minimum and maximum delays permissible from one flip-flop to another
+**Asynchronous timing paths:** if there is a glitch in the data path, it can get captured, hence, can cause issue. To prevent this, synchronizers are used and there are certain rules to be followed for asynchronous paths. 
+
+
+
 **_Labs:_**
 
 _Lab 4:Introduction to dot lib_ 
 
+a)
 i) Open up sky*.lib file from lib 
 ![day2_lab4_1](https://user-images.githubusercontent.com/118953929/206072693-479941d2-ef25-4fb5-93ab-661817051570.jpg)
 ii) Observe and understand the lib file.
@@ -220,6 +234,8 @@ vi) write_verilog -noattr multiple_modules.v for a simplifier code and vim to vi
 The full code for simplified multiple_modules: ![View here](https://github.com/somsunee/Intel-sd-training/blob/main/multiple_modules_simplified)
 
 ![day2_lab5_9_2](https://user-images.githubusercontent.com/118953929/206074913-62e200f5-5178-4830-86d8-63419b139aa9.jpg)
+
+b)
 
 
 
