@@ -216,6 +216,7 @@ v) write_verilog multiple_modules.v and vim to view the code:
 The full code for multiple_modules: ![View here](https://github.com/somsunee/Intel-sd-training/blob/main/multiple_modules)
 
 vi) write_verilog -noattr multiple_modules.v for a simplifier code and vim to view it:
+
 The full code for simplified multiple_modules: ![View here](https://github.com/somsunee/Intel-sd-training/blob/main/multiple_modules_simplified)
 
 ![day2_lab5_9_2](https://user-images.githubusercontent.com/118953929/206074913-62e200f5-5178-4830-86d8-63419b139aa9.jpg)
