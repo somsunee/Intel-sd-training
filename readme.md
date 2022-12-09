@@ -1,8 +1,9 @@
 **Contents:**
 
-i)   [Day_0 : System/Tool Setup Check & GitHub ID creation](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_0)\
-ii)  [Day_1 : Introduction to RTL verilog design and analysis](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_1)\
-iii) [Day_2 : Timing libs, hierarchical vs flat synthesis and efficient flop coding styles](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_2)
+- [Day_0 : System/Tool Setup Check & GitHub ID creation](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_0)\
+- [Day_1 : Introduction to RTL verilog design and analysis](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_1)\
+- [Day_2 : Timing libs, hierarchical vs flat synthesis and efficient flop coding styles](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_2)
+- [Day_3 : Combinational and sequential optimizations](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_3)
  
 ### Day_0
 
@@ -303,4 +304,38 @@ As can see, no cells is getting map during synthesis
 ![23](https://user-images.githubusercontent.com/118953929/206198796-a9909427-873b-4fed-99c7-1583413c029d.jpg)
 ![24](https://user-images.githubusercontent.com/118953929/206198794-8a5931df-d29c-4f87-a0fc-1727e80b6c84.jpg)
 ![25](https://user-images.githubusercontent.com/118953929/206198792-7303b4c3-686e-41fd-b0bd-09d84d295829.jpg)
+
+### Day_3
+
+**_Notes:_**
+
+_**Combinational Logic Optimization**_
+- squeez the logic in order to get most optimised design ( in term of _area_ and _power_ )
+
+**techniques used in combinational logic optimization
+- _Constant Propagation_ - which is direct optimization
+- _Boolean Logic Optimization_ - eg: KMap
+
+
+**CONSTANT PROPAGATION**
+Eg:
+2
+
+**BOOLEAN LOGIC OPTIMIZATION**
+1
+
+**_Sequential Logic Optimizations_**
+
+- Basic
+	- Sequential Constant propagation
+- Advanced 
+	-State optimisation
+	-Retiming
+	-Sequential Logic Cloning(FloorPlan Aware Synthesis)
+	
+
+
+**SEQUENTIAL CONSTANT**
+
+
 
