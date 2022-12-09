@@ -330,9 +330,9 @@ Eg:
 - Basic
 	- Sequential Constant propagation
 - Advanced 
-	-State optimisation
-	-Retiming
-	-Sequential Logic Cloning(FloorPlan Aware Synthesis)
+	- State optimisation
+	- Retiming
+	- Sequential Logic Cloning(FloorPlan Aware Synthesis)
 	
 
 
