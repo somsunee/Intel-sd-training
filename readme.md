@@ -319,10 +319,11 @@ _**Combinational Logic Optimization**_
 
 **CONSTANT PROPAGATION**
 Eg:
-2
+![photo1670590644](https://user-images.githubusercontent.com/118953929/206707796-e4d76742-cea1-47b7-98fc-1b2c79534ff9.jpeg)
+![photo1670590644 (1)](https://user-images.githubusercontent.com/118953929/206707795-d327e207-4803-4611-a2b4-6e2397cbd6b2.jpeg)
 
 **BOOLEAN LOGIC OPTIMIZATION**
-1
+![photo1670590644 (2)](https://user-images.githubusercontent.com/118953929/206707789-5d2a239e-d3c7-40a3-8eae-ecfa23c0fe09.jpeg)
 
 **_Sequential Logic Optimizations_**
 
@@ -337,5 +338,7 @@ Eg:
 
 **SEQUENTIAL CONSTANT**
 
+![photo1670590644 (3)](https://user-images.githubusercontent.com/118953929/206707788-c3a11f60-e003-4e6a-a66a-b1a2b0947df9.jpeg)
+![photo1670590644 (4)](https://user-images.githubusercontent.com/118953929/206707783-005d1b87-bb49-41a6-8994-d9ec84d5448f.jpeg)
 
 
