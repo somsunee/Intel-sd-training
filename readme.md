@@ -457,7 +457,7 @@ gvim the dff_const file to observe the code and see how the pattern will be:
 
 view the waveform pattern and observe:
 
-iverilog dff_const1.v tb_dff_const1.v\
+a)iverilog dff_const1.v tb_dff_const1.v\
 ./a.out\
 gtkwave *.vcd 
 
@@ -466,7 +466,7 @@ gtkwave *.vcd
 
 do the same and observe for dff_const2.v:
 
-iverilog dff_const2.v tb_dff_const2.v\
+b)iverilog dff_const2.v tb_dff_const2.v\
 ./a.out\
 gtkwave *.vcd
 
@@ -509,7 +509,7 @@ show
 
 view the waveform pattern and observe:
 
-iverilog dff_const3.v tb_dff_const3.v\
+c)iverilog dff_const3.v tb_dff_const3.v\
 ./a.out\
 gtkwave *.vcd
 
@@ -534,7 +534,7 @@ show
 ![21](https://user-images.githubusercontent.com/118953929/206887014-1714c7a7-5251-4c82-8d1d-b04484f6080a.jpg)
 
 
-view the waveform pattern and observe:
+d)view the waveform pattern and observe:
 
 iverilog dff_const4.v tb_dff_const4.v\
 ./a.out\
@@ -559,7 +559,7 @@ show
 ![23 3](https://user-images.githubusercontent.com/118953929/206887020-3b65ccff-324c-4b80-9ca5-12a52a1dd649.jpg)
 
 
-iverilog dff_const5.v tb_dff_const5.v\
+e)iverilog dff_const5.v tb_dff_const5.v\
 ./a.out\
 gtkwave *.vcd
 
