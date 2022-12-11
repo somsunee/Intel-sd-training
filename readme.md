@@ -584,6 +584,42 @@ _**Seq Optimisation unused outputs**_
 
 ![photo1670735469](https://user-images.githubusercontent.com/118953929/206887612-c714c172-2fb4-44c1-ac4e-be3b6ef1b841.jpeg)
 
+a)counter_opt.v
+
+yosys\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+read_verilog counter_opt.v\
+synth -top counter_opt\
+dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+show
+
+![1](https://user-images.githubusercontent.com/118953929/206888002-b5e881c6-de87-4f53-bfd9-7fba2da8e795.jpg)
+![2](https://user-images.githubusercontent.com/118953929/206888004-ebbca002-d42a-41d4-9710-9e94de6f2f64.jpg)
+![3](https://user-images.githubusercontent.com/118953929/206888005-6664888e-819b-4f1a-b7cb-622e09d47723.jpg)
+![4](https://user-images.githubusercontent.com/118953929/206888007-c6ab221a-4b7d-4eea-8fe2-477e555a94c9.jpg)
+![5](https://user-images.githubusercontent.com/118953929/206887992-de0e6335-4230-4333-a97f-c07f7758413a.jpg)
+
+copy over counter_opt.v to counter_opt2.v and do the changes
+![6](https://user-images.githubusercontent.com/118953929/206887993-27fb396b-e06a-49e9-bbd3-c29516d5e5d2.jpg)
+
+b)counter_opt2.v
+
+yosys\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+read_verilog counter_opt2.v\
+synth -top counter_opt\
+dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+show
+
+![7](https://user-images.githubusercontent.com/118953929/206887994-4ee2a3f5-032d-449f-8582-9653e5e4a981.jpg)
+![8](https://user-images.githubusercontent.com/118953929/206887996-90d0bd2d-d88c-4bce-a66d-4772a0923a30.jpg)
+![9](https://user-images.githubusercontent.com/118953929/206887997-ac53542c-54d2-4694-8f48-79a9dbdab0fe.jpg)
+![10](https://user-images.githubusercontent.com/118953929/206887998-c76aa5e4-ce8f-43bc-a5dc-536faa1d4b3a.jpg)
+![11](https://user-images.githubusercontent.com/118953929/206888000-bac922c0-302c-46e5-8c9c-6d4d34f8fbdf.jpg)
+
+
 
 
 
