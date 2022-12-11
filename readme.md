@@ -451,7 +451,9 @@ show
 
 **Lab 7:**
 
+gvim the dff_const file to observe the code and see how the pattern will be:
 
+![photo1670730967](https://user-images.githubusercontent.com/118953929/206885608-d6caec17-a07f-41d1-a9d5-d0962ce8c276.jpeg)
 
 
 
