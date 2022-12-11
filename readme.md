@@ -582,6 +582,8 @@ show
 
 _**Seq Optimisation unused outputs**_
 
+![photo1670735469](https://user-images.githubusercontent.com/118953929/206887612-c714c172-2fb4-44c1-ac4e-be3b6ef1b841.jpeg)
+
 
 
 
