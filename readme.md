@@ -670,9 +670,30 @@ Caveats with Blocking Statements:
 
 ![photo1670741384](https://user-images.githubusercontent.com/118953929/206890323-c31013ce-7194-458f-ab93-765669edbce1.jpeg)
 
+_**Labs:**_
+
+_Lab GLS Synth Sim Mismatch _
 
 
+open up the ternary_operator_mux.v good_mux.v and bad_mux.v to observe the pattern
 
+a)\
+iverilog ternary_operator_mux.v tb_ternary_operator_mux.v\
+./a.out\
+gtkwave *.vcd
+
+
+yosys
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog ternary_operator_mux.v
+synth -top ternary_operator_mux
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+write_verilog -noattr ternary_operator_mux_net.v
+show
+
+iverilog ../my_lib/verilog_model/primitives.v iver../my_lib/verilog_models/sky*.v ternary_operator_mux.v tb_ternary_operator_mux.v
+./a.out
+gtkwave *.vcd
 
 
 
