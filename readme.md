@@ -343,7 +343,7 @@ Eg:
 
 _**Labs:**_
 
-_Lab6 part1:_
+**Lab 6: **
 
 First, open verilog_files and make sure opt_check files are there, open up the opt_check files and observe the differences:
 ![photo1670592095](https://user-images.githubusercontent.com/118953929/206712325-f818f5d6-2708-4418-a03e-c842e509d7c9.jpeg)
@@ -447,6 +447,10 @@ show
 ![22](https://user-images.githubusercontent.com/118953929/206885176-335b9ee0-be24-4d26-994c-ad2c774b3470.jpg)
 ![23](https://user-images.githubusercontent.com/118953929/206885177-24ba600c-a14d-4680-a505-4465a462b5d0.jpg)
 ![24](https://user-images.githubusercontent.com/118953929/206885178-fe052566-7fa6-46aa-94b2-e28054f9a40a.jpg)
+
+
+**Lab 7:**
+
 
 
 
