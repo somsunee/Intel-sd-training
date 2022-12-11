@@ -632,7 +632,12 @@ What is GLS?
 
 GLS using iVERILOG
 
+![photo1670737566 (2)](https://user-images.githubusercontent.com/118953929/206888465-87726af8-afac-46c4-aa10-f5f71ebdd252.jpeg)
+![photo1670737566 (1)](https://user-images.githubusercontent.com/118953929/206888466-d53a252e-bc0d-455a-a349-f043ab4b79f3.jpeg)
 
+***why need to validate the functionality of the netlist?
+
+Synthesis Simulation Mismatch
 
 
 
