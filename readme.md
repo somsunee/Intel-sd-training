@@ -399,7 +399,7 @@ show
 iv)opt_check4.v
 
 do for opt_check4\
-read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.libread_verilog\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
 read_verilog opt_check4.v\
 synth -top opt_check4\
 opt_clean -purge\
@@ -417,7 +417,7 @@ v)multiple_module_opt.v\
 Steps:
 
 do for multiple_module_opt\
-read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.libread_verilog\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
 read_verilog multiple_module_opt.v\
 synth -top multiple_module_opt\
 flatten\
@@ -435,7 +435,7 @@ vi)multiple_module_opt2.v\
 
 Steps:
 do for multiple_module_opt2\
-read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.libread_verilog\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
 read_verilog multiple_module_opt2.v\
 synth -top multiple_module_opt2\
 flatten\
