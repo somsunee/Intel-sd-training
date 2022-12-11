@@ -455,6 +455,134 @@ gvim the dff_const file to observe the code and see how the pattern will be:
 
 ![photo1670730967](https://user-images.githubusercontent.com/118953929/206885608-d6caec17-a07f-41d1-a9d5-d0962ce8c276.jpeg)
 
+view the waveform pattern and observe:
+
+iverilog dff_const1.v tb_dff_const1.v\
+./a.out\
+gtkwave *.vcd 
+
+![1](https://user-images.githubusercontent.com/118953929/206887032-0b6f5949-e66e-446f-935c-cc5438f92a96.jpg)
+![2](https://user-images.githubusercontent.com/118953929/206887033-0c0ea095-04dc-4e63-921f-ce4ec33d7150.jpg)
+
+do the same and observe for dff_const2.v:
+
+iverilog dff_const2.v tb_dff_const2.v\
+./a.out\
+gtkwave *.vcd
+
+![3](https://user-images.githubusercontent.com/118953929/206887036-8a59ed42-70ef-4e69-a99a-c6b9313a759b.jpg)
+![4](https://user-images.githubusercontent.com/118953929/206887038-ad0a9f12-a223-498f-848d-96ebaabd8529.jpg)
+
+Synthesis:
+
+dff_const1.v
+
+i)do for dff_const1.v\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+read_verilog dff_const1.v\
+synth -top dff_const1\
+dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+show
+
+![5](https://user-images.githubusercontent.com/118953929/206887039-c49d633d-f4e4-4b7c-8d2d-8ab7016f2d2d.jpg)
+![6](https://user-images.githubusercontent.com/118953929/206886993-f055661d-c1f9-492d-9dbf-c9f745b9c35b.jpg)
+![7](https://user-images.githubusercontent.com/118953929/206886994-2746c220-5be7-4fbd-bd52-2b403e296fd9.jpg)
+![8](https://user-images.githubusercontent.com/118953929/206886995-761c8ed2-f7b5-48df-ab21-15fa3ab00d9c.jpg)
+![9](https://user-images.githubusercontent.com/118953929/206886996-c653e3fb-aeed-43c0-8a90-b0a1156c738c.jpg)
+
+ii)do for dff_const2.v\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+read_verilog dff_const2.v\
+synth -top dff_const2\
+dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib ( no need map again )\
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+show
+
+![10](https://user-images.githubusercontent.com/118953929/206886997-7cbd56ee-44bd-4df8-931f-753d536f1c54.jpg)
+![11](https://user-images.githubusercontent.com/118953929/206886999-aca76b1a-2c49-49ef-8f4e-8a789d65cb32.jpg)
+![12](https://user-images.githubusercontent.com/118953929/206887000-c7092cc2-053c-494f-ad09-3394373fe2a7.jpg)
+
+
+- gvim for dff_const3.v ,dff_const4.v, dff_const5.v
+![13](https://user-images.githubusercontent.com/118953929/206887001-c15bb11c-9f2d-4f51-8866-fe8a501a6acc.jpg)
+
+view the waveform pattern and observe:
+
+iverilog dff_const3.v tb_dff_const3.v\
+./a.out\
+gtkwave *.vcd
+
+![14](https://user-images.githubusercontent.com/118953929/206887002-7b2c4b2d-d044-43ce-b54a-ea515241c674.jpg)
+![15](https://user-images.githubusercontent.com/118953929/206887004-87c0b5af-2912-4fa5-9577-21bb3fe1d8ba.jpg)
+
+iii)dff_const3.v
+
+do for dff_const3.v\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+read_verilog dff_const3.v\
+synth -top dff_const3\
+dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+show
+
+![16](https://user-images.githubusercontent.com/118953929/206887007-67e86d60-75a1-4498-9f4e-bc1e6d97ee0c.jpg)
+![17](https://user-images.githubusercontent.com/118953929/206887008-657db25b-263f-4c64-a424-bef3646e5aa9.jpg)
+![18](https://user-images.githubusercontent.com/118953929/206887009-0ebf01fe-f371-4837-9914-441cbf693e35.jpg)
+![19](https://user-images.githubusercontent.com/118953929/206887011-0969477c-77d3-4d14-b836-5830171cdd38.jpg)
+![20](https://user-images.githubusercontent.com/118953929/206887012-9702bd21-7e16-47ca-8f4b-d9e58e87b96d.jpg)
+![21](https://user-images.githubusercontent.com/118953929/206887014-1714c7a7-5251-4c82-8d1d-b04484f6080a.jpg)
+
+
+view the waveform pattern and observe:
+
+iverilog dff_const4.v tb_dff_const4.v\
+./a.out\
+gtkwave *.vcd 
+
+![22](https://user-images.githubusercontent.com/118953929/206887016-fa50d266-5fb9-4f01-8cae-2388dbee9816.jpg)
+![23](https://user-images.githubusercontent.com/118953929/206887021-9065fcd0-c2f9-4316-8267-41ea0bfe45a3.jpg)
+
+iv)dff_const4.v
+
+do for dff_const4.v\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+read_verilog dff_const4.v\
+synth -top dff_const4\
+dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+show
+
+
+![23 1](https://user-images.githubusercontent.com/118953929/206887017-b7c69fcd-8b5b-44a1-a895-775c1701a51e.jpg)
+![23 2](https://user-images.githubusercontent.com/118953929/206887018-572dfe52-622d-43d8-ab70-a838f081aa16.jpg)
+![23 3](https://user-images.githubusercontent.com/118953929/206887020-3b65ccff-324c-4b80-9ca5-12a52a1dd649.jpg)
+
+
+iverilog dff_const5.v tb_dff_const5.v\
+./a.out\
+gtkwave *.vcd
+
+![24](https://user-images.githubusercontent.com/118953929/206887022-c1080e93-eb94-41bf-a821-8d22f62fae4a.jpg)
+![25](https://user-images.githubusercontent.com/118953929/206887029-30a60475-f668-4ae9-9f8d-0db05df852c2.jpg)
+
+v)dff_const5.v
+
+do for dff_const5.v\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+read_verilog dff_const5.v\
+synth -top dff_const5\
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+show
+
+![25 1](https://user-images.githubusercontent.com/118953929/206887024-c099ccfe-aa91-4d43-96ee-fb48bca61b98.jpg)
+![25 2](https://user-images.githubusercontent.com/118953929/206887027-b4a8f9af-39d0-404a-926b-e87dbea169df.jpg)
+![25 3](https://user-images.githubusercontent.com/118953929/206887028-1d258dd7-af69-456c-a022-0faf537b3f6f.jpg)
+
+
+
+
+
 
 
 
