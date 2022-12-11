@@ -348,4 +348,13 @@ _Lab6 part1:_
 First, open verilog_files and make sure opt_check files are there, open up the opt_check files and observe the differences:
 ![photo1670592095](https://user-images.githubusercontent.com/118953929/206712325-f818f5d6-2708-4418-a03e-c842e509d7c9.jpeg)
 
+Steps for opt_check.v
+yosys
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog opt_check.v
+synth -top opt_check
+opt_clean -purge (command to run optimization)
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show (expecting and and gate here)
+
 
