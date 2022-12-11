@@ -625,7 +625,7 @@ show
 
 _**Lecture notes:**_
 
-What is GLS?
+_What is GLS?_
 - GLS stands for (Gate Level Simulation) 
 	- used to boost the confidence regarding implementation of a design and can help verify dynamic circuit behaviour, which cannot be verified accurately by static methods.
 	- running test bench with netlist (same as RTL code) as DUT 
@@ -637,7 +637,16 @@ GLS using iVERILOG
 
 ***why need to validate the functionality of the netlist?
 
-Synthesis Simulation Mismatch
+_Synthesis Simulation Mismatch_
+
+- missing sensivity list
+- blocking vs non-blocking asssignments
+- non standard verilog coding
+
+
+**Missing Sensivity list**
+
+
 
 
 
