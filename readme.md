@@ -653,6 +653,19 @@ changes: do _always @(*)_
 **snapshot from lecture's video:
 ![photo1670738503](https://user-images.githubusercontent.com/118953929/206888896-dce12271-d0d8-4530-966d-5952a0e06a24.jpeg)
 
+_**Blocking vs Non-blocking statements in verilog **_
+
+Inside the always block
+- if the "=" is used to make assignments --> that is called blocking statements
+	- it executes in the order is written
+	- the first statement is evaluated before the second statement
+
+- if the "<=" ---> non-blocking statements
+	- it executes all the RHS when always block is entered and assigns to LHS
+	- parallel evaluation ( order doesn't matter )
+
+Caveats with Blocking Statements:
+
 
 
 
