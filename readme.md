@@ -676,24 +676,79 @@ _Lab GLS Synth Sim Mismatch _
 
 
 open up the ternary_operator_mux.v good_mux.v and bad_mux.v to observe the pattern
+![1](https://user-images.githubusercontent.com/118953929/206893035-e4eba467-2bf3-4199-a4fd-addf686a9114.jpg)
 
 a)\
 iverilog ternary_operator_mux.v tb_ternary_operator_mux.v\
 ./a.out\
 gtkwave *.vcd
 
+![2](https://user-images.githubusercontent.com/118953929/206893037-0ad0a85e-ece4-423b-9b66-9ac63f389a66.jpg)
 
-yosys
-read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-read_verilog ternary_operator_mux.v
-synth -top ternary_operator_mux
-abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-write_verilog -noattr ternary_operator_mux_net.v
+Synthesis:
+yosys\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+read_verilog ternary_operator_mux.v\
+synth -top ternary_operator_mux\
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+write_verilog -noattr ternary_operator_mux_net.v\
 show
 
-iverilog ../my_lib/verilog_model/primitives.v iver../my_lib/verilog_models/sky*.v ternary_operator_mux.v tb_ternary_operator_mux.v
-./a.out
+![3](https://user-images.githubusercontent.com/118953929/206893007-63f908df-33ff-4a23-97a2-ceb240e5d485.jpg)
+![4](https://user-images.githubusercontent.com/118953929/206893011-395f61e5-027b-4857-bd95-af6b8272f5c2.jpg)
+![5](https://user-images.githubusercontent.com/118953929/206893012-1cf46118-d631-40dd-868d-30b95d9a805e.jpg)
+
+Explaination details from lecture's video:
+![6](https://user-images.githubusercontent.com/118953929/206893013-c244fe21-7fd5-49d1-9778-b283f6307e79.jpg)
+
+:
+iverilog ../my_lib/verilog_model/primitives.v iver../my_lib/verilog_models/sky*.v ternary_operator_mux.v tb_ternary_operator_mux.v\
+./a.out\
 gtkwave *.vcd
+
+![7](https://user-images.githubusercontent.com/118953929/206893014-d69d857e-84b1-4c80-90d8-95933dd5b4ed.jpg)
+![8](https://user-images.githubusercontent.com/118953929/206893016-e93f2ded-22e3-44b7-8059-8fd0ee8bf7cb.jpg)
+
+b)
+
+iverilog bad_mux.v tb_bad_mux.v\
+./a.out\
+gtkwave *.vcd
+
+
+![9](https://user-images.githubusercontent.com/118953929/206893018-9419c03c-18dd-423a-b150-b18803a4e249.jpg)
+![10](https://user-images.githubusercontent.com/118953929/206893020-70f1e4c5-40c2-456a-b401-f3ed005fc754.jpg)
+
+Synthesis:
+
+yosys\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+read_verilog bad_mux.v\
+synth -top bad_mux\
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+write_verilog -noattr bad_mux.v\
+show
+
+![11](https://user-images.githubusercontent.com/118953929/206893021-b6afe7f0-74e1-4be8-9e7a-8002b7230b78.jpg)
+![12](https://user-images.githubusercontent.com/118953929/206893022-0aa3837d-75ca-4b2d-8a9f-87c9a5a1f7b2.jpg)
+![13](https://user-images.githubusercontent.com/118953929/206893023-d44e5316-8099-4116-8209-60ee025b110a.jpg)
+
+iverilog ../my_lib/verilog_model/primitives.v iver../my_lib/verilog_models/sky*.v bad_mux.v tb_bad_mux.v\
+./a.out\
+gtkwave *.vcd
+
+![14](https://user-images.githubusercontent.com/118953929/206893024-00d195cd-803e-444b-8b38-d116d6ff6a01.jpg)
+![15](https://user-images.githubusercontent.com/118953929/206893025-e37edafe-57ae-43a3-820b-e8bdf2fc1c52.jpg)
+
+Lab Synth sim mismatch blocking statement 
+
+
+
+
+
+
+
+
 
 
 
