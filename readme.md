@@ -672,13 +672,14 @@ Caveats with Blocking Statements:
 
 _**Labs:**_
 
-_Lab GLS Synth Sim Mismatch _
+_Lab GLS Synth Sim Mismatch_
 
 
 open up the ternary_operator_mux.v good_mux.v and bad_mux.v to observe the pattern
 ![1](https://user-images.githubusercontent.com/118953929/206893035-e4eba467-2bf3-4199-a4fd-addf686a9114.jpg)
 
-a)\
+a)
+
 iverilog ternary_operator_mux.v tb_ternary_operator_mux.v\
 ./a.out\
 gtkwave *.vcd
@@ -701,7 +702,7 @@ show
 Explaination details from lecture's video:
 ![6](https://user-images.githubusercontent.com/118953929/206893013-c244fe21-7fd5-49d1-9778-b283f6307e79.jpg)
 
-:
+
 iverilog ../my_lib/verilog_model/primitives.v iver../my_lib/verilog_models/sky*.v ternary_operator_mux.v tb_ternary_operator_mux.v\
 ./a.out\
 gtkwave *.vcd
@@ -740,8 +741,42 @@ gtkwave *.vcd
 ![14](https://user-images.githubusercontent.com/118953929/206893024-00d195cd-803e-444b-8b38-d116d6ff6a01.jpg)
 ![15](https://user-images.githubusercontent.com/118953929/206893025-e37edafe-57ae-43a3-820b-e8bdf2fc1c52.jpg)
 
-Lab Synth sim mismatch blocking statement 
+_Lab Synth sim mismatch blocking statement_ 
 
+gvim to view blocking_caveat.v
+
+![16](https://user-images.githubusercontent.com/118953929/206893027-cb157a18-e4bc-4aaf-8902-da9287c9ccbc.jpg)
+
+
+a)blocking_caveat.v
+
+
+iverilog blocking_caveat.v tb_blocking_caveat.v\
+./a.out\
+gtkwave *.vcd
+
+![17](https://user-images.githubusercontent.com/118953929/206893029-a1ab11f0-0e8b-4d6c-89df-b73825963214.jpg)
+![18](https://user-images.githubusercontent.com/118953929/206893030-aa1bd20c-8fd7-49cf-8649-a81049055662.jpg)
+
+
+yosys\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+read_verilog blocking_caveat.v\
+synth -top blocking_caveat\
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+write_verilog -noattr blocking_caveat.v\
+show
+
+![19](https://user-images.githubusercontent.com/118953929/206893031-d0207c9b-2c8b-469a-86f8-e415f713522d.jpg)
+![20](https://user-images.githubusercontent.com/118953929/206893032-a6433d53-04d7-4967-b904-b83fb9a2e850.jpg)
+![21](https://user-images.githubusercontent.com/118953929/206893033-e18dd1cf-a2c9-441b-8c3b-afe508094c86.jpg)
+
+iverilog ../my_lib/verilog_model/primitives.v iver../my_lib/verilog_models/sky*.v blocking_caveat.v tb_blocking_caveat.v\
+./a.out\
+gtkwave *.vcd
+
+
+![22](https://user-images.githubusercontent.com/118953929/206893034-00440c6d-13a1-4723-8294-4400548cae78.jpg)
 
 
 
