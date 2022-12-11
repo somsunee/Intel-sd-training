@@ -653,7 +653,7 @@ changes: do _always @(*)_
 **snapshot from lecture's video:
 ![photo1670738503](https://user-images.githubusercontent.com/118953929/206888896-dce12271-d0d8-4530-966d-5952a0e06a24.jpeg)
 
-_**Blocking vs Non-blocking statements in verilog **_
+_**Blocking vs Non-blocking statements in verilog**_
 
 Inside the always block
 - if the "=" is used to make assignments --> that is called blocking statements
@@ -668,7 +668,7 @@ Caveats with Blocking Statements:
 
 ![photo1670741002](https://user-images.githubusercontent.com/118953929/206890178-58738b0b-b8b0-4f9d-8c71-60c4ab90b5d0.jpeg)
 
-
+![photo1670741384](https://user-images.githubusercontent.com/118953929/206890323-c31013ce-7194-458f-ab93-765669edbce1.jpeg)
 
 
 
