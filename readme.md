@@ -580,6 +580,9 @@ show
 ![25 3](https://user-images.githubusercontent.com/118953929/206887028-1d258dd7-af69-456c-a022-0faf537b3f6f.jpg)
 
 
+_**Seq Optimisation unused outputs**_
+
+
 
 
 
