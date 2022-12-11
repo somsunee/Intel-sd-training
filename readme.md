@@ -348,15 +348,15 @@ _Lab6 part1:_
 First, open verilog_files and make sure opt_check files are there, open up the opt_check files and observe the differences:
 ![photo1670592095](https://user-images.githubusercontent.com/118953929/206712325-f818f5d6-2708-4418-a03e-c842e509d7c9.jpeg)
 
-Steps for 
+Steps for\
 i)opt_check.v
 
-yosys
-read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-read_verilog opt_check.v
-synth -top opt_check
-opt_clean -purge (command to run optimization)
-abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+yosys\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+read_verilog opt_check.v\
+synth -top opt_check\
+opt_clean -purge (command to run optimization)\
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
 show (expecting and and gate here)
 
 ![1](https://user-images.githubusercontent.com/118953929/206885179-b7c87be7-eb31-4238-88ab-c5f8327bd9c6.jpg)
@@ -369,13 +369,13 @@ show (expecting and and gate here)
 
 ii)opt_check2.v
 
-Repeating same steps:
-do for opt_check2
-read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-read_verilog opt_check2.v
-synth -top opt_check2
-opt_clean -purge
-abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Repeating same steps:\
+do for opt_check2\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
+read_verilog opt_check2.v\
+synth -top opt_check2\
+opt_clean -purge\
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
 show
 
 ![8](https://user-images.githubusercontent.com/118953929/206885160-a55ae685-0afe-4066-8cf0-a78218f72abc.jpg)
@@ -384,12 +384,12 @@ show
 
 iii)opt_check3.v
 
-do for opt_check3
-read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.libread_verilog
-read_verilog opt_check3.v
-synth -top opt_check3
-opt_clean -purge
-abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+do for opt_check3\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.libread_verilog\
+read_verilog opt_check3.v\
+synth -top opt_check3\
+opt_clean -purge\
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
 show
 
 ![10](https://user-images.githubusercontent.com/118953929/206885163-c2f49b6c-87fe-4e0e-93ab-492f1d0f45de.jpg)
@@ -398,12 +398,12 @@ show
 
 iv)opt_check4.v
 
-do for opt_check4
-read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.libread_verilog
-read_verilog opt_check4.v
-synth -top opt_check4
-opt_clean -purge
-abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+do for opt_check4\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.libread_verilog\
+read_verilog opt_check4.v\
+synth -top opt_check4\
+opt_clean -purge\
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
 show
 
 ![13](https://user-images.githubusercontent.com/118953929/206885166-9812cf63-3a71-4121-bd97-139e72a642e1.jpg)
@@ -411,17 +411,18 @@ show
 ![15](https://user-images.githubusercontent.com/118953929/206885168-6da4c733-b160-4b75-89c8-5601fc63ba8f.jpg)
 ![16](https://user-images.githubusercontent.com/118953929/206885169-5c972ebd-3996-4551-9884-a4dbf396f17e.jpg)
 
-v)multiple_module_opt.v
+v)multiple_module_opt.v\
 **do flatten before do the optimization
 
 Steps:
-do for multiple_module_opt
-read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.libread_verilog
-read_verilog multiple_module_opt.v
-synth -top multiple_module_opt
-flatten
-opt_clean -purge
-abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+do for multiple_module_opt\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.libread_verilog\
+read_verilog multiple_module_opt.v\
+synth -top multiple_module_opt\
+flatten\
+opt_clean -purge\
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
 show
 
 ![17](https://user-images.githubusercontent.com/118953929/206885170-97de8254-987c-4f74-8ee1-aa09285efd8f.jpg)
@@ -429,17 +430,17 @@ show
 ![19](https://user-images.githubusercontent.com/118953929/206885173-79eed031-7122-4f2e-a8d4-6ee63b8dc036.jpg)
 ![20](https://user-images.githubusercontent.com/118953929/206885174-8b75499b-2f70-4a9d-aeac-a3f8cdca7b8a.jpg)
 
-vi)multiple_module_opt2.v
+vi)multiple_module_opt2.v\
 **do flatten before do the optimization
 
 Steps:
-do for multiple_module_opt2
-read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.libread_verilog
-read_verilog multiple_module_opt2.v
-synth -top multiple_module_opt2
-flatten
-opt_clean -purge
-abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+do for multiple_module_opt2\
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.libread_verilog\
+read_verilog multiple_module_opt2.v\
+synth -top multiple_module_opt2\
+flatten\
+opt_clean -purge\
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\
 show
 
 ![21](https://user-images.githubusercontent.com/118953929/206885175-4a6ee305-3988-4d5d-9ca7-d98b3e95303d.jpg)
