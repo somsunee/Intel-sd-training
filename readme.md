@@ -646,6 +646,10 @@ _Synthesis Simulation Mismatch_
 
 **Missing Sensivity list**
 
+![photo1670738375](https://user-images.githubusercontent.com/118953929/206888819-04036770-9559-44a3-b5c6-1dee24458e35.jpeg)
+
+changes: do always @(*)
+
 
 
 
