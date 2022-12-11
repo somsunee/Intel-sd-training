@@ -666,6 +666,8 @@ Inside the always block
 
 Caveats with Blocking Statements:
 
+![photo1670741002](https://user-images.githubusercontent.com/118953929/206890178-58738b0b-b8b0-4f9d-8c71-60c4ab90b5d0.jpeg)
+
 
 
 
