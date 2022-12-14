@@ -8,7 +8,7 @@
  
 ### Day_0
 
-**_Quick notes_**
+<details><summary> _**Lecture Notes**_ </summary>
 
 chip --package
 
@@ -41,6 +41,8 @@ Snapshot\
 ![Note1](https://user-images.githubusercontent.com/118953929/205479029-dcfa21b3-52b0-4e38-a6e2-327f2d1de574.png)
 ![Notes2](https://user-images.githubusercontent.com/118953929/205479032-fcff4233-6313-4fe5-ab9d-5338e53bbb1f.png)
 
+
+</details>
 
 _**Lab:**_ \
 ![day-0](https://user-images.githubusercontent.com/118953929/205479043-0a05819e-ed14-4521-a34f-8da892d44c67.jpg)
