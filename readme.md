@@ -7,7 +7,7 @@
 - [Day 4 : GLS,blocking vs non-blocking and synthesis-simulation mismtach](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_4)
 - [Day 5 : DFT](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_5)
  
-&#x1F53D;
+
 ### Day_0
 
 <details><summary><b>Lecture Notes</b></summary>
@@ -53,7 +53,7 @@ _**Lab:**_ \
 
 </details>
 	
-### Day_1 &#x1F53D;
+### Day_1
 
 <details><summary><b>Lecture Notes</s></summary>
 
@@ -180,7 +180,7 @@ Simplifying:
 
 </details>
 	
-### Day_2 &#x1F53D;
+### Day_2
 
 <details><summary><b>Lecture Notes</s></summary>
 
@@ -328,7 +328,7 @@ As can see, no cells is getting map during synthesis
 
 </details>	
 
-### Day_3 &#x1F53D;
+### Day_3
 	
 	
 <details><summary><b>Lecture Notes</s></summary>
@@ -653,7 +653,7 @@ show
 
 </details>
 
-### Day_4 &#x1F53D;
+### Day_4
 
 
 <details><summary><b> Lecture notes </b></summary>
@@ -820,7 +820,7 @@ gtkwave *.vcd
 </details>
 
 
-### Day_5 &#x1F53D;
+### Day_5
 
 
 
