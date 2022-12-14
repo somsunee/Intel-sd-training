@@ -912,6 +912,14 @@ ii) Structured technique
 	- Built-in self-test 
 	     - MBist ( Memory Built-in self test ) - macro
 	     - LBist ( Logic Built-in self test )
+
+	
+MBIST vs LBIST:
+
+Types | Advantages | Disadvantages |
+--- | --- | --- |
+MBIST |It allows for robust testing of memories, Reduced test time, All the memories of the design can be tested in parallel, Lesser test cost |causes increase in area |
+LBIST | provides self-test capability to logic inside chip, provides the ability to be tested at higher frequencies reducing test time considerably, can run while the chip is on field running functionally | the cost of chip increases, causing impact on timing |
 	
 
 Scan-chain technique ( scan-chains)
@@ -952,13 +960,16 @@ _How a scan chain functions:_
 _How Chain length is decided?_
 	
 	Number of ports required = 2 X Number of scan chains
+
+Since for each scan chain, scan_in and scan_out port is needed. Also,
+	
+	 Number of cycles required to run a pattern = Length of largest scan chain in design
 	
 
- 
+ ![photo1671027130](https://user-images.githubusercontent.com/118953929/207618179-1b2f43f7-67a5-409b-9037-d0a7c09956ad.jpeg)
 
- 
+> __Note__  : Scan-chain balancing is keeping almost equal number of flops in each scan chain
 	
- 
 
 Basic ATE functionality
 	
