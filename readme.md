@@ -890,11 +890,26 @@ What do we add to observe at the node 1 ?
 
 $\mathcal{\textcolor{purple}{FAULT:} \}$ physical damage/defect
 
-$\mathcal{\textcolor{purple}{ERROR:} \}$
+$\mathcal{\textcolor{purple}{ERROR:} \}$ error caused by a fault
 
 $\mathcal{\textcolor{purple}{FAILURE:} \}$ when system not working 
 
 
+**DFT Techniques:**
+	
+i) Ad-hoc technique
+	- avoid combinational feedback
+	- all flip flops must be initialize
+	- partition a large circuit into small blocks.
+	- provide test control for the signals which are not controllable
+	- consider ATE requirements while designing test logic
+ii) Structured technique
+	- Scan flip flop
+	- Boundary Scan
+	- Built-in self-test 
+	     - MBist ( Memory Built-in self test )
+	     - LBist ( Logic Built-in self test )
+	
 
 
 
