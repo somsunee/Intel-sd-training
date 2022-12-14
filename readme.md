@@ -883,12 +883,22 @@ Let's say there are a lot more Registers here, all has been fabricated and do no
 Observability:
 
 What do we add to observe at the node 1 ? 
-- by adding a flip flop 
+- by adding a flip flop (only observe without effecting the results/process)
 
-
-
-
+![photo1671023466](https://user-images.githubusercontent.com/118953929/207604465-595531a3-3302-4b7a-93c9-09a1d7a8a512.jpeg)
 > __Note__  : Scan Based design increases both controllability and observability. You are able to set internal states and observe internal states. 
+
+$\mathcal{\textcolor{purple}{FAULT:} \}$ physical damage/defect
+
+$\mathcal{\textcolor{purple}{ERROR:} \}$
+
+$\mathcal{\textcolor{purple}{FAILURE:} \}$ when system not working 
+
+
+
+
+
+
 
 </details>
 
