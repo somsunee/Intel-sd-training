@@ -914,16 +914,33 @@ ii) Structured technique
 	     - LBist ( Logic Built-in self test )
 	
 
-Scan-chain technique
-- the elements in scan-based designs that are used in scan in/out the data
+Scan-chain technique ( scan-chains)
 
+- the elements in scan-based designs that are used in scan in/out the data
+- A scan chain is formed by a number of flops connected back to back in a chain with the output of one flop connected to another
+- The input of first flop is connected to the input pin of the chip (called scan-in) from where scan data is fed. 
+- The output of the last flop is connected to the output pin of the chip (called scan-out) which is used to take the shifted data out. 
+
+_Purpose of scan chains_: As said above, scan chains are inserted into designs to shift the test data into the chip and out of the chip. 
+
+	**The figure below shows a scan chain.
+![photo1671026029](https://user-images.githubusercontent.com/118953929/207613675-79c2b972-7cc1-4b3c-99f0-173982f64ad2.jpeg)
+	
+
+_How normal flop is transformed into a scan flop?_
+	
+-The flops in the design have to be modified in order to be put in the scan chains. To do so, the normal input (D) of the flip-flop has to be multiplexed with the scan input. A signal called **scan-enable** is used to control which input will propagate to the output.
+
+> __Note__  :
+If scan-enable = 0, data at D pin of the flop will propagate to Q at the next active edge;
+If scan-enable= 1, data present at scan-in input will propagate to Q at the next active edge
 	
 Basic ATE functionality
 	
--scan-in phase
--parallel measure
--parallel capture
--first scan-out phase
+-scan-in phase\
+-parallel measure\
+-parallel capture\
+-first scan-out phase\
 -scan-out Phase
 
 
