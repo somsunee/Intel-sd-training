@@ -1,3 +1,4 @@
+
 **Contents:**
 
 - [Day 0 : System/Tool Setup Check & GitHub ID creation](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_0)
@@ -10,8 +11,9 @@
 
 ### Day_0
 
-<details><summary><b>Lecture Notes</b></summary>
 
+<details><summary><b>Lecture Notes</b></summary>
+	
 chip --package
 
 wirebond - solid phase welding process, where two metallic materials (wire and pad surface) are brought into intimate contact
