@@ -910,9 +910,12 @@ ii) Structured technique
 	- Scan flip flop
 	- Boundary Scan
 	- Built-in self-test 
-	     - MBist ( Memory Built-in self test )
+	     - MBist ( Memory Built-in self test ) - macro
 	     - LBist ( Logic Built-in self test )
 	
+
+Scan-chain technique
+- the elements in scan-based designs that are used in scan in/out the data
 
 	
 Basic ATE functionality
