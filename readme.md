@@ -6,9 +6,9 @@
 - [Day 3 : Combinational and sequential optimizations](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_3)
 - [Day 4 : GLS,blocking vs non-blocking and synthesis-simulation mismtach](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_4)
  
-### Day_0
+### Day_0 &#x1F53D;
 
-<details><summary> _**Lecture Notes**_ </summary>
+<details><summary><b>Lecture Notes</b></summary>
 
 chip --package
 
@@ -44,12 +44,16 @@ Snapshot\
 
 </details>
 
+<details><summary><b>Labs</b></summary>
+
 _**Lab:**_ \
 ![day-0](https://user-images.githubusercontent.com/118953929/205479043-0a05819e-ed14-4521-a34f-8da892d44c67.jpg)
 
-### Day_1
+</details>
+	
+### Day_1 &#x1F53D;
 
-_**Quick notes & Lecture Session**_
+<details><summary><b>Lecture Notes</s></summary>
 
 Part_1\
 **Introduction to iverilog design test bench**
@@ -65,37 +69,7 @@ _TestBench_
 - is a setup tool to apply stimulus (to check whether the design is obey/align to required specifications) - by observing the outputs
 
 **NOTES: testbench doesn't have a primary inputs/outputs, while Design may have one or more primary inputs/outputs
-
-_**Lab_1:**_ 
-
-
-i) Creating VLSI directory, do git clone [enter this full link path](https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop) to setup the lab with files. ( Make sure be in VLSI directory )
-![lab1_1](https://user-images.githubusercontent.com/118953929/205483354-1448f2fa-a5f2-45ee-9b8b-e91e0249bc07.jpg)
-
-ii) Checked if the git clone is cloning correctly. 
-- made sure all the files stated is in the path directory, respectively.
-![lab1_2](https://user-images.githubusercontent.com/118953929/205483355-a7722db1-d7f5-494a-80d4-1b6d640bf42d.jpg)
-![lab1_3](https://user-images.githubusercontent.com/118953929/205483357-a4652328-69df-435b-87f0-2835cd645a55.jpg)
-![lab1_4](https://user-images.githubusercontent.com/118953929/205483347-af26c122-cecf-4859-829b-3fdf39d6a439.jpg)
-
-**in verilog_files, make sure all the verilog files, comes along with tb (testbench) files, respectively. 
-Eg: rcs.v and tb_rca.v
-
-**_Lab_2:_**
-
-i) Load iverilog: do _iverilog good_mux.v tb_good_mux.v_ , 
-After loaded, a.out file will be generated. Next, execute the a.out: do _./a.out_
-Then, will see a _tb_good_mux.vcd_ file being generated
-![lab2_1](https://user-images.githubusercontent.com/118953929/205483348-058652de-ccd4-49fc-ba64-14e0232c9937.jpg)
-
-ii) Launch waveform: do gtkwave tb_good_mux.vcd
-Observe the waveform pattern. 
-![lab2_2](https://user-images.githubusercontent.com/118953929/205484160-e89c70db-3f5e-4741-872f-116be7ffa5e1.jpg)
-
-iii) Design verilog code and the testbench of the verilog
-![lab2_3](https://user-images.githubusercontent.com/118953929/205483351-457c63d4-79e2-468f-81e8-3eac230105df.jpg)
-![lab2_4](https://user-images.githubusercontent.com/118953929/205483352-e18dcbec-a049-4c66-8ee6-879c6692b518.jpg)
-
+	
 
 Part_2\
 **Introduction to yosys**
@@ -134,6 +108,41 @@ Transistors - charge/discharge the capacitance fast.
 Wider transistors -> low delay (more area and power)
 Narrow transistors -> More delay (less area and power)
 
+</details>
+
+<details><summary><b>Labs</b></summary>	
+
+_**Lab_1:**_ 
+
+
+i) Creating VLSI directory, do git clone [enter this full link path](https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop) to setup the lab with files. ( Make sure be in VLSI directory )
+![lab1_1](https://user-images.githubusercontent.com/118953929/205483354-1448f2fa-a5f2-45ee-9b8b-e91e0249bc07.jpg)
+
+ii) Checked if the git clone is cloning correctly. 
+- made sure all the files stated is in the path directory, respectively.
+![lab1_2](https://user-images.githubusercontent.com/118953929/205483355-a7722db1-d7f5-494a-80d4-1b6d640bf42d.jpg)
+![lab1_3](https://user-images.githubusercontent.com/118953929/205483357-a4652328-69df-435b-87f0-2835cd645a55.jpg)
+![lab1_4](https://user-images.githubusercontent.com/118953929/205483347-af26c122-cecf-4859-829b-3fdf39d6a439.jpg)
+
+**in verilog_files, make sure all the verilog files, comes along with tb (testbench) files, respectively. 
+Eg: rcs.v and tb_rca.v
+
+**_Lab_2:_**
+
+i) Load iverilog: do _iverilog good_mux.v tb_good_mux.v_ , 
+After loaded, a.out file will be generated. Next, execute the a.out: do _./a.out_
+Then, will see a _tb_good_mux.vcd_ file being generated
+![lab2_1](https://user-images.githubusercontent.com/118953929/205483348-058652de-ccd4-49fc-ba64-14e0232c9937.jpg)
+
+ii) Launch waveform: do gtkwave tb_good_mux.vcd
+Observe the waveform pattern. 
+![lab2_2](https://user-images.githubusercontent.com/118953929/205484160-e89c70db-3f5e-4741-872f-116be7ffa5e1.jpg)
+
+iii) Design verilog code and the testbench of the verilog
+![lab2_3](https://user-images.githubusercontent.com/118953929/205483351-457c63d4-79e2-468f-81e8-3eac230105df.jpg)
+![lab2_4](https://user-images.githubusercontent.com/118953929/205483352-e18dcbec-a049-4c66-8ee6-879c6692b518.jpg)
+
+
 **_Labs:_**
 
 i) invoking yosys: terminal >_yosys_
@@ -167,7 +176,11 @@ Simplifying:
 ![day1_2_lab3_3](https://user-images.githubusercontent.com/118953929/205486794-76e68f97-3790-448c-b511-3a11c30b517f.jpg)
 ![day1_2_lab3_4](https://user-images.githubusercontent.com/118953929/205486793-aaf9ccda-eb3a-47a8-ad57-802b23199490.jpg)
 
-### Day_2
+</details>
+	
+### Day_2 &#x1F53D;
+
+<details><summary><b>Lecture Notes</s></summary>
 
 _**Lecture and notes**_
 
@@ -183,6 +196,9 @@ A glitch can be an issue if it propagates to the resultant logic or gets capture
 **Asynchronous timing paths:** if there is a glitch in the data path, it can get captured, hence, can cause issue. To prevent this, synchronizers are used and there are certain rules to be followed for asynchronous paths. 
 ![Screenshot 2022-12-07 201315](https://user-images.githubusercontent.com/118953929/206177613-9c92c340-9dd3-48f5-89bf-469067c00b85.jpg)
 
+</details>
+
+<details><summary><b>Labs</b></summary>
 
 **_Labs:_**
 
@@ -308,7 +324,13 @@ As can see, no cells is getting map during synthesis
 ![24](https://user-images.githubusercontent.com/118953929/206198794-8a5931df-d29c-4f87-a0fc-1727e80b6c84.jpg)
 ![25](https://user-images.githubusercontent.com/118953929/206198792-7303b4c3-686e-41fd-b0bd-09d84d295829.jpg)
 
-### Day_3
+</details>	
+
+### Day_3 &#x1F53D;
+	
+	
+<details><summary><b>Lecture Notes</s></summary>
+
 
 **_Notes:_**
 
@@ -344,6 +366,11 @@ Eg:
 ![photo1670590644 (3)](https://user-images.githubusercontent.com/118953929/206707788-c3a11f60-e003-4e6a-a66a-b1a2b0947df9.jpeg)
 ![photo1670590644 (4)](https://user-images.githubusercontent.com/118953929/206707783-005d1b87-bb49-41a6-8994-d9ec84d5448f.jpeg)
 
+
+</details>
+
+<details><summary><b>Labs</b></summary>
+	
 _**Labs:**_
 
 **Lab 6: **
@@ -622,8 +649,12 @@ show
 ![10](https://user-images.githubusercontent.com/118953929/206887998-c76aa5e4-ce8f-43bc-a5dc-536faa1d4b3a.jpg)
 ![11](https://user-images.githubusercontent.com/118953929/206888000-bac922c0-302c-46e5-8c9c-6d4d34f8fbdf.jpg)
 
+</details>
 
-### Day_4
+### Day_4 &#x1F53D;
+
+
+<details><summary><b> Lecture notes </b></summary>
 
 _**Lecture notes:**_
 
@@ -671,6 +702,10 @@ Caveats with Blocking Statements:
 ![photo1670741002](https://user-images.githubusercontent.com/118953929/206890178-58738b0b-b8b0-4f9d-8c71-60c4ab90b5d0.jpeg)
 
 ![photo1670741384](https://user-images.githubusercontent.com/118953929/206890323-c31013ce-7194-458f-ab93-765669edbce1.jpeg)
+
+</details>
+
+<details><summary><b> Labs </b></summary>
 
 _**Labs:**_
 
@@ -780,7 +815,7 @@ gtkwave *.vcd
 
 ![22](https://user-images.githubusercontent.com/118953929/206893034-00440c6d-13a1-4723-8294-4400548cae78.jpg)
 
-
+</details>
 
 
 
