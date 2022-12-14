@@ -926,7 +926,6 @@ _Purpose of scan chains_: As said above, scan chains are inserted into designs t
 	**The figure below shows a scan chain.
 ![photo1671026029](https://user-images.githubusercontent.com/118953929/207613675-79c2b972-7cc1-4b3c-99f0-173982f64ad2.jpeg)
 	
-
 _How normal flop is transformed into a scan flop?_
 	
 -The flops in the design have to be modified in order to be put in the scan chains. To do so, the normal input (D) of the flip-flop has to be multiplexed with the scan input. A signal called **scan-enable** is used to control which input will propagate to the output.
@@ -934,7 +933,33 @@ _How normal flop is transformed into a scan flop?_
 > __Note__  :
 If scan-enable = 0, data at D pin of the flop will propagate to Q at the next active edge;
 If scan-enable= 1, data present at scan-in input will propagate to Q at the next active edge
+
+_Scan terminology:_
 	
+Scan-in: Input to the flop/scan-chain that is used to provide scan data into it\
+Scan-out: Output from flop/scan-chain that provides the scanned data to the next flop/output\
+Scan-enable: Input to the flop that controls whether scan_in data or functional data will propagate to output
+
+_How a scan chain functions:_ 
+
+	Steps:
+	Assert scan_enable (make it high) so as to enable (SI -> Q) path for each flop
+	Keep shifting in the scan data until the intended values at intended nodes are reached
+	De-assert scan_enable (for one pulse of clock in case of stuck-at testing and two or more cycles in case of transition testing) to enable D->Q path so that the combinational cloud output can be captured at the next clock edge.
+	Again assert scan_enable and shift out the data through scan_out
+
+	
+_How Chain length is decided?_
+	
+	Number of ports required = 2 X Number of scan chains
+	
+
+ 
+
+ 
+	
+ 
+
 Basic ATE functionality
 	
 -scan-in phase\
