@@ -5,6 +5,7 @@
 - [Day 2 : Timing libs, hierarchical vs flat synthesis and efficient flop coding styles](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_2)
 - [Day 3 : Combinational and sequential optimizations](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_3)
 - [Day 4 : GLS,blocking vs non-blocking and synthesis-simulation mismtach](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_4)
+- [Day 5 : DFT](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_5)
  
 ### Day_0 &#x1F53D;
 
@@ -817,6 +818,8 @@ gtkwave *.vcd
 
 </details>
 
+
+### Day_5 &#x1F53D;
 
 
 
