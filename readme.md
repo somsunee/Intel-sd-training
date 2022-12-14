@@ -24,7 +24,7 @@ io pads - a very huge domain
 	- needs to be protected -from charges in not damaging the core  - esd
 
 
-Core
+$\Large{Core}$
 
 ADC- Analog to convert to digital signal
 
@@ -35,11 +35,13 @@ if the (soc)design inside the core need higher frequency than can provide by the
 eg: have a booster to boost the frequency - provided 50 MHz then needed 100Mhz
 every foundry gives you different transistor 
 
-Macros
+$\Large{Macro}$
+	
 -eg: rtl 
 -prety easy code
 
-CBB - custom building block
+$\Large{CBB}$
+- stands for custom building block
 
 Snapshot\
 ![Note1](https://user-images.githubusercontent.com/118953929/205479029-dcfa21b3-52b0-4e38-a6e2-327f2d1de574.png)
@@ -62,14 +64,14 @@ _**Lab:**_ \
 Part_1\
 **Introduction to iverilog design test bench**
 
-_Simulator_
+$\Large{Simulator}$
 - is a tool to check the design
 	-iverilog - a compiler that translates Verilog source code into executable programs  
 
-_Design_
+$\Large{Design}$
 - is the verilog codes that has the intended functionality to meet with required specification
 
-_TestBench_
+$\Large{TestBench}$
 - is a setup tool to apply stimulus (to check whether the design is obey/align to required specifications) - by observing the outputs
 
 **NOTES: testbench doesn't have a primary inputs/outputs, while Design may have one or more primary inputs/outputs
@@ -78,7 +80,7 @@ _TestBench_
 Part_2\
 **Introduction to yosys**
 
-_Synthesizer_
+$\Large{Synthesizer}$
 - tool used to convert RTL to netlist, while _yosys_ is the synthesizer
 
 _Yosys setup_
@@ -185,16 +187,16 @@ Simplifying:
 ### Day_2
 
 <details><summary><b>Lecture Notes</s></summary>
+	
+	
 
-_**Lecture and notes**_
-
-_CMOS (complementary metal-oxide-semiconductor) _
+$\Large{CMOS - complementary metal-oxide-semiconductor}$
 - has enabled massive scaling in a variety of semiconductor devices. Combining the CMOS process with VLSI has helped push packages to smaller levels while keeping costs reasonable
 
-_FLOPS_ 
+$\Large{Flops}$
 -Propagation delay - the time required for the input to be propagated to the output
 
-_Glitch_
+$\Large{Glitch}$
 A glitch can be an issue if it propagates to the resultant logic or gets captured by a flip-flop. There can be two cases here:
 **Synchronous timing paths:** (even has glitch) it will be within the limits of minimum and maximum delays permissible from one flip-flop to another
 **Asynchronous timing paths:** if there is a glitch in the data path, it can get captured, hence, can cause issue. To prevent this, synchronizers are used and there are certain rules to be followed for asynchronous paths. 
@@ -215,7 +217,7 @@ ii) Observe and understand the lib file.
 - tt - typical
 - 025C - tempertature\
 ***3 important things inside library, for the design to work\
-PVT\
+$\Large{PVT}$
 Process - variation due to fabrication\
 Voltage\
 Temperature
@@ -336,7 +338,6 @@ As can see, no cells is getting map during synthesis
 <details><summary><b>Lecture Notes</s></summary>
 
 
-**_Notes:_**
 
 _**Combinational Logic Optimization**_
 - squeez the logic in order to get most optimised design ( in term of _area_ and _power_ )
@@ -657,12 +658,10 @@ show
 
 ### Day_4
 
-
 <details><summary><b> Lecture notes </b></summary>
+	
 
-_**Lecture notes:**_
-
-_What is GLS?_
+$\Large{\ WHAT\ IS \ GLS?}$
 - GLS stands for (Gate Level Simulation) 
 	- used to boost the confidence regarding implementation of a design and can help verify dynamic circuit behaviour, which cannot be verified accurately by static methods.
 	- running test bench with netlist (same as RTL code) as DUT 
@@ -711,7 +710,6 @@ Caveats with Blocking Statements:
 
 <details><summary><b> Labs </b></summary>
 
-_**Labs:**_
 
 _Lab GLS Synth Sim Mismatch_
 
@@ -821,9 +819,35 @@ gtkwave *.vcd
 
 </details>
 
-
 ### Day_5
 
+<details><summary><b> Lecture notes </b></summary> 
+	
+	
+$\Large{DFT}$
+
+$\fbox{W H A T  is dft?}$	
+
+- DFT stands for Design For Testability 
+- is a innovative design technique which makes the testing the chip cost-effective by adding circuitry to the chip.
+- it improves the $\mathcal{\textcolor{purple}{observability} \}$ and $\mathcal{\textcolor{purple}{controllability} \}$ of internal nodes to increase the testability of all logic in the chip
+	
+$\fbox{W H Y  do we need dft?}$
+
+- it makes the testing easy at the post-production process.
+- helps to thorough testing of chips and to avoid the chances of any faults.
+- we have 3 levels after a chip is being fabricated:
+	- **Chip-level**: DFT at this stage helps to test the overall shipped-product quality. To ensure the smooth working of the product, chips are thoroughly checked and tested.
+	- **Board-level**: DFT at this stage helps to test the operational life of chips with a temperature test.
+	- **System-level**: to ensure that the replaceable parts are working smoothly, the application of DFT is important here.
+	
+$\fbox{W H E R E  do we need dft?}$
+
+
+	
+	
+	
+</details>
 
 
 
