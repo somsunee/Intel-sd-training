@@ -856,13 +856,20 @@ $\fbox{W H E N  do we need dft?}$
 
 ![photo1671021186](https://user-images.githubusercontent.com/118953929/207596500-9440f83f-0b5f-4ed6-8c34-2c38f57f9f03.jpg)
 
-Pros and Cons of DFT:
+**Pros and Cons of DFT:**
 	
 Pros | Cons |
 --- | --- | 
 Reduces tester complexity |adds compication to the design flow | 
 Reduces tester time |increase power, area, timing and package pins | 
 Reduces the chances of going into loss |increases design time | 
+	
+
+**Basic Termonologies:**
+	
+$\mathcal{\textcolor{purple}{CONTROLLABILITY:} \}$ ability to establish a specific signal value at each node in a circuit from setting values at the circuit’s inputs.
+
+$\mathcal{\textcolor{purple}{OBSERVABILITY:} \}$: ability to determine the signal value at any node in a circuit by controlling the circuit’s inputs and observing its outputs.
 	
 </details>
 
