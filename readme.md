@@ -914,7 +914,14 @@ ii) Structured technique
 	     - LBist ( Logic Built-in self test )
 	
 
-
+	
+Basic ATE functionality
+	
+-scan-in phase
+-parallel measure
+-parallel capture
+-first scan-out phase
+-scan-out Phase
 
 
 
