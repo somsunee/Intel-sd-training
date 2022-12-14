@@ -840,10 +840,16 @@ $\fbox{W H Y  do we need dft?}$
 	- **Chip-level**: DFT at this stage helps to test the overall shipped-product quality. To ensure the smooth working of the product, chips are thoroughly checked and tested.
 	- **Board-level**: DFT at this stage helps to test the operational life of chips with a temperature test.
 	- **System-level**: to ensure that the replaceable parts are working smoothly, the application of DFT is important here.
+		
+> __Note__  : DFT also done due to economical and market needs.
 	
 $\fbox{W H E R E  do we need dft?}$
 
+- during the "Synthesis"
+	
+$\fbox{W H E N  do we need dft?}$
 
+- at the beginning of design flow
 	
 	
 	
