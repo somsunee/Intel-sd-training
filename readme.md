@@ -851,6 +851,10 @@ $\fbox{W H E N  do we need dft?}$
 
 - at the beginning of design flow
 	
+
+ASIC DDESIGN FLOW chart:
+
+![photo1671021186](https://user-images.githubusercontent.com/118953929/207596500-9440f83f-0b5f-4ed6-8c34-2c38f57f9f03.jpg)
 	
 	
 </details>
