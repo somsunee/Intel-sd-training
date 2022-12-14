@@ -870,7 +870,26 @@ Reduces the chances of going into loss |increases design time |
 $\mathcal{\textcolor{purple}{CONTROLLABILITY:} \}$ ability to establish a specific signal value at each node in a circuit from setting values at the circuit’s inputs.
 
 $\mathcal{\textcolor{purple}{OBSERVABILITY:} \}$: ability to determine the signal value at any node in a circuit by controlling the circuit’s inputs and observing its outputs.
-	
+
+Controllability:
+Lets take an example for this:
+
+Let's say there are a lot more Registers here, all has been fabricated and do not have time to change the whole design, what do we do? 
+- Assume only one node that can be control and let others be black box only, by this way, we can easily contorl the only one node. 
+- An ad-hoc technique to increase controllability is adding a test point- adding a signal that you can control externally.
+
+![photo1671022514](https://user-images.githubusercontent.com/118953929/207601104-851bb170-d2cb-4b63-a077-225523555246.jpeg)
+
+Observability:
+
+What do we add to observe at the node 1 ? 
+- by adding a flip flop 
+
+
+
+
+> __Note__  : Scan Based design increases both controllability and observability. You are able to set internal states and observe internal states. 
+
 </details>
 
 
