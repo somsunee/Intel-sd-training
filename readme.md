@@ -898,12 +898,15 @@ $\mathcal{\textcolor{purple}{FAILURE:} \}$ when system not working
 **DFT Techniques:**
 	
 i) Ad-hoc technique
+	
 	- avoid combinational feedback
 	- all flip flops must be initialize
 	- partition a large circuit into small blocks.
 	- provide test control for the signals which are not controllable
 	- consider ATE requirements while designing test logic
+	
 ii) Structured technique
+	
 	- Scan flip flop
 	- Boundary Scan
 	- Built-in self-test 
