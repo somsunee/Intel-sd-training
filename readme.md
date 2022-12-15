@@ -932,7 +932,21 @@ _Purpose of scan chains_: As said above, scan chains are inserted into designs t
 
 	**The figure below shows a scan chain.
 ![photo1671026029](https://user-images.githubusercontent.com/118953929/207613675-79c2b972-7cc1-4b3c-99f0-173982f64ad2.jpeg)
+
+
+_Scan configuration:_
 	
+	- initial step in scan chain planning ( where the general structure of the scan design is determined )
+	- main decisions that made during this stage is:
+		(1) the number of scan chains used;
+		(2) the types of scan cells used to implement these scan chains; 
+		(3) storage elements to be excluded from the scan synthesis process; 
+	        (4) the way the scan cells are arranged within the scan chains
+	
+	- The number of scan chains used is typically determined by analyzing the input and output pins of the circuit to determine how many pins can be allo-cated for the scan use.
+
+
+
 _How normal flop is transformed into a scan flop?_
 	
 -The flops in the design have to be modified in order to be put in the scan chains. To do so, the normal input (D) of the flip-flop has to be multiplexed with the scan input. A signal called **scan-enable** is used to control which input will propagate to the output.
@@ -964,10 +978,23 @@ Since for each scan chain, scan_in and scan_out port is needed. Also,
 	
 	 Number of cycles required to run a pattern = Length of largest scan chain in design
 	
-
+> __Note__  : Scan-chain balancing is keeping almost equal number of flops in each scan chain	
+	
  ![photo1671027130](https://user-images.githubusercontent.com/118953929/207618179-1b2f43f7-67a5-409b-9037-d0a7c09956ad.jpeg)
+	
+	- Scan chain operation involves three stages: Scan-in, Scan-capture and Scan-out. 
+	- Scan-in involves shifting in and loading all the flip-flops with an input vector. 
+	- During scan-in, the data flows from the output of one flop to the scan-input of the next flop not unlike a shift register. 
+	- Once the sequence is loaded, one clock pulse (also called the capture pulse) is allowed to excite the combinatorial logic block and the output is captured at the second flop. 
+	- The data is then shifted out and the signature is compared with the expected signature. Modern ATPG tools can use the captured sequence as the next input vector for the next shift-in cycle. Moreover, in case of any mismatch, they can point the nodes where one can possibly find any manufacturing fault.
+	
 
-> __Note__  : Scan-chain balancing is keeping almost equal number of flops in each scan chain
+	
+Figure below shows the sequence events that takes place: ![Reference](https://anysilicon.com/overview-and-dynamics-of-scan-testing)
+	
+![photo1671101685](https://user-images.githubusercontent.com/118953929/207841630-1a4d24d6-0174-4ef9-94bf-f9091df43eb4.jpeg)
+
+
 	
 > __Conclusion__  :Insertion of scan chains in the design leads to additional cost in terms of area, speed, power, design- cycle, complexity. Scan chains are inserted to serially shift in the test patterns and serially shift out the test pattern responses.
 	
