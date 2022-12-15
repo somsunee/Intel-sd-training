@@ -10,8 +10,6 @@
  
 # &#x1F537; Day_0
 
-### Day_0
-
 
 <details><summary><b>Lecture Notes</b></summary>
 	
@@ -58,7 +56,7 @@ _**Lab:**_ \
 
 </details>
 	
-### Day_1
+# &#x1F537; Day_1
 
 <details><summary><b>Lecture Notes</s></summary>
 
@@ -185,7 +183,7 @@ Simplifying:
 
 </details>
 	
-### Day_2
+# &#x1F537; Day_2
 
 <details><summary><b>Lecture Notes</s></summary>
 	
@@ -333,7 +331,7 @@ As can see, no cells is getting map during synthesis
 
 </details>	
 
-### Day_3
+# &#x1F537; Day_3
 	
 	
 <details><summary><b>Lecture Notes</s></summary>
@@ -657,7 +655,7 @@ show
 
 </details>
 
-### Day_4
+# &#x1F537; Day_4
 
 <details><summary><b> Lecture notes </b></summary>
 	
@@ -820,7 +818,7 @@ gtkwave *.vcd
 
 </details>
 
-### Day_5
+# &#x1F537; Day_5
 
 <details><summary><b> Lecture notes </b></summary> 
 	
