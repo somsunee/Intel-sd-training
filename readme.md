@@ -988,10 +988,10 @@ How is ATE useful and beneficial ?
 - helps cut down testing time 
 - saves money by digitizing and automating traditionallu manual testing equipment, procedures and processes
 	
-Benefits of ATE:
-	- reduce test and cycle time
-	- reduction or prevention of data input errors
-	- more efficient and effective use of available engineering resources
+Benefits of ATE:\
+	- reduce test and cycle time\
+	- reduction or prevention of data input errors\
+	- more efficient and effective use of available engineering resources\
 	- faster and more accurate tests
 
 
