@@ -1003,7 +1003,7 @@ Figure below shows the sequence events that takes place: ![Reference](https://an
 > __Conclusion__  :Insertion of scan chains in the design leads to additional cost in terms of area, speed, power, design- cycle, complexity. Scan chains are inserted to serially shift in the test patterns and serially shift out the test pattern responses.
 	
 	
-Basic ATE functionality
+**Basic ATE functionality**
 	
 -scan-in phase\
 -parallel measure\
