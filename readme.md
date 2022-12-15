@@ -919,7 +919,11 @@ Types | Advantages | Disadvantages |
 --- | --- | --- |
 MBIST |It allows for robust testing of memories, Reduced test time, All the memories of the design can be tested in parallel, Lesser test cost |causes increase in area |
 LBIST | provides self-test capability to logic inside chip, provides the ability to be tested at higher frequencies reducing test time considerably, can run while the chip is on field running functionally | the cost of chip increases, causing impact on timing |
-	
+
+Figure shows the built-in self-test architecture ![Reference](https://www.sciencedirect.com/topics/computer-science/scan-chain)
+![Screenshot 2022-12-15 193122](https://user-images.githubusercontent.com/118953929/207850112-5240f120-2256-412a-a90b-470873a00e69.jpg)
+
+
 
 Scan-chain technique ( scan-chains)
 
@@ -1019,6 +1023,14 @@ Benefits of ATE:\
 	- reduction or prevention of data input errors\
 	- more efficient and effective use of available engineering resources\
 	- faster and more accurate tests
+
+Automatic Test Pattern Generation (ATPG)
+- an electronic design automation (EDA) method used to find an input sequence which, when it applied to a digital circuit, it enables testers to distinguish between the correct circuit behavior and the faulty circuit behavior caused by defects. 
+
+- The effectiveness of ATPG is measured by the amount of modeled defects, or fault models, that are detected and the number of generated patterns.
+
+-influenced by the fault model under consideration, the type of circuit under test (combinational, synchronous sequential, or asynchronous sequential), the level of ab-straction used to represent the circuit under test (register, gate, transistor), and the required test quality
+
 
 
 
