@@ -1029,11 +1029,11 @@ Automatic Test Pattern Generation (ATPG)
 
 - The effectiveness of ATPG is measured by the amount of modeled defects, or fault models, that are detected and the number of generated patterns.
 
--influenced by the fault model under consideration, the type of circuit under test (combinational, synchronous sequential, or asynchronous sequential), the level of ab-straction used to represent the circuit under test (register, gate, transistor), and the required test quality
+- influenced by the fault model under consideration, the type of circuit under test (combinational, synchronous sequential, or asynchronous sequential), the level of ab-straction used to represent the circuit under test (register, gate, transistor), and the required test quality
 
+Basic ATPG flow ![Reference](https://reader.elsevier.com/reader/sd/pii/B9780128124772000083?token=3CE44CC7CA29B54B4A43CC24F6819451EFE4F4C8F8587A00A8EA924CF8B653C4AA14648E6E123A7B8FB307A456A19429&originRegion=eu-west-1&originCreation=20221215111428)
 
-
-
+![Screenshot 2022-12-15 194703](https://user-images.githubusercontent.com/118953929/207852221-c1f089e5-7ac0-4ac0-b848-9c9a912c91f4.jpg)
 
 
 </details>
