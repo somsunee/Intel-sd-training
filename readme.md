@@ -970,7 +970,9 @@ Since for each scan chain, scan_in and scan_out port is needed. Also,
 
 > __Note__  : Scan-chain balancing is keeping almost equal number of flops in each scan chain
 	
-
+> __Conclusion__  :Insertion of scan chains in the design leads to additional cost in terms of area, speed, power, design- cycle, complexity. Scan chains are inserted to serially shift in the test patterns and serially shift out the test pattern responses.
+	
+	
 Basic ATE functionality
 	
 -scan-in phase\
@@ -978,6 +980,21 @@ Basic ATE functionality
 -parallel capture\
 -first scan-out phase\
 -scan-out Phase
+
+
+How is ATE useful and beneficial ?
+
+- if faults or defects are detected during testing, ATE helps to diagnose why.
+- helps cut down testing time 
+- saves money by digitizing and automating traditionallu manual testing equipment, procedures and processes
+	
+Benefits of ATE:
+	- reduce test and cycle time
+	- reduction or prevention of data input errors
+	- more efficient and effective use of available engineering resources
+	- faster and more accurate tests
+
+
 
 
 
