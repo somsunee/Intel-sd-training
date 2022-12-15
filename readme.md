@@ -2,11 +2,11 @@
 **Contents:**
 
 - [Day 0 : System/Tool Setup Check & GitHub ID creation](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_0)
-- [Day 1 : Introduction to RTL verilog design and analysis](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_1)
-- [Day 2 : Timing libs, hierarchical vs flat synthesis and efficient flop coding styles](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_2)
-- [Day 3 : Combinational and sequential optimizations](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_3)
-- [Day 4 : GLS,blocking vs non-blocking and synthesis-simulation mismtach](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_4)
-- [Day 5 : DFT](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_5)
+- [Day 1 : Introduction to RTL verilog design and analysis](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_1)
+- [Day 2 : Timing libs, hierarchical vs flat synthesis and efficient flop coding styles](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_2)
+- [Day 3 : Combinational and sequential optimizations](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_3)
+- [Day 4 : GLS,blocking vs non-blocking and synthesis-simulation mismtach](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_4)
+- [Day 5 : DFT](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_5)
  
 # &#x1F537; Day_0
 
