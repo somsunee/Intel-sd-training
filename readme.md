@@ -860,7 +860,7 @@ $\fbox{W H E N  do we need dft?}$
 	
 Pros | Cons |
 --- | --- | 
-Reduces tester complexity |adds compication to the design flow | 
+Reduces tester complexity |adds complication to the design flow | 
 Reduces tester time |increase power, area, timing and package pins | 
 Reduces the chances of going into loss |increases design time | 
 	
