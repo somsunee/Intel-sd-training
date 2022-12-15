@@ -8,6 +8,7 @@
 - [Day 4 : GLS,blocking vs non-blocking and synthesis-simulation mismtach](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_4)
 - [Day 5 : DFT](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#day_5)
  
+# &#x1F537; Day_0
 
 ### Day_0
 
