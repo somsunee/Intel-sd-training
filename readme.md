@@ -1212,13 +1212,17 @@ Observe the difference between read_verilog and read_ddc !
 
 > __Notes__  :ddc will save all information in the tool memory in the particular session. It only understood by synopsys tool.
 
+Open up the schematic view:
+![photo1671454097](https://user-images.githubusercontent.com/118953929/208429887-ef137045-5a02-42aa-bd35-0b09b4cf3213.jpeg)
 
+Observe the schematic view, get as what we expected, as drawn expectedly:
+![photo1671454097 (1)](https://user-images.githubusercontent.com/118953929/208429896-54c37ecf-2392-48ab-b5b0-68ade0668a0f.jpeg)
 
-
-
-	
 
 </details>
 
+<details><summary><b> Lab 3: DC synopsys DC setup </b></summary>
 
+
+</details>
 
