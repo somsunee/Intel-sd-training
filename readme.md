@@ -1228,7 +1228,8 @@ If you notice, each and everytime we invoke dc_shell, we will need to repeatativ
 
 **by creating the sysnopsys.dc_setup ^^
 
-
+![photo1671455560 (1)](https://user-images.githubusercontent.com/118953929/208434088-96c1e630-eeef-4cfb-a236-6913448794ed.jpeg)
+![photo1671455560](https://user-images.githubusercontent.com/118953929/208434096-4a324ad3-ce28-42f4-8cf3-5570255e008c.jpeg)
 
 </details>
 
