@@ -1053,7 +1053,12 @@ $\fbox{BASIC of Digital Logic Design and Synthesis}$
 	- VDHL
 	- verilog
 
+![photo1671431897](https://user-images.githubusercontent.com/118953929/208363710-a66ff672-995c-4c90-bdae-848795ff4652.jpeg)
+
 $\fbox{WHAT is .lib}$
+	
+
+![photo1671431897 (1)](https://user-images.githubusercontent.com/118953929/208363706-26b57ea0-b701-4ad9-b4bf-b7c441d74c8d.jpeg)
 	
 **Faster cells vs slower cells**
 	
@@ -1061,7 +1066,11 @@ $\fbox{WHAT is .lib}$
 	- Faster the charging or discharging of cap -> lesser the cell delay
 		- Wider transistors -> LOW delay (more AREA and POWER)
 		- narrow transistors -> MORE delay (Less AREA and POWER)
+	
 
+![photo1671431897 (2)](https://user-images.githubusercontent.com/118953929/208363703-c5e208ed-1e8e-4051-b10c-ed02cb2010b2.jpeg)
+![photo1671431897 (3)](https://user-images.githubusercontent.com/118953929/208363698-6086474a-df25-4d58-9bdd-d6dad5716cfa.jpeg)
+	
 > __Keep in mind ^^__  : Wider transistors, increased capacitance ; faster cells, more power
 	
 	
@@ -1078,13 +1087,17 @@ Cells selection
 
 
 **Synthesis illustration**
-	
 
+![photo1671431897 (4)](https://user-images.githubusercontent.com/118953929/208363693-15248534-1e9a-4ed7-8d13-d273b55ba071.jpeg)
+
+	
 **Logic synthesis basics**
 
+![photo1671431897 (5)](https://user-images.githubusercontent.com/118953929/208363689-953b8fcb-4de4-4dae-9cc7-a26085118c9b.jpeg)
 	
 _Standard cell details:_
 	
+![photo1671431897 (6)](https://user-images.githubusercontent.com/118953929/208363678-6912c17c-6f52-42b9-9593-577e31df4593.jpeg)
 	
 	
 **by seeing at the briefly calculation; we can see that implementation 3 is a good choice. _(but it may not always be the choice, it depends)_
@@ -1094,22 +1107,13 @@ A working digital logic circuit:
 	- logically correct
 	- electrically correct
 	- timing met
-	
-	
-	
-
-	
-	
-	
-	
-
-
-	
-	
+		
 </details>
 
+<details><summary><b> Lecture 1: Introduction to DC </b></summary>
+	
 
-
+</details>
 
 
 
