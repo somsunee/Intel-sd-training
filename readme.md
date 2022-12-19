@@ -1142,16 +1142,18 @@ $\mathbb{\color{magenta}{DESIGN}}$ : RTL files which has the behavioral model of
 	
 
 Implementation Flow of ASIC
-	
-	
 
-	
-
-
+![photo1671436358](https://user-images.githubusercontent.com/118953929/208374668-6547ffb0-3a50-408e-b943-fad07eb0544a.jpeg)
+![photo1671436358 (1)](https://user-images.githubusercontent.com/118953929/208374654-f35b05d6-be85-4c64-9bca-df04a82139ad.jpeg)
 	
 
 </details>
 
+<details><summary><b> Lab 1: Invoking DC basic setup </b></summary>
 
+
+
+
+</details>
 
 
