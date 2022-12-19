@@ -1164,7 +1164,9 @@ ii) information of the .lib content:\
 ![photo1671439783 (1)](https://user-images.githubusercontent.com/118953929/208385257-74f29be8-8352-461b-8688-6e895cd4e851.jpeg)
 ![photo1671439783](https://user-images.githubusercontent.com/118953929/208385266-fede7754-cbcf-4f0e-82a1-e77c82a2eced.jpeg)
 
+iii) invoke csh - enable the cshell, then invoke dc_shell
 
+	
 
 </details>
 
