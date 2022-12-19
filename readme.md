@@ -1110,7 +1110,7 @@ A working digital logic circuit:
 		
 </details>
 
-<details><summary><b> Lecture 1: Introduction to DC </b></summary>
+<details><summary><b> Lecture 2: Introduction to DC </b></summary>
 	
 
 </details>
