@@ -1280,4 +1280,14 @@ Quick refresher:
 	
 <details><summary><b> Lab 4: TCL scripting </b></summary>
 
+$\mathbb{\color{blue}{Let \ play \ around \ with \ tcl}}$
+
+![photo1671458055](https://user-images.githubusercontent.com/118953929/208441615-126acd35-0c48-41f3-baaa-f01e33d78fc3.jpeg)
+![photo1671458056](https://user-images.githubusercontent.com/118953929/208441613-bf7c0350-7722-4546-847c-5721d932c182.jpeg)
+![photo1671458056 (1)](https://user-images.githubusercontent.com/118953929/208441606-12f9ddf0-5d09-4cd4-9fe9-86398969906c.jpeg)
+![photo1671458056 (2)](https://user-images.githubusercontent.com/118953929/208441608-7368691d-bd73-4df3-8e23-12a6c03bf1fe.jpeg)
+![photo1671458056 (3)](https://user-images.githubusercontent.com/118953929/208441602-b62ac05e-5864-45d5-82b2-978df67dd2e8.jpeg)
+![photo1671458056 (4)](https://user-images.githubusercontent.com/118953929/208441597-1da2cdba-6ed0-4828-9265-8158b5cce6bb.jpeg)
+![photo1671458056 (5)](https://user-images.githubusercontent.com/118953929/208441591-ee7bbbeb-642f-412a-83a8-f68b949c1322.jpeg)
+
 </details>
