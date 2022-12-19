@@ -1223,6 +1223,12 @@ Observe the schematic view, get as what we expected, as drawn expectedly:
 
 <details><summary><b> Lab 3: DC synopsys DC setup </b></summary>
 
+If you notice, each and everytime we invoke dc_shell, we will need to repeatatively set target_library and link_library to the lib file, if not, it will keep pointing back to your_library.db. So HOW ? 
+![photo1671454547](https://user-images.githubusercontent.com/118953929/208431075-d84a97fd-569c-4a79-95cc-0e5f26e1a1a7.jpeg)
+
+**by creating the sysnopsys.dc_setup ^^
+
+
 
 </details>
 
