@@ -1197,6 +1197,25 @@ viii) There we go! the standard cells should be read in!
 
 <details><summary><b> Lab 2: Intro to DDC GUI with design_vision </b></summary>
 
+Invoke the design_vision:
+
+![photo1671453569](https://user-images.githubusercontent.com/118953929/208428299-7f4e972e-9737-4a67-bba9-24c3a1a76164.jpeg)
+
+write the ddc file:
+![photo1671453569 (1)](https://user-images.githubusercontent.com/118953929/208428292-40b1a116-250f-470f-81b4-c37232397bc2.jpeg)
+
+Do read_ddc inside the gui, to read the ddc
+![photo1671453569 (2)](https://user-images.githubusercontent.com/118953929/208428284-650808ac-4f25-45c2-9b60-ffeccbfcdf47.jpeg)
+
+Observe the difference between read_verilog and read_ddc ! 
+![photo1671453569 (3)](https://user-images.githubusercontent.com/118953929/208428275-c6a82425-37b1-40a0-a23c-21a8b8d1412d.jpeg)
+
+> __Notes__  :ddc will save all information in the tool memory in the particular session. It only understood by synopsys tool.
+
+
+
+
+
 	
 
 </details>
