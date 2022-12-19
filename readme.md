@@ -1055,7 +1055,6 @@ $\fbox{BASIC of Digital Logic Design and Synthesis}$
 
 $\fbox{WHAT is .lib}$
 	
-
 **Faster cells vs slower cells**
 	
 	- load in Digital logic circuit -> Capacitance
@@ -1063,8 +1062,7 @@ $\fbox{WHAT is .lib}$
 		- Wider transistors -> LOW delay (more AREA and POWER)
 		- narrow transistors -> MORE delay (Less AREA and POWER)
 
-
-$\fbox{Cells selection}$
+Cells selection
 	
 **How do we select the cells ?**
 	
@@ -1073,7 +1071,7 @@ $\fbox{Cells selection}$
 		- bad circuit ( in term of POWER and AREA )
 	- more use of slower cells 
 		- may not meet the performance need
-	- The guidance use is ---> the $\mathscr{\color{red}{mon}\color{white}{day}}$
+	- The guidance use is ---> the CONSTRAINTS
 	
 	
 	
