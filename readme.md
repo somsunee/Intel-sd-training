@@ -1232,4 +1232,52 @@ If you notice, each and everytime we invoke dc_shell, we will need to repeatativ
 ![photo1671455560](https://user-images.githubusercontent.com/118953929/208434096-4a324ad3-ce28-42f4-8cf3-5570255e008c.jpeg)
 
 </details>
+	
+<details><summary><b> Lecture 3: TCL(Tool Command Language) quick refresher </b></summary>
+	
+Quick refresher:
+	
+- set
+	- keyword use for setting any variables in tcl
+	- eg: set a 5 , which is a = 5
+	- for a nested command, use square brackets: 
+		- eg: set a [expr $a + $b] --> a = a+b
+	
+- conditional statements;
+	if{condition} {
+		statements if true
+	}else{
+		statements if false
+	}
+	
+> __Keep in mind ^^__  : make sure use only curly brackets, and take note of the spacing, it does matters!
 
+- while loops:
+	while{condition} {
+	statements
+	}
+
+> __Keep in mind ^^__  : use the correct variables ! else it might lead to infinite loops.
+
+- for loop:
+	for{looping var} {condition} {looping var modification} {
+		statements
+	}
+	
+- foreach var list {
+	statements
+	}
+	
+> __Keep in mind ^^__  : this is very useful in DC, to loop lists
+	
+- foreach_in_collection var collection {
+	statements
+	}
+
+> __Keep in mind ^^__  : nesting of tcl commands is very useful in tcl
+	
+</details>
+	
+<details><summary><b> Lab 4: TCL scripting </b></summary>
+
+</details>
