@@ -1171,6 +1171,34 @@ iii) invoke csh - enable the cshell, then invoke dc_shell
 ![photo1671441268 (1)](https://user-images.githubusercontent.com/118953929/208390300-2637233d-ff93-4519-abd8-1b286b53cb61.jpeg)
 ** exec gvim - to execute the gvim command inside the tool without exitting the dc_shell
 
+iv) read_verilog the lab1 verilog file
+
+![photo1671443693](https://user-images.githubusercontent.com/118953929/208398625-8ba432f9-0943-4b73-8f4f-122108ab3770.jpeg)
+![photo1671443693 (1)](https://user-images.githubusercontent.com/118953929/208398602-bd8a199f-74d6-4559-b5fd-4ae32af803fa.jpeg)
+
+v) read_db of the sky130 db file (do not want the dummy gtech), but it still not read in in this case. WHY ? 
+![photo1671443693 (2)](https://user-images.githubusercontent.com/118953929/208398592-c3684e3e-8e34-437f-ac04-3a2a3f2b5801.jpeg)
+![photo1671443693 (3)](https://user-images.githubusercontent.com/118953929/208398586-d72fb8d4-a4aa-4a66-a7a1-39097ba46a59.jpeg)
+
+vi) need to set the link_library and target library to what we targeted. And do make sure the link file is correct
+
+![photo1671443693 (4)](https://user-images.githubusercontent.com/118953929/208398581-dd6ce789-d919-49e9-bd2f-18a144d0c2db.jpeg)
+![photo1671443693 (5)](https://user-images.githubusercontent.com/118953929/208398575-9c364c16-3ad6-4100-b858-d2b89c93827c.jpeg)
+
+vii) compile
+
+![photo1671443693 (6)](https://user-images.githubusercontent.com/118953929/208398570-ac152ecf-9ea6-4127-9d22-a312f48daac5.jpeg)
+![photo1671443693 (7)](https://user-images.githubusercontent.com/118953929/208398566-b7f655ee-453f-442d-b013-6f551700899c.jpeg)
+
+viii) There we go! the standard cells should be read in! 
+![photo1671443693 (8)](https://user-images.githubusercontent.com/118953929/208398554-26cc10ee-6a2c-408a-8ceb-b98834e89781.jpeg)
+
 </details>
+
+<details><summary><b> Lab 2: Intro to DDC GUI with design_vision </b></summary>
+
+
+</details>
+
 
 
