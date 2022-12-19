@@ -1125,11 +1125,12 @@ $\fbox{WHAT is DC ?}$
 Common Terminologies:
 	
 
-$\mathbb{\color{magenta}{SDC}}$ : Synopsys Design Constraints - supplied to DC to _enable appropriate optimization_ suitable to archieve the best implementation
-	- design intent in terms of **timing, power** and **area** constraints.
-$\mathbb{\color{magenta}{.LIB}}$ : Design library (contains stamdard cells)
-$\mathbb{\color{magenta}{DB}}$ : same as .lib, but different format, in DC, we use .db
-$\mathbb{\color{magenta}{DDC}}$ : storing the design information. DC can write out and read in DDC
+$\mathbb{\color{magenta}{SDC}}$ : Synopsys Design Constraints 
+	- supplied to DC to _enable appropriate optimization_ suitable to archieve the best implementation 
+	- design intent in terms of **timing, power** and **area** constraints.\
+$\mathbb{\color{magenta}{.LIB}}$ : Design library (contains stamdard cells)\
+$\mathbb{\color{magenta}{DB}}$ : same as .lib, but different format, in DC, we use .db\
+$\mathbb{\color{magenta}{DDC}}$ : storing the design information. DC can write out and read in DDC\
 $\mathbb{\color{magenta}{DESIGN}}$ : RTL files which has the behavioral model of the design
 
 	
