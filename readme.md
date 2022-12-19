@@ -1055,7 +1055,7 @@ $\fbox{BASIC of Digital Logic Design and Synthesis}$
 
 ![photo1671431897](https://user-images.githubusercontent.com/118953929/208363710-a66ff672-995c-4c90-bdae-848795ff4652.jpeg)
 
-$\fbox{WHAT is .lib}$
+$\fbox{WHAT is .lib ?}$
 	
 
 ![photo1671431897 (1)](https://user-images.githubusercontent.com/118953929/208363706-26b57ea0-b701-4ad9-b4bf-b7c441d74c8d.jpeg)
@@ -1111,6 +1111,29 @@ A working digital logic circuit:
 </details>
 
 <details><summary><b> Lecture 2: Introduction to DC </b></summary>
+
+$\fbox{WHAT is DC ?}$
+
+- Design Compiler (DC) 
+	- synthesis tool targeted for ASIC design flow from synopsys
+	- Features of DC
+		- premium synthesis tool
+		- interoperability with various backend tools
+		- has the ability to perform DFT scan stitch
+		- can handle huge designs (with complexity) and provide very good QoR
+	
+Common Terminologies:
+	
+
+$\mathbb{\color{magenta}{SDC}}$ : Synopsys Design Constraints - supplied to DC to _enable appropriate optimization_ suitable to archieve the best implementation
+	- design intent in terms of **timing, power** and **area** constraints.
+$\mathbb{\color{magenta}{.LIB}}$ : Design library (contains stamdard cells)
+$\mathbb{\color{magenta}{DB}}$ : same as .lib, but different format, in DC, we use .db
+$\mathbb{\color{magenta}{DDC}}$ : storing the design information. DC can write out and read in DDC
+$\mathbb{\color{magenta}{DESIGN}}$ : RTL files which has the behavioral model of the design
+	
+
+
 	
 
 </details>
