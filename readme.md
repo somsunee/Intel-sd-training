@@ -1151,6 +1151,13 @@ Implementation Flow of ASIC
 
 <details><summary><b> Lab 1: Invoking DC basic setup </b></summary>
 
+i) Create a directory at the home area and git clone the website:\
+	- do git clone ![https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop](https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop)
+
+![photo1671438641](https://user-images.githubusercontent.com/118953929/208381694-9b404594-ead6-4a70-9eea-d61f718a2259.jpeg)
+**sepin = my unix id 
+> __Warning !__  :Check that all the files needed are there before proceed. 
+
 
 
 
