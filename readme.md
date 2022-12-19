@@ -1166,8 +1166,10 @@ ii) information of the .lib content:\
 
 iii) invoke csh - enable the cshell, then invoke dc_shell
 
+![1](https://user-images.githubusercontent.com/118953929/208390505-45a9fe8b-91a5-43c3-8a57-bde37ea9c7e9.jpg)
 ![photo1671441268](https://user-images.githubusercontent.com/118953929/208390305-e02a7d7c-fbd2-45e0-811f-c8a334b6e96f.jpeg)
 ![photo1671441268 (1)](https://user-images.githubusercontent.com/118953929/208390300-2637233d-ff93-4519-abd8-1b286b53cb61.jpeg)
+** exec gvim - to execute the gvim command inside the tool without exitting the dc_shell
 
 </details>
 
