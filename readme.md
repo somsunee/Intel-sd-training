@@ -1174,7 +1174,7 @@ iii) invoke csh - enable the cshell, then invoke dc_shell
 iv) read_verilog the lab1 verilog file
 
 ![photo1671443693](https://user-images.githubusercontent.com/118953929/208398625-8ba432f9-0943-4b73-8f4f-122108ab3770.jpeg)
-![photo1671443693 (1)](https://user-images.githubusercontent.com/118953929/208398602-bd8a199f-74d6-4559-b5fd-4ae32af803fa.jpeg)
+
 
 v) read_db of the sky130 db file (do not want the dummy gtech), but it still not read in in this case. WHY ? 
 ![photo1671443693 (2)](https://user-images.githubusercontent.com/118953929/208398592-c3684e3e-8e34-437f-ac04-3a2a3f2b5801.jpeg)
@@ -1197,6 +1197,7 @@ viii) There we go! the standard cells should be read in!
 
 <details><summary><b> Lab 2: Intro to DDC GUI with design_vision </b></summary>
 
+	
 
 </details>
 
