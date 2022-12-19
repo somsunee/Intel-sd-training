@@ -1158,6 +1158,11 @@ i) Create a directory at the home area and git clone the website:\
 **sepin = my unix id 
 > __Warning !__  :Check that all the files needed are there before proceed. 
 
+ii) information of the .lib content:\
+	- do gvim sky*.lib
+
+![photo1671439783 (1)](https://user-images.githubusercontent.com/118953929/208385257-74f29be8-8352-461b-8688-6e895cd4e851.jpeg)
+![photo1671439783](https://user-images.githubusercontent.com/118953929/208385266-fede7754-cbcf-4f0e-82a1-e77c82a2eced.jpeg)
 
 
 
