@@ -1062,6 +1062,9 @@ $\fbox{WHAT is .lib}$
 		- Wider transistors -> LOW delay (more AREA and POWER)
 		- narrow transistors -> MORE delay (Less AREA and POWER)
 
+> __Keep in mind ^^__  : Wider transistors, increased capacitance ; faster cells, more power
+	
+	
 Cells selection
 	
 **How do we select the cells ?**
@@ -1072,12 +1075,34 @@ Cells selection
 	- more use of slower cells 
 		- may not meet the performance need
 	- The guidance use is ---> the CONSTRAINTS
+
+
+**Synthesis illustration**
+	
+
+**Logic synthesis basics**
+
+	
+_Standard cell details:_
+	
+	
+	
+**by seeing at the briefly calculation; we can see that implementation 3 is a good choice. _(but it may not always be the choice, it depends)_
+*let's say the logic is present in hold: additional buffers added to meet the hold, so we will need additional area, Right? 
+
+A working digital logic circuit:
+	- logically correct
+	- electrically correct
+	- timing met
+	
+	
+	
+
 	
 	
 	
 	
-	
-> __Keep in mind ^^__  : Wider transistors, increased capacitance ; faster cells, more power
+
 
 	
 	
