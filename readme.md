@@ -7,6 +7,7 @@
 - [Day 3 : Combinational and sequential optimizations](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_3)
 - [Day 4 : GLS,blocking vs non-blocking and synthesis-simulation mismtach](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_4)
 - [Day 5 : DFT](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_5)
+- [Day 6 : Introduction to Logic Synthesis](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_6)
  
 # &#x1F537; Day_0
 
@@ -1038,8 +1039,51 @@ Basic ATPG flow ![Reference](https://reader.elsevier.com/reader/sd/pii/B97801281
 
 </details>
 
+	
+# &#x1F537; Day_6
+
+<details><summary><b> Lecture 1: Introduction to the course </b></summary>
+
+$\fbox{BASIC of Digital Logic Design and Synthesis}$
+	
+- Digital Logic
+	- Switching Function
+	- Automation and Decision making
+- Behavioral Model of the design written in HDL
+	- VDHL
+	- verilog
+
+$\fbox{WHAT is .lib}$
+	
+
+**Faster cells vs slower cells**
+	
+	- load in Digital logic circuit -> Capacitance
+	- Faster the charging or discharging of cap -> lesser the cell delay
+		- Wider transistors -> LOW delay (more AREA and POWER)
+		- narrow transistors -> MORE delay (Less AREA and POWER)
 
 
+$\fbox{Cells selection}$
+	
+**How do we select the cells ?**
+	
+	- need to guide the Synthesizer tool to select the flavours of cells.
+	- more use of faster cells 
+		- bad circuit ( in term of POWER and AREA )
+	- more use of slower cells 
+		- may not meet the performance need
+	- The guidance use is ---> the $\mathscr{\color{red}{mon}\color{white}{day}}$
+	
+	
+	
+	
+	
+> __Keep in mind ^^__  : Wider transistors, increased capacitance ; faster cells, more power
+
+	
+	
+</details>
 
 
 
