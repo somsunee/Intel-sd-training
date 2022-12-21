@@ -1319,8 +1319,11 @@ NegLevel DLAT |from NegEdge Clk | From D to Q when clk is low | to PosEdge clk |
 </details>
 
 <details><summary><b> Lecture 5 - What are constraints ? </b></summary>
-	
 
+![photo1671622625](https://user-images.githubusercontent.com/118953929/208896636-7e7f87fc-638b-45de-92af-5a8bd036499c.jpeg)
+![photo1671622625 (1)](https://user-images.githubusercontent.com/118953929/208896641-eb3cab74-9bef-4d5f-95a3-ad9da5b3e30c.jpeg)
+![photo1671622625 (2)](https://user-images.githubusercontent.com/118953929/208896646-a550e743-f7fa-4fa8-aff5-8fc6d2ea5b69.jpeg)	
+![photo1671622625 (3)](https://user-images.githubusercontent.com/118953929/208896632-76b66324-70b5-47e0-af5a-99f3071af9b2.jpeg)
 	
 	
 </details>
