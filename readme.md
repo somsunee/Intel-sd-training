@@ -8,6 +8,7 @@
 - [Day 4 : GLS,blocking vs non-blocking and synthesis-simulation mismtach](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_4)
 - [Day 5 : DFT](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_5)
 - [Day 6 : Introduction to Logic Synthesis](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_6)
+- [Day 7 : Basic of STA](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_7)
  
 # &#x1F537; Day_0
 
@@ -1291,3 +1292,14 @@ $\mathbb{\color{blue}{Let \ play \ around \ with \ tcl}}$
 ![photo1671458056 (5)](https://user-images.githubusercontent.com/118953929/208441591-ee7bbbeb-642f-412a-83a8-f68b949c1322.jpeg)
 
 </details>
+	
+	
+# &#x1F537; Day_7
+
+<details><summary><b> Lecture4 - Intro to STA: TCL scripting </b></summary>
+	
+
+	
+</details>
+
+	
