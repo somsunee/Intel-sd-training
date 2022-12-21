@@ -1348,3 +1348,16 @@ NegLevel DLAT |from NegEdge Clk | From D to Q when clk is low | to PosEdge clk |
 ![photo1671627454 (6)](https://user-images.githubusercontent.com/118953929/208911043-b0d66aae-9aeb-409d-aacf-dfed2d281c84.jpeg)
 ![photo1671627454 (8)](https://user-images.githubusercontent.com/118953929/208911020-b3a6f645-ced3-41b3-b0f3-daada7a486f2.jpeg)
 </details>
+
+
+<details><summary><b> Lab 6 - Exploring dotlibs </b></summary>
+
+![photo1671630456](https://user-images.githubusercontent.com/118953929/208920467-16b985ec-84e7-4705-a662-7c55559c279c.jpeg)
+![photo1671630456 (1)](https://user-images.githubusercontent.com/118953929/208920475-df6b35b4-31b7-454e-845e-efc948f9489d.jpeg)
+![photo1671630456 (2)](https://user-images.githubusercontent.com/118953929/208920553-e96d9bd1-3eb3-467c-8124-ccc08da88396.jpeg)
+![photo1671630456 (3)](https://user-images.githubusercontent.com/118953929/208920546-68ae46bc-a24b-401b-953f-3ccdcac1d881.jpeg)
+![photo1671630456 (4)](https://user-images.githubusercontent.com/118953929/208920542-6652d066-735e-4b97-b57a-0ec7841848fd.jpeg)
+![photo1671630456 (5)](https://user-images.githubusercontent.com/118953929/208920532-54f36f4d-864e-43a0-a106-458a37dbd0eb.jpeg)
+![photo1671630456 (6)](https://user-images.githubusercontent.com/118953929/208920557-af15c4ca-b009-42e2-96d5-99c6152af62e.jpeg)
+
+</details>
