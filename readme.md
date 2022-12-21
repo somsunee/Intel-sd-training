@@ -1296,7 +1296,7 @@ $\mathbb{\color{blue}{Let \ play \ around \ with \ tcl}}$
 	
 # &#x1F537; Day_7
 
-<details><summary><b> Lecture 4 - Intro to STA: TCL scripting </b></summary>
+<details><summary><b> Lecture 4 - Intro to STA </b></summary>
 
 _**Introduction to STA**_
 
@@ -1318,7 +1318,7 @@ NegLevel DLAT |from NegEdge Clk | From D to Q when clk is low | to PosEdge clk |
 
 </details>
 
-<details><summary><b> Lecture 5 - What are constraints ?: TCL scripting </b></summary>
+<details><summary><b> Lecture 5 - What are constraints ? </b></summary>
 	
 
 	
