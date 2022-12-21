@@ -1328,3 +1328,7 @@ NegLevel DLAT |from NegEdge Clk | From D to Q when clk is low | to PosEdge clk |
 	
 </details>
 	
+	
+<details><summary><b> Lecture 6 - Input Trans Output Load ? </b></summary>
+
+</details>
