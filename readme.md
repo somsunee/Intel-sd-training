@@ -1304,8 +1304,18 @@ _**Introduction to STA**_
 ![photo1671619579 (1)](https://user-images.githubusercontent.com/118953929/208887278-50708554-dccf-4818-8c05-02952d24a36a.jpeg)
 ![photo1671619579 (2)](https://user-images.githubusercontent.com/118953929/208887275-499446b4-12ab-4e8b-9b1a-e72597767dd9.jpeg)
 ![photo1671619579 (3)](https://user-images.githubusercontent.com/118953929/208887265-c5472951-8dfe-4277-9e51-cdd8ae55e080.jpeg)
+![photo1671619579 (4)](https://user-images.githubusercontent.com/118953929/208887263-15369060-7e9f-4da1-84c2-bfaf34507f23.jpeg)
 
-	
+The patterns:
+
+Device | CLK to Q | D to Q | Setup | Hold
+--- | --- | --- | --- |--- |
+PosEdge DFF |from PosEdge Clk | NA | to PosEdge clk |from PosEdge clk 
+NegEdge DFF |from NegEdge Clk | NA | to NegEdge clk |from NegEdge clk
+PosLevel DLAT |from PosEdge Clk | From D to Q when clk is high | to NegEdge clk |from NegEdge clk
+NegLevel DLAT |from NegEdge Clk | From D to Q when clk is low | to PosEdge clk |from PosEdge clk
+
+
 </details>
 
 	
