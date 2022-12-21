@@ -1336,6 +1336,14 @@ NegLevel DLAT |from NegEdge Clk | From D to Q when clk is low | to PosEdge clk |
 
 </details>
 
-<details><summary><b> Lecture 5 - Timing dot libs </b></summary>
+<details><summary><b> Lab 5 - Timing dot libs </b></summary>
 
+![photo1671627454](https://user-images.githubusercontent.com/118953929/208911071-f229ebc8-ad6e-4f74-beed-38cd34a0c721.jpeg)
+![photo1671627454 (1)](https://user-images.githubusercontent.com/118953929/208911060-576b923e-0bc0-4065-bb6a-973dc5c5c6e9.jpeg)
+![photo1671627454 (2)](https://user-images.githubusercontent.com/118953929/208911064-322f22ef-6ffd-4d51-bfc9-8daec2bbbb64.jpeg)
+![photo1671627454 (3)](https://user-images.githubusercontent.com/118953929/208911059-cd9135cc-72e8-4ea1-922b-db9ae39cda6b.jpeg)
+![photo1671627454 (4)](https://user-images.githubusercontent.com/118953929/208911053-c729139b-3e92-421b-bee9-15a6101fa2f5.jpeg)
+![photo1671627454 (5)](https://user-images.githubusercontent.com/118953929/208911048-0e8d6948-ebb7-4b37-902c-39c3c634a7eb.jpeg)
+![photo1671627454 (6)](https://user-images.githubusercontent.com/118953929/208911043-b0d66aae-9aeb-409d-aacf-dfed2d281c84.jpeg)
+![photo1671627454 (8)](https://user-images.githubusercontent.com/118953929/208911020-b3a6f645-ced3-41b3-b0f3-daada7a486f2.jpeg)
 </details>
