@@ -1296,8 +1296,14 @@ $\mathbb{\color{blue}{Let \ play \ around \ with \ tcl}}$
 	
 # &#x1F537; Day_7
 
-<details><summary><b> Lecture4 - Intro to STA: TCL scripting </b></summary>
-	
+<details><summary><b> Lecture 4 - Intro to STA: TCL scripting </b></summary>
+
+_**Introduction to STA**_
+
+![photo1671619579](https://user-images.githubusercontent.com/118953929/208887282-db208f6a-7566-4d8c-bd64-f91f360124f5.jpeg)
+![photo1671619579 (1)](https://user-images.githubusercontent.com/118953929/208887278-50708554-dccf-4818-8c05-02952d24a36a.jpeg)
+![photo1671619579 (2)](https://user-images.githubusercontent.com/118953929/208887275-499446b4-12ab-4e8b-9b1a-e72597767dd9.jpeg)
+![photo1671619579 (3)](https://user-images.githubusercontent.com/118953929/208887265-c5472951-8dfe-4277-9e51-cdd8ae55e080.jpeg)
 
 	
 </details>
