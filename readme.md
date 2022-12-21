@@ -1338,6 +1338,7 @@ NegLevel DLAT |from NegEdge Clk | From D to Q when clk is low | to PosEdge clk |
 
 <details><summary><b> Lab 5 - Timing dot libs </b></summary>
 
+![photo1671594240 (1)](https://user-images.githubusercontent.com/118953929/208911519-06122118-a568-44e4-9f67-207264534c2a.jpeg)
 ![photo1671627454](https://user-images.githubusercontent.com/118953929/208911071-f229ebc8-ad6e-4f74-beed-38cd34a0c721.jpeg)
 ![photo1671627454 (1)](https://user-images.githubusercontent.com/118953929/208911060-576b923e-0bc0-4065-bb6a-973dc5c5c6e9.jpeg)
 ![photo1671627454 (2)](https://user-images.githubusercontent.com/118953929/208911064-322f22ef-6ffd-4d51-bfc9-8daec2bbbb64.jpeg)
