@@ -1318,4 +1318,10 @@ NegLevel DLAT |from NegEdge Clk | From D to Q when clk is low | to PosEdge clk |
 
 </details>
 
+<details><summary><b> Lecture 5 - What are constraints ?: TCL scripting </b></summary>
+	
+
+	
+	
+</details>
 	
