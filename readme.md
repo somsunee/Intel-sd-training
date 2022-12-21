@@ -1364,6 +1364,15 @@ NegLevel DLAT |from NegEdge Clk | From D to Q when clk is low | to PosEdge clk |
 	
 <details><summary><b> Lab 6 - Exploring dotlibs part 2 </b></summary>
 
+
+![photo1671633446](https://user-images.githubusercontent.com/118953929/208931084-29b1fa4f-e48c-4960-827a-96d2bafbedcb.jpeg)
+![photo1671633446 (1)](https://user-images.githubusercontent.com/118953929/208931079-96b193d5-d885-4c88-8c2f-6cffe1eb14c5.jpeg)
+![photo1671633446 (2)](https://user-images.githubusercontent.com/118953929/208931073-26ae12d9-e5d4-4d70-a69f-449086443532.jpeg)
+![photo1671633446 (3)](https://user-images.githubusercontent.com/118953929/208931063-c3f580e6-cf68-4e55-9b72-b4135f7a300b.jpeg)
+![photo1671633446 (4)](https://user-images.githubusercontent.com/118953929/208931070-33a71b25-d9c5-4909-8fad-2e3a211405de.jpeg)
+![photo1671633577](https://user-images.githubusercontent.com/118953929/208931051-4726a83c-154b-4fb2-84b7-3b1557972707.jpeg)
+
+
 	
 </details>
 	
