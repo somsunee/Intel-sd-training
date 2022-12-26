@@ -1537,11 +1537,17 @@ Looking inside the input ports:
 	
 <details><summary><b> Lab8 - Loading design get_cells, get_ports, get_nets </b></summary>
 	
-pic 14-18
+![14](https://user-images.githubusercontent.com/118953929/209548837-871391d9-f499-415c-9c44-1a3380dc0d5d.jpg)
+![15_1](https://user-images.githubusercontent.com/118953929/209548840-d66e78a7-38fa-40ad-a1a9-25fae4de5a1f.jpg)
+![15_2](https://user-images.githubusercontent.com/118953929/209548841-c01482ac-ec3c-4a30-9d6a-a8ff209ac4cb.jpg)
+![16](https://user-images.githubusercontent.com/118953929/209548844-d85e0f17-f1ec-4ed8-9afe-c0963b26e004.jpg)
+![17](https://user-images.githubusercontent.com/118953929/209548846-c0c6774b-5954-46a3-8b21-8b5133a01293.jpg)
+![18](https://user-images.githubusercontent.com/118953929/209548849-124a1dea-835e-4ae1-8b5b-72c91d3558a1.jpg)
+![20](https://user-images.githubusercontent.com/118953929/209548853-a9ee4d30-7c10-4ffa-8e69-051b167d19e3.jpg)
 	
 Clear picture of the schematic shown:
-pic 19
-	
+![19](https://user-images.githubusercontent.com/118953929/209548851-447f914b-f9b5-4904-be8a-621294e2250c.jpg)
+
 
 	
 </details>
