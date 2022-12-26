@@ -1684,7 +1684,17 @@ eg of usage:
 
 <details><summary><b> Lab 15: part1 - set_max_delay </b></summary>
 	
-
+![61](https://user-images.githubusercontent.com/118953929/209574357-bab1ff23-5a4a-46a5-a724-e5151e32a529.jpg)
+![62](https://user-images.githubusercontent.com/118953929/209574363-3cc2511c-1cb6-43d0-af25-9152c461b2dc.jpg)
+![63](https://user-images.githubusercontent.com/118953929/209574365-5769a00c-45b6-4e08-ada6-7901ba36d0f2.jpg)
+![64](https://user-images.githubusercontent.com/118953929/209574366-22203df3-19c1-434e-b8fc-164dd6b0fa7a.jpg)
+![65](https://user-images.githubusercontent.com/118953929/209574367-28bd22a4-5b11-496b-a3fa-bb70d0662631.jpg)
+![66](https://user-images.githubusercontent.com/118953929/209574368-af43ff58-e953-4b67-960a-2bb3debe7e44.jpg)
+![67](https://user-images.githubusercontent.com/118953929/209574369-25507ad9-5d2a-428b-b7e1-dd9a64bf9cbb.jpg)
+![68](https://user-images.githubusercontent.com/118953929/209574372-a91bbf21-8a77-4137-a606-0cc10330f6b3.jpg)
+![69](https://user-images.githubusercontent.com/118953929/209574375-116a02da-b813-4bba-aaa7-812b80a81f95.jpg)
+![70](https://user-images.githubusercontent.com/118953929/209574377-cc65303e-6883-431e-a28f-19b98098afc4.jpg)
+![71](https://user-images.githubusercontent.com/118953929/209574378-88f6640a-c796-40de-ad08-604dcf278f68.jpg)
 	
 </details>
 	
