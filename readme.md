@@ -1602,20 +1602,33 @@ Clear picture of the schematic shown:
 
 Looking at the output path:
 
-45
+![45](https://user-images.githubusercontent.com/118953929/209565327-b783e813-9196-4096-a51e-2ad0f4c60d5f.jpg)
+
 
 Command to generate clocks:
 
-46
+
+![46](https://user-images.githubusercontent.com/118953929/209565321-72c544da-6ef0-4ef2-91cf-6b5e8c653c53.jpg)
+
 
 H O W  do we constraints the design?
 
-47
+![47](https://user-images.githubusercontent.com/118953929/209565324-e05d0160-a10e-4d7f-a524-2c297e88f4a8.jpg)
 
 H O W the clocks are propagated:
 
 - once a clock is created on a pin/port, DC will propogate that clock downstream based on the timing arcs. 
 - all the timing arcs from the definition point will see the clock propogate by default.
+
+</details>
+
+<details><summary><b> Lab13 - Generated_clocks </b></summary>
+
+
+
+</details>
+
+<details><summary><b> Lecture 10: SDC Part4 vclk, max_latency, rise_fall IO delays </b></summary>
 
 
 
