@@ -1700,5 +1700,9 @@ eg of usage:
 	
 <details><summary><b> Lab 15: part2 - VCLK </b></summary>
 	
+**virtual clock: a clock that is created WITHOUT a definition point
+	
+
+	
 </details>
 
