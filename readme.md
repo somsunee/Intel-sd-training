@@ -1547,7 +1547,11 @@ Looking inside the input ports:
 	
 Clear picture of the schematic shown:
 ![19](https://user-images.githubusercontent.com/118953929/209548851-447f914b-f9b5-4904-be8a-621294e2250c.jpg)
+	
+</details>
 
 
+<details><summary><b> Lab9 - </b></summary>
+	
 	
 </details>
