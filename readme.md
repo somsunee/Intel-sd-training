@@ -1701,7 +1701,15 @@ eg of usage:
 <details><summary><b> Lab 15: part2 - VCLK </b></summary>
 	
 **virtual clock: a clock that is created WITHOUT a definition point
-	
+
+
+
+![72](https://user-images.githubusercontent.com/118953929/209575557-35cf47fb-d1ba-4b89-9ec9-ad0770fc50f5.jpg)
+![73](https://user-images.githubusercontent.com/118953929/209575558-e9c362a3-e9e3-4550-8d1d-5d2f163cda4e.jpg)
+![74](https://user-images.githubusercontent.com/118953929/209575560-028f8c3d-8f34-4429-aac9-58bd370cfd29.jpg)
+![75](https://user-images.githubusercontent.com/118953929/209575561-7902521b-f699-493f-a6c1-9c2938d9d95b.jpg)
+![76](https://user-images.githubusercontent.com/118953929/209575563-58cb415b-e87c-4c5b-b84d-88bbf6601301.jpg)	
+![77](https://user-images.githubusercontent.com/118953929/209575552-0e94edf1-bac7-45fe-8ec1-899a42d69087.jpg)
 
 	
 </details>
