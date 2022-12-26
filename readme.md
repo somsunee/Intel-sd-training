@@ -1588,4 +1588,35 @@ Clear picture of the schematic shown:
 <details><summary><b> Lab12 -IO Delays </b></summary>
 
 
+![38](https://user-images.githubusercontent.com/118953929/209562271-31756623-c7d8-4abe-a4b1-4696ba7fb1e0.jpg)
+![39](https://user-images.githubusercontent.com/118953929/209562272-674d6cf8-0dc4-414a-bb1f-93897355696b.jpg)
+![40](https://user-images.githubusercontent.com/118953929/209562274-d592bc6d-3242-4638-90f8-9c1156b5bbf9.jpg)
+![41](https://user-images.githubusercontent.com/118953929/209562277-64c704d6-c904-4e37-9e80-76f7ff6c51b9.jpg)
+![42](https://user-images.githubusercontent.com/118953929/209562278-4df95deb-23b4-4a5f-9f6f-9ee400f7ba0c.jpg)
+![43](https://user-images.githubusercontent.com/118953929/209562280-68361239-85e6-4260-b909-1dece45e76a4.jpg)
+![44](https://user-images.githubusercontent.com/118953929/209562283-b8842d3f-7cd4-4316-85f0-eac61937d96e.jpg)
+
+</details>
+
+<details><summary><b> Lecture9 - SDC Part3 generated_clk </b></summary>
+
+Looking at the output path:
+
+45
+
+Command to generate clocks:
+
+46
+
+H O W  do we constraints the design?
+
+47
+
+H O W the clocks are propagated:
+
+- once a clock is created on a pin/port, DC will propogate that clock downstream based on the timing arcs. 
+- all the timing arcs from the definition point will see the clock propogate by default.
+
+
+
 </details>
