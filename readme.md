@@ -1387,6 +1387,84 @@ Small recap from previous:
 
 Q: What needs to be constrained for clocks ?
 -	CLOCK PERIOD
+	
 
+Looking back at the Implementation flow of ASIC, pay attention at the CTS stage.
+CTS (Clock Tree Synthesis)
+-	Clock is built during CTS ONLY !
+-	Clock is an IDEAL Network. 
+	
+	
+Theoretically explained:
+	
+	- The concept of Clock Tree Synthesis (CTS ) is the automatic insertion of buffers/inverters along the clock paths of the ASIC design in order to balance the clock delay to all clock inputs.
+	- In order to balance clock skew and minimize insertion delay, CTS is performed. Naturally, before CTS, all clock pins are driven by a single clock source and considered as an ideal net.
+	
+	
+
+Ideal Network:
+pic 3:
+	
+> __NOTE !__  : But practically this is not possible
+
+(in term of clock gen)
+pic 5_1:
+
+(in term of Distribution) 
+> __NOTE !__  : ALL flops sees the edge at same time 
+	
+Pratically:
+	
+pic 4:
+Clock needs to be routed, the CTS is basically to ensure to reduce the delay between these two flops.
+> __NOTE !__  : These delays will not be seen at the synthesis tool ( refer the flow of ASIC )
+
+(in term of clock gen)
+pic 5_2:
+
+> __NOTE !__  : Edges arrive within a window, the location of edge varies from cycle to cycle within this window
+
+(in term of clock Distribution)
+> __NOTE !__  : Pratical Network after CTS, ALL flops may not see the clock edge at same instance---> which this is called CLOCK SKEW
+
+Clock Generation:
+	- Oscillator
+	- PLL 
+	- External clock source
+
+> __NOTE !__  : All these clock sources have inherent variations in the clock period due to stochastic effects
+
+Clock Distribution:
+	
+Pic 6
+
+	
+Clock Skew:
+	- Clock Tree built during CTS --> Practical Clock Tree
+	- Logic optimization happens in synthesis --> Ideal Clock Tree
+	- Timing Clean paths in synthesis may fail after STA 
+
+Pic 7
+	
+** Available timing window shrinks, path is timing clean before CTS, but fails after CTS
+	
+Clock Modelling
+
+- Model the clock:
+	- Period
+	- Source Latency --> Time taken by the clock source to generate clock
+	- Clock network latency --> Time taken by CLOCK DISTRIBUTION network
+	- Clock Skew --> Clock path delay mismatches ( causes difference in the arrival of clock )
+		- CTS will balance the clock, but the skew CANNOT be reduced to 0
+	- Jitter --> Stochastic variations in the arrival of clock edge
+		- Duty cycle jitter
+		- Period Jitter
+	- Collctively clock skew, Jitter is CLOCK UNCERTAINTY
+- Post CTS
+	- the clock NW is real, hence these modelled clock skew and clock network latency must be removed! 
+
+> __NOTE !__  :Synthesis --> Jitter + Skew ; Post CTS --> Only Jitter
+	
+	
 	
 </details>
