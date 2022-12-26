@@ -1555,5 +1555,16 @@ Clear picture of the schematic shown:
 
 <details><summary><b> Lab9 - get_pins, get_clocks, querying_clocks </b></summary>
 	
-pic
+![22](https://user-images.githubusercontent.com/118953929/209552228-2c0430c6-d249-4e71-9512-4991ae96cb0b.jpg)
+![23](https://user-images.githubusercontent.com/118953929/209552233-6f98f67f-4df4-4f1d-b8cf-28d581c5bc71.jpg)
+![24](https://user-images.githubusercontent.com/118953929/209552235-96a480c5-a28d-40a0-bb51-77a72ac68f94.jpg)
+![25](https://user-images.githubusercontent.com/118953929/209552238-3e248aaa-977f-45c0-bfa9-1fc6f7e5770c.jpg)
+![26](https://user-images.githubusercontent.com/118953929/209552240-78aa9309-1375-4a89-bd62-c19d3331f074.jpg)
+![27](https://user-images.githubusercontent.com/118953929/209552241-5aa9ce78-c92d-4c69-8bf1-46ab3e3c1468.jpg)
+	
+</details>
+	
+<details><summary><b> Lab10 - create_clock waveform </b></summary>
+
+	
 </details>
