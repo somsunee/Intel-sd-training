@@ -1639,9 +1639,16 @@ H O W the clocks are propagated:
 I N P U T   D E L A Y
 
 
+![55](https://user-images.githubusercontent.com/118953929/209570802-2f0133e1-e6ef-4ced-ac6c-c407a9845f91.jpg)
+![56](https://user-images.githubusercontent.com/118953929/209570803-04f4d94d-cdd0-4e8c-a84a-e0fb61eacdbe.jpg)
+![57](https://user-images.githubusercontent.com/118953929/209570804-f989be6e-347a-475d-bc97-8bfcb164b94d.jpg)
+![58](https://user-images.githubusercontent.com/118953929/209570805-65a11c6b-701f-4d98-9704-ef1fa1ea0acf.jpg)
+
 
 O U T P U T   D E L A Y 
 
+![59](https://user-images.githubusercontent.com/118953929/209570806-7091866e-bd7d-48b3-8047-8b1e641346d0.jpg)
+![60](https://user-images.githubusercontent.com/118953929/209570798-b6d78138-7c01-4040-9c7c-578e4a9bd461.jpg)
 
 
 </details>
