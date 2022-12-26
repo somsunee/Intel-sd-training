@@ -9,6 +9,7 @@
 - [Day 5 : DFT](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_5)
 - [Day 6 : Introduction to Logic Synthesis](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_6)
 - [Day 7 : Basic of STA](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_7)
+- [Day 8 : Advanced Constraints](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_8)
  
 # &#x1F537; Day_0
 
@@ -1375,5 +1376,17 @@ NegLevel DLAT |from NegEdge Clk | From D to Q when clk is low | to PosEdge clk |
 
 	
 </details>
+
 	
+# &#x1F537; Day_8
+
+<details><summary><b> Lecture 7 - SDC Part1 Clock - Clock Tree Modelling </b></summary>
+
 	
+Small recap from previous: 
+
+Q: What needs to be constrained for clocks ?
+-	CLOCK PERIOD
+
+	
+</details>
