@@ -1473,7 +1473,9 @@ Clock Modelling
 
 H O W  to constraint the design in DC ?
 
-pic 8
+
+![8](https://user-images.githubusercontent.com/118953929/209544443-13e6b651-1e03-4136-8d1a-9808233db7b3.jpg)
+
 ** NETS - 2 or more pin that are connected to ports
 
 
@@ -1499,7 +1501,8 @@ Commands to getting clocks in DC
 Querying the cells in the Design\
 Inside the combo logic:
 
-Pic 9
+![9](https://user-images.githubusercontent.com/118953929/209544445-7f56f7a0-2d17-44e4-8034-2c00ef3c2af7.jpg)
+
 
 Clock Distribution:
 
@@ -1507,26 +1510,26 @@ H O W do we create clock?
 
 Command: 
 
-pic 10
+![10](https://user-images.githubusercontent.com/118953929/209544447-f4b3fc8a-61c7-4f03-8847-912c2784b0f2.jpg)
+
 
 > __NOTE !__  : Clock must be created on the clock generators (PLL, OSCILLATORS) or Primary IO pins (for EXTERNAL CLOCKS). Clock should not be created on hierarchical pins which are not clock generators. 
 
 P R A C T I C A L I T I E S  of clock network
 
-pic 11
+![11](https://user-images.githubusercontent.com/118953929/209544449-631fbc68-c681-4dea-8de0-240ec866c7a0.jpg)
 
 
 Clocks - Waveform
 
-pic 12
+![12](https://user-images.githubusercontent.com/118953929/209544438-831bb21d-9765-445b-8941-e4d3803ab8b4.jpg)
 
 
 H O W do we constraint the IO paths ?
 
 Looking inside the input ports:
 
-pic 13
-
+![13](https://user-images.githubusercontent.com/118953929/209544441-b34f2e86-1b27-4642-a047-7dfafc5f6e0a.jpg)
 
 
 </details>
