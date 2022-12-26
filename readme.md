@@ -1650,5 +1650,19 @@ O U T P U T   D E L A Y
 ![59](https://user-images.githubusercontent.com/118953929/209570806-7091866e-bd7d-48b3-8047-8b1e641346d0.jpg)
 ![60](https://user-images.githubusercontent.com/118953929/209570798-b6d78138-7c01-4040-9c7c-578e4a9bd461.jpg)
 
+IO CONSTRAINTS REVISITED:
+	
+	***No clock definition point -> virtual clock inferred
+
+eg:
+	
+create_clock -name MY_VCLK -period 5
+	
+set_output_delay -max 2.5 -clock MY_VCLK [get_ports OUT_Z]
+set_input_delay -max 1.5 -clock MY_VCLK [get_ports IN_C]
+set_input_delay -max 1.5 -clock MY_VCLK [get_ports IN_D]
+	
+> __NOTE !__  : for virtual clock, there is no latency , no clock definition point	
+
 
 </details>
