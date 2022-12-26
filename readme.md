@@ -1576,8 +1576,16 @@ Clear picture of the schematic shown:
 </details>
 	
 <details><summary><b> Lab11 -Clock Network Modelling -Uncertainty, report_timing </b></summary>
-	
 
+![33](https://user-images.githubusercontent.com/118953929/209559774-dd7647c5-63fc-41f8-ac87-93525c977e36.jpg)
+![34](https://user-images.githubusercontent.com/118953929/209559776-39eeced7-5bb1-4e50-9315-fa9d5d8b3e55.jpg)
+![35](https://user-images.githubusercontent.com/118953929/209559777-f26a0e48-5390-4c1d-af17-19d35c3f1377.jpg)
+![36](https://user-images.githubusercontent.com/118953929/209559781-71be7931-9a4a-4de4-9ba5-aef44243cd18.jpg)	
+![37](https://user-images.githubusercontent.com/118953929/209559768-ec06328f-29b0-4724-a684-c8b5349a68c4.jpg)
 	
 </details>
 
+<details><summary><b> Lab12 -IO Delays </b></summary>
+
+
+</details>
