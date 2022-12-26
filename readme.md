@@ -1385,9 +1385,12 @@ NegLevel DLAT |from NegEdge Clk | From D to Q when clk is low | to PosEdge clk |
 	
 Small recap from previous: 
 
+![1](https://user-images.githubusercontent.com/118953929/209536618-4da86ee8-c343-4fcc-aec6-eb9c2ee0f973.jpg)
+
 Q: What needs to be constrained for clocks ?
 -	CLOCK PERIOD
-	
+
+![2](https://user-images.githubusercontent.com/118953929/209536616-9bfd1b57-f8c4-4d9a-b5f6-732923857e9d.jpg)
 
 Looking back at the Implementation flow of ASIC, pay attention at the CTS stage.
 CTS (Clock Tree Synthesis)
@@ -1403,48 +1406,46 @@ Theoretically explained:
 	
 
 Ideal Network:
-pic 3:
-	
+
+![3](https://user-images.githubusercontent.com/118953929/209536605-5afcfee5-d9f0-47c5-91c3-a31315b3a7fe.jpg)
+
 > __NOTE !__  : But practically this is not possible
 
-(in term of clock gen)
-pic 5_1:
+![5_1](https://user-images.githubusercontent.com/118953929/209536614-61c7f7ae-cc74-4852-bd4a-e8469caab32b.jpg)
 
-(in term of Distribution) 
 > __NOTE !__  : ALL flops sees the edge at same time 
 	
 Pratically:
 	
-pic 4:
+![4](https://user-images.githubusercontent.com/118953929/209536608-5d647e36-6f6c-4b0f-a6bd-56de58ba1eeb.jpg)
+
 Clock needs to be routed, the CTS is basically to ensure to reduce the delay between these two flops.
 > __NOTE !__  : These delays will not be seen at the synthesis tool ( refer the flow of ASIC )
 
-(in term of clock gen)
-pic 5_2:
+![5_2](https://user-images.githubusercontent.com/118953929/209536610-941ce990-eadf-4eff-9533-01097010899e.jpg)
+
 
 > __NOTE !__  : Edges arrive within a window, the location of edge varies from cycle to cycle within this window
 
-(in term of clock Distribution)
 > __NOTE !__  : Pratical Network after CTS, ALL flops may not see the clock edge at same instance---> which this is called CLOCK SKEW
 
-Clock Generation:
-	- Oscillator
-	- PLL 
+Clock Generation:\
+	- Oscillator\
+	- PLL\
 	- External clock source
 
 > __NOTE !__  : All these clock sources have inherent variations in the clock period due to stochastic effects
 
 Clock Distribution:
-	
-Pic 6
 
+![6](https://user-images.githubusercontent.com/118953929/209536603-4050cbb4-5e52-4d72-a4a0-bf808aa6a556.jpg)
 	
-Clock Skew:
-	- Clock Tree built during CTS --> Practical Clock Tree
-	- Logic optimization happens in synthesis --> Ideal Clock Tree
+Clock Skew:\
+	- Clock Tree built during CTS --> Practical Clock Tree\
+	- Logic optimization happens in synthesis --> Ideal Clock Tree\
 	- Timing Clean paths in synthesis may fail after STA 
 
-Pic 7
+![7](https://user-images.githubusercontent.com/118953929/209536598-1373eaf9-7144-45f0-bdb5-bc5fc40d1c88.jpg)
 	
 ** Available timing window shrinks, path is timing clean before CTS, but fails after CTS
 	
@@ -1465,6 +1466,67 @@ Clock Modelling
 
 > __NOTE !__  :Synthesis --> Jitter + Skew ; Post CTS --> Only Jitter
 	
-	
-	
+</details>
+
+
+<details><summary><b> Lecture 8 - SDC Part2 IO delays </b></summary>
+
+H O W  to constraint the design in DC ?
+
+pic 8
+** NETS - 2 or more pin that are connected to ports
+
+
+Commands to getting ports in DC
+
+- get_ports clk;
+- get_ports * clk *; --> * gets all ports with "clk" in within
+- get_ports *; --> gets all ports name for the design
+- get_ports * -filter "direction == in"; --> get all ports, pins that are input
+- get_ports * -filter "direction == out"; --> get all ports, pins that are output
+
+> __NOTE !__  : all ports, pins , clk are case sensitive !
+
+Commands to getting clocks in DC
+
+- get_clocks *
+- get_clocks * clk *
+- get_clocks * -filter "period > 10"
+- get_attribute [get_clocks my_clk] period --> my_clk is the clock variable that we set
+- get_attribute [get_clocks my_clk] is_generated
+- report_clocks my_clk
+
+Querying the cells in the Design\
+Inside the combo logic:
+
+Pic 9
+
+Clock Distribution:
+
+H O W do we create clock?
+
+Command: 
+
+pic 10
+
+> __NOTE !__  : Clock must be created on the clock generators (PLL, OSCILLATORS) or Primary IO pins (for EXTERNAL CLOCKS). Clock should not be created on hierarchical pins which are not clock generators. 
+
+P R A C T I C A L I T I E S  of clock network
+
+pic 11
+
+
+Clocks - Waveform
+
+pic 12
+
+
+H O W do we constraint the IO paths ?
+
+Looking inside the input ports:
+
+pic 13
+
+
+
 </details>
