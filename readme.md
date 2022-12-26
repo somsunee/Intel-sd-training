@@ -1566,5 +1566,18 @@ Clear picture of the schematic shown:
 	
 <details><summary><b> Lab10 - create_clock waveform </b></summary>
 
+![28](https://user-images.githubusercontent.com/118953929/209554372-3afdee57-d20a-4db7-b8f0-de0c87133d7c.jpg)
+![29](https://user-images.githubusercontent.com/118953929/209554364-dc7c1373-eb85-48fd-9546-c823e891f260.jpg)
+![30](https://user-images.githubusercontent.com/118953929/209554367-8e462ad8-c76f-4955-a808-91094b63fb39.jpg)
+![31](https://user-images.githubusercontent.com/118953929/209554368-8ac7b54b-9f1a-4dcd-9033-a0ad238c7890.jpg)
+![32](https://user-images.githubusercontent.com/118953929/209554369-f6bd844b-7a82-4ccf-8de6-cf7efc4743c5.jpg)
+
 	
 </details>
+	
+<details><summary><b> Lab11 -Clock Network Modelling -Uncertainty, report_timing </b></summary>
+	
+
+	
+</details>
+
