@@ -1544,14 +1544,16 @@ Looking inside the input ports:
 ![17](https://user-images.githubusercontent.com/118953929/209548846-c0c6774b-5954-46a3-8b21-8b5133a01293.jpg)
 ![18](https://user-images.githubusercontent.com/118953929/209548849-124a1dea-835e-4ae1-8b5b-72c91d3558a1.jpg)
 ![20](https://user-images.githubusercontent.com/118953929/209548853-a9ee4d30-7c10-4ffa-8e69-051b167d19e3.jpg)
+![21](https://user-images.githubusercontent.com/118953929/209549497-2a067b5a-95ac-4905-bff7-2bece6b4561a.jpg)
 	
 Clear picture of the schematic shown:
 ![19](https://user-images.githubusercontent.com/118953929/209548851-447f914b-f9b5-4904-be8a-621294e2250c.jpg)
+
 	
 </details>
 
 
-<details><summary><b> Lab9 - </b></summary>
+<details><summary><b> Lab9 - get_pins, get_clocks, querying_clocks </b></summary>
 	
-	
+pic
 </details>
