@@ -1667,5 +1667,17 @@ set_input_delay -max 1.5 -clock MY_VCLK [get_ports IN_D]
 	
 > __NOTE !__  : for virtual clock, there is no latency , no clock definition point	
 
+	
+set_driving_cell --> will be discussed more on lab
+
+	set_input_transition -max 0.15 [get_ports IN_A]
+	
+**more accurate for all internal paths
+	
+eg of usage:
+	
+	set_driving cell -lib_cell <lib_cell_name> <ports>
+	set_driving_cell -lib_cell sky130_fd_sc_hd_buf_1 [all_inputs]
+	
 
 </details>
