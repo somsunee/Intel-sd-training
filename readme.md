@@ -1624,11 +1624,23 @@ H O W the clocks are propagated:
 
 <details><summary><b> Lab13 - Generated_clocks </b></summary>
 
-
+![48](https://user-images.githubusercontent.com/118953929/209567986-0dba1601-3dbf-4d03-a990-ca56e145dfd4.jpg)
+![49](https://user-images.githubusercontent.com/118953929/209567987-4e4b751e-1836-41f1-bcb6-56a5ba8ea5e4.jpg)
+![50](https://user-images.githubusercontent.com/118953929/209567989-6dcdacc0-2668-4cba-89d8-ab1e61b69db3.jpg)
+![51](https://user-images.githubusercontent.com/118953929/209567991-1f3cae2d-0d98-4805-9aca-ccda3ff11080.jpg)
+![52](https://user-images.githubusercontent.com/118953929/209567992-c04a99eb-5567-496f-83f3-9a31c58a95f6.jpg)
+![53](https://user-images.githubusercontent.com/118953929/209567997-f9f1e7d1-15bd-473c-916b-371a7186fffd.jpg)
+![54](https://user-images.githubusercontent.com/118953929/209567984-cdc713e9-dd99-4d16-a981-fec7223cc02b.jpg)
 
 </details>
 
 <details><summary><b> Lecture 10: SDC Part4 vclk, max_latency, rise_fall IO delays </b></summary>
+
+I N P U T   D E L A Y
+
+
+
+O U T P U T   D E L A Y 
 
 
 
