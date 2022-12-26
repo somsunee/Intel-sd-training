@@ -1533,3 +1533,15 @@ Looking inside the input ports:
 
 
 </details>
+	
+	
+<details><summary><b> Lab8 - Loading design get_cells, get_ports, get_nets </b></summary>
+	
+pic 14-18
+	
+Clear picture of the schematic shown:
+pic 19
+	
+
+	
+</details>
