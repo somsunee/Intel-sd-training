@@ -1655,11 +1655,14 @@ IO CONSTRAINTS REVISITED:
 	***No clock definition point -> virtual clock inferred
 
 eg:
+
+Diagram from Lecture's:
+![image](https://user-images.githubusercontent.com/118953929/209571224-58a56d8a-3644-4e4d-b0ce-aebc27a324d7.png)
 	
 create_clock -name MY_VCLK -period 5
 	
-set_output_delay -max 2.5 -clock MY_VCLK [get_ports OUT_Z]
-set_input_delay -max 1.5 -clock MY_VCLK [get_ports IN_C]
+set_output_delay -max 2.5 -clock MY_VCLK [get_ports OUT_Z]\
+set_input_delay -max 1.5 -clock MY_VCLK [get_ports IN_C]\
 set_input_delay -max 1.5 -clock MY_VCLK [get_ports IN_D]
 	
 > __NOTE !__  : for virtual clock, there is no latency , no clock definition point	
