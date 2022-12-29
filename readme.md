@@ -10,6 +10,7 @@
 - [Day 6 : Introduction to Logic Synthesis](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_6)
 - [Day 7 : Basic of STA](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_7)
 - [Day 8 : Advanced Constraints](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_8)
+- [Day 9 : Optimization](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_9)
  
 # &#x1F537; Day_0
 
@@ -1713,4 +1714,38 @@ eg of usage:
 
 	
 </details>
+
+# &#x1F537; Day_9
+	
+<details><summary><b> Lecture 11 - Optimizations Combinational Opt </b></summary>
+
+$\fbox{OPTIMIZATION GOALS}$
+
+- Cost function based optimizations
+	- Optimization till the cost is met
+	- Over optimization of one goal will/might harm the other
+	- Goals for synthesis 
+		- Meeting Timing --> $\colorbox{blue}{{\color{white}{FASTER}}}$ cells, $\colorbox{red}{{\color{white}{BAD}}}$ power and area 
+		- Meet Area --> $\colorbox{blue}{{\color{white}{SMALLER}}}$ cells, $\colorbox{blue}{{\color{white}{GOOD}}}$ power and area, $\colorbox{red}{{\color{white}{BAD}}}$ timing
+		- Meet Power 
+	
+$\fbox{Combinational Logic Optimisation}$
+	
+- Squeezing logic to get $\colorbox{violet}{{\color{white}{most optimized}}}$ design
+	- area and power savings
+	
+- Constant Propagation
+	- $\colorbox{violet}{{\color{white}{Direct}}}$ Optimisation
+
+![image](https://user-images.githubusercontent.com/118953929/209784103-3e8db6cb-3c61-4d53-baf5-d9c5c880e9a3.png)
+
+
+- Boolean Logic Optimisation
+	- KMap
+	- Quine McKluskey
+	
+ 
+	
+</details>	
+
 
