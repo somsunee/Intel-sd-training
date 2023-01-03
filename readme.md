@@ -11,6 +11,7 @@
 - [Day 7 : Basic of STA](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_7)
 - [Day 8 : Advanced Constraints](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_8)
 - [Day 9 : Optimization](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_9)
+- [Day 10 : Optimization](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_10)
  
 # &#x1F537; Day_0
 
@@ -1744,8 +1745,678 @@ $\fbox{Combinational Logic Optimisation}$
 	- KMap
 	- Quine McKluskey
 	
- 
+ ![image](https://user-images.githubusercontent.com/118953929/210214118-dc4f7cf5-642f-46e3-99df-b3b669da053f.png)
+
+	
+$\fbox{Resource sharing}$
+	
+![image](https://user-images.githubusercontent.com/118953929/210215647-798f19b2-974e-4372-9d99-e314bf3923b3.png)
+
+	
+$\fbox{Logic sharing}$	
+
+![image](https://user-images.githubusercontent.com/118953929/210217890-8f904a95-9241-4681-8d5f-57cf0bbd0594.png)
+	
+$\fbox{Balanced vs Preferential Implementation}$
+	
+Assuming 5 i/p,
+	
+	assign y = a & b & c & d & e ;
+
+![image](https://user-images.githubusercontent.com/118953929/210227906-610588c7-59c7-4ecb-8795-c46c863b227f.png)
+	
+</details>	
+	
+
+<details><summary><b> Lecture 12 - Sequential Optimizations </b></summary>
+
+$\fbox{Sequential Logic Optimisations}$
+	
+- Basic 
+	- Sequential Constant propagation
+	- Retiming
+	- Unused flop removal
+	- Clock gating
+	
+- Advanced 
+	- State Optimization
+	- Sequential Logic Cloning ( Floor Plan Aware Synthesis )
+	
+
+EG:
+	
+SEQUENTIAL CONST
+i) q is grounded;  Q is always D (1'b0)
+
+![image](https://user-images.githubusercontent.com/118953929/210234695-0e5a2631-2d25-4253-bce8-2fa4787c4813.png)
+
+ii) q = VDD ; Q is always 1'b1
+	
+![image](https://user-images.githubusercontent.com/118953929/210234528-a5be02b4-dd55-45f8-aed1-c4d5d51f898d.png)
+
+
+NOT A SEQUENTIAL CONST ( cannot be optimized )
+
+iii) 
+
+![image](https://user-images.githubusercontent.com/118953929/210239040-6653fae1-d63c-45ce-9109-0341e7738aa9.png)
+
+Another example:
+	
+Seq Const:
+	
+B'.1 + B.1' = B' + 0 
+	    = B' --> out 
+	
+![image](https://user-images.githubusercontent.com/118953929/210243392-b7a1e855-a59a-4bbc-984f-603c0c44e7ab.png)
+
+	
+
+$\fbox{Optimization of uloaded outputs}$
+
+input --> clk , en, res
+output --> q
+reg of 4 bit count --> cnt
+	
+	**condition(s): if there is enable, it will toggle, if not, will not toggle --> be the value of 4 bit counter
+	
+![image](https://user-images.githubusercontent.com/118953929/210246643-e2b5dec1-68d5-4b22-861a-ed7ad159672e.png)
+
+	
+$\fbox{Controlling sequential optimizations in DC}$
+	
+- compile_seqmap_porpagate_constants
+- compile_delete_unloaded_sequential_cells
+- compile_register_replication
+
+	
+</details>
+
+<details><summary><b> Lab 16 - part1 Combinational_optimizations </b></summary>	
+
+read_verilog --> can observe the comments --> nothing is report out, means nothing is present in the design
+	
+![image](https://user-images.githubusercontent.com/118953929/210250103-7fc7cec1-f02a-413e-abbb-7acddfcafdb0.png)
+do link, and compile, and then report_timing again, then you will see the and gate reported out
+	
+![image](https://user-images.githubusercontent.com/118953929/210250421-7ac0241c-5b1d-463b-a751-8501b5e8040a.png)
+	
+load up the desion_vision and write ddc the op_check.v file:
+	
+![image](https://user-images.githubusercontent.com/118953929/210253237-5ae57d2e-6589-4da3-ab62-02205c1f5c34.png)
+
+for others: 
+	
+do read_verilog opt_check*.v , link and compile, write ddc file and observe the schematic
+
+opt_check2.v
+![image](https://user-images.githubusercontent.com/118953929/210253493-1f73e905-036b-4f63-b150-63a486578132.png)
+
+opt_check3.v
+![image](https://user-images.githubusercontent.com/118953929/210253610-da3c0732-c412-40e1-95b8-a007d973db38.png)
+	
+opt_check4.v 
+![image](https://user-images.githubusercontent.com/118953929/210254092-3faab2d5-5d1f-4455-8f7a-261b07963adf.png)
+	
+report_timing: will see the path is unconstrained, as nothing is being link here
+
+![image](https://user-images.githubusercontent.com/118953929/210289837-27bf3cc5-fbed-456d-ba8b-fbff0fec3db2.png)
+
+do set_max_delay; observe the violated time
+	
+![image](https://user-images.githubusercontent.com/118953929/210289904-8c18122d-d1ac-4ca1-bdf7-79b4a65a0b0e.png)
+
+compile_ultra, and report_timing again to see differs;
+so as observed, nothing actually happens any changes here.
+	
+![image](https://user-images.githubusercontent.com/118953929/210289953-0322ddaa-2c88-4846-a811-353fd04c2a5a.png)
+
+do a set_max_delay for a 6 ps,
+
+![image](https://user-images.githubusercontent.com/118953929/210292233-fbba4550-1073-4d64-aad6-03b38fee31a5.png)
+
+report_timing, observed:
+	
+![image](https://user-images.githubusercontent.com/118953929/210292271-269c9c9f-4c24-4b12-a352-58b341249bae.png)
+
+compile_ultra for the optimization, and observe the differs:
+
+![image](https://user-images.githubusercontent.com/118953929/210292437-c39ea3a0-701a-4d2f-8e35-f79d601401c9.png)
+	
 	
 </details>	
 
+<details><summary><b> Lab 16 - part2 Resource sharing optimizations </b></summary>	
 
+open up resource_sharing_mult_check.v
+- looking back at the notes, the code is write out as what we drawn theoretically:
+	
+![image](https://user-images.githubusercontent.com/118953929/210292787-4b4f6336-488f-43c0-953c-f1bd8f822bc1.png)
+	
+read_verilog resource_sharing_mult_check.v\
+link\
+compile_ultra
+
+![image](https://user-images.githubusercontent.com/118953929/210294460-2a537e69-b0ca-4625-b6b2-1e5005e93b6f.png)
+
+![image](https://user-images.githubusercontent.com/118953929/210293879-895d4c8f-df66-436a-81e7-ce7a7f252f2b.png)
+
+FOR RUN1:
+
+report_area, viewing from the .v file and the diagram, we observed: 
+- input [3:0] a , input [3:0] b, input [3:0] c , input [3:0] d, output [7:0] y  , input sel --> 25 ports
+	
+![image](https://user-images.githubusercontent.com/118953929/210294926-e7584450-cdc7-43cb-a428-000aeddd3f82.png)
+	
+![image](https://user-images.githubusercontent.com/118953929/210295382-aba19538-b3dc-4b33-8580-d83a4eb42ea2.png)
+
+set_max_delay:
+	
+![image](https://user-images.githubusercontent.com/118953929/210295531-03df338b-85f3-4e0a-bd0f-88ecb3ba0ee1.png)
+	
+
+report_timing: 
+
+![image](https://user-images.githubusercontent.com/118953929/210295587-f67f1be3-df45-4f9d-bf9d-7ff3c41a4397.png)
+
+after compile_ultra:
+
+![image](https://user-images.githubusercontent.com/118953929/210296217-2117afcb-6f5d-436c-9d30-d05775cf0476.png)
+
+set_max_delay from sel:
+	
+![image](https://user-images.githubusercontent.com/118953929/210296391-9a05ff01-3336-4379-8df5-56e44e2b9142.png)
+
+report_timing:
+
+![image](https://user-images.githubusercontent.com/118953929/210296453-28dbbf57-afdf-4290-ae0f-499ef8079ec4.png)
+
+after compile_ultra:
+
+![image](https://user-images.githubusercontent.com/118953929/210296493-7bac0e9b-3709-40b0-bcd5-343b390ca1e0.png)
+
+
+FOR RUN2:
+
+report_area:
+
+![image](https://user-images.githubusercontent.com/118953929/210296548-c47d1a11-a52b-400b-a13b-41ead6917d65.png)
+
+report_timing:
+![image](https://user-images.githubusercontent.com/118953929/210296824-fddcb1ac-1278-48f5-9e30-7f48a6185973.png)
+
+after compile_ultra:
+
+![image](https://user-images.githubusercontent.com/118953929/210296898-22747b46-682f-47a5-bd46-43d00ea769be.png)
+
+</details>	
+
+<details><summary><b> Lab 17 - seq optimizations </b></summary>
+
+reading dff_constant1.v
+
+![image](https://user-images.githubusercontent.com/118953929/210297111-41e69c34-b207-4fd2-9ac5-f12b595298ad.png)
+
+read_verilog dff_const1.v\
+link\
+compile
+	
+write a foreach for a collection loop to get the cells;
+	
+![image](https://user-images.githubusercontent.com/118953929/210297668-b06ffda6-47c2-4d86-b985-76b2c1ac5dff.png)
+
+get the ref_name for the cells:
+
+![image](https://user-images.githubusercontent.com/118953929/210299288-a3280f2d-8cd4-47f9-a8c7-d59eeeac7665.png)
+
+The schematic:
+	
+![image](https://user-images.githubusercontent.com/118953929/210299866-42283fad-21a4-4fef-bff5-f3d7052c760b.png)
+
+read_verilog dff_const2.v\
+link\
+compile\
+gui_start
+
+The schematic:
+
+![image](https://user-images.githubusercontent.com/118953929/210300353-0a4f0e2a-5e55-4a47-90b3-0ab4ce3daf7f.png)
+
+read_verilog dff_const3.v\
+link\
+compile\
+gui_start
+
+
+The schematic: 
+
+![image](https://user-images.githubusercontent.com/118953929/210300475-f5004be5-de0c-4033-a8e4-e0e7e8ce2f33.png)
+	
+Looking back at dff_const2.v:
+
+read_verilog dff_const2.v
+set compile_seqmap_propagate_constants false
+	
+	
+**not optimized:
+
+![image](https://user-images.githubusercontent.com/118953929/210300727-165537af-8600-4fd5-aca9-93c7f1025ecd.png)
+
+read_verilog dff_const4.v\
+link\
+compile\
+gui_start
+
+
+The schematic:
+	
+![image](https://user-images.githubusercontent.com/118953929/210300987-9f96757d-417e-449f-bc35-f4674f7fa7d9.png)
+	
+read_verilog dff_const5.v\
+link\
+compile\
+gui_start
+
+
+The schematic:
+	
+![image](https://user-images.githubusercontent.com/118953929/210301105-48f49c96-2b9f-4ec0-9b55-df3eb841130c.png)
+
+</details>
+	
+
+<details><summary><b> Lecture 13: Special Optimizations </b></summary>
+
+$\fbox{Special Opt}$
+
+- Retiming
+	
+
+![image](https://user-images.githubusercontent.com/118953929/210302428-6a4c7901-6a18-40aa-be83-b26e671e1a30.png)
+
+the illustration of the retiming:
+
+![image](https://user-images.githubusercontent.com/118953929/210302874-a66a65a2-28c7-4c68-8b2f-30a43b52fd45.png)
+
+$\fbox{Boundary Optimization}$
+
+![image](https://user-images.githubusercontent.com/118953929/210303253-ab555b34-7aea-433d-8c6e-43803e7c3f1d.png)
+	
+Optimization::( it was merged) 
+	
+![image](https://user-images.githubusercontent.com/118953929/210303343-0cd6fa54-ea67-4ffc-afde-959f750f4d2a.png)
+
+
+**Take note: need to enable or not --> need to be very careful
+
+Commands:
+	
+- set_boundary_optimization <design> < true| false>
+	
+M U L T I - C Y C L E PATHS 
+	
+- set_multicycle_path -setup 2 -to prod_reg [*]/D -through [all_inputs]
+
+![image](https://user-images.githubusercontent.com/118953929/210304142-68c5944f-fedf-4ed9-93e9-f08115aaa53f.png)
+
+
+**input A and B will load the data, and wait the sel to select, sel is basically the 1 cycle delay of the enable. SO, it can not be optimized into single path
+	
+F A L S E PATHS 
+	
+- Paths that are not valid for STA
+	- set_false_path -from <> -to <>
+	- set_false_path -through <>
+
+![image](https://user-images.githubusercontent.com/118953929/210304588-3ec5988b-e06e-4561-9b16-df55f3b145cd.png)
+![image](https://user-images.githubusercontent.com/118953929/210305039-9c1520a9-ad55-42ab-973c-a4ac036c6039.png)
+	
+External LOAD vs Internal LOAD
+
+Commands:
+
+- set_isolate_ports -type buffer [get_ports y]
+
+![image](https://user-images.githubusercontent.com/118953929/210305712-ce10d41b-d27e-47d6-94d6-dc5e4ab9980f.png)
+![image](https://user-images.githubusercontent.com/118953929/210305727-f657a68d-645e-4b84-bc82-71993450852e.png)
+
+*internal path will not see the external load 
+		
+</details>
+
+<details><summary><b> Lecture 14: How Paths are timed MCP? </b></summary>
+
+H O W DC/STA tool checks timing ?
+
+--single cycle path
+	
+![image](https://user-images.githubusercontent.com/118953929/210306683-99160365-1b08-4b41-919f-d131601ead00.png)
+
+**Note: HOLD is always checked at the edge before setup
+	
+--Half cycle path
+	
+![image](https://user-images.githubusercontent.com/118953929/210307027-01ae91ea-798b-4fef-8eba-aee08309b74b.png)
+
+**Note: HOLD will happen at edge before (VERY RELAXED) 
+	
+--multi-cycle path
+	
+![image](https://user-images.githubusercontent.com/118953929/210308130-51d6e4fb-5e2f-4174-a23a-dd1c1cc8b173.png)
+
+
+**Prod_reg is getting loaded once in every 2 CYCLES only. 
+	
+	set_multicycle_path –setup 2 –from [all_inputs] –to (PROD_REG[]/D) <- endpoint edge moved forward
+	set_multicycle_path –hold 1 –from [all_inputs] –to (PROD_REG[]/D) <- launch edge moved forward
+
+
+
+</details>
+	
+
+<details><summary><b> Lab 18: Boundary Optimization </b></summary>
+
+check_boundary.v content:
+	
+![image](https://user-images.githubusercontent.com/118953929/210309247-08603bfb-a5e6-43e1-8423-2368b3f17ed7.png)
+	
+
+reset_design\
+read_verilog check_boundary.v\
+link\
+compile\
+write -f ddc -out check_boundary.ddc
+read_ddc check_boundary.ddc
+	
+The schematic:
+![image](https://user-images.githubusercontent.com/118953929/210314464-507a8c54-9b67-4aac-9e28-a79e1bb3c362.png)
+
+Now turn the u_im to false:
+	
+set_boundary_optimization u_im false\
+compile_ultra
+
+The schematic:
+	
+![image](https://user-images.githubusercontent.com/118953929/210315718-28e0ddc9-6a6a-4ca6-a0ba-3dbcbd914537.png)
+
+</details>
+	
+
+<details><summary><b> Lab 19: Register Retiming </b></summary>
+
+check_reg_retime.v
+
+![image](https://user-images.githubusercontent.com/118953929/210316015-311c60ba-140a-4201-b0f0-fa212bb909c2.png)
+![image](https://user-images.githubusercontent.com/118953929/210316238-1a7bb4ce-1bc0-4a0c-bc34-aedc076657ba.png)
+![image](https://user-images.githubusercontent.com/118953929/210316349-6239906f-3376-4e1c-9486-4e1ee5ce65e1.png)
+
+
+The schematic:
+
+![image](https://user-images.githubusercontent.com/118953929/210316491-c3ede2a1-753e-4084-b349-bbe30ffc4e93.png)
+
+create a tcl for the retiming:
+
+![image](https://user-images.githubusercontent.com/118953929/210316751-311b5e42-9b14-4bde-a1d9-a06fb56f0b8c.png)
+
+source the tcl\
+report_timing:
+	
+![image](https://user-images.githubusercontent.com/118953929/210317108-f5bae39e-0cdb-455f-9ce1-d28c0ac69366.png)
+
+Enable the retiming, can observe the schematic:
+	
+![image](https://user-images.githubusercontent.com/118953929/210317319-692a129e-d462-4407-933d-0f6532d4786d.png)
+	
+report_timing -from [all_inputs] -trans -cap -nosplit:
+
+![image](https://user-images.githubusercontent.com/118953929/210317425-b07136f9-dc54-4f1d-9df4-f9bb0382dd49.png)
+	
+
+</details>
+	
+
+<details><summary><b> Lab 20: Isolating output ports </b></summary>
+
+check_boundary.v
+
+![image](https://user-images.githubusercontent.com/118953929/210326304-e4146688-6df8-4f76-a8a1-b8a2f8cd91c9.png)
+
+set_isolate_ports -type buffer [all_outputs]\
+compile_ultra
+
+*the buffer is created:
+
+![image](https://user-images.githubusercontent.com/118953929/210327069-a182e2d5-e1bc-4f32-a6a9-f66fa645a3b5.png)
+	
+reset_design\
+read_verilog check_boundary.v\
+link\
+compile_ultra\
+create_clock -per 5 -name myclk [get_ports clk]\
+set_input_delay -max 2 [all_inputs] -clock myclk\
+set_output_delay -max 2 [all_outputs] -clock myclk\
+set_load -max 0.3 [all_outputs]\
+report_timing
+
+![image](https://user-images.githubusercontent.com/118953929/210327972-e01525eb-a581-4b32-93bb-814684dbe4a3.png)
+
+report_timing -nosplit -inp -cap -trans -sig 4
+	
+![image](https://user-images.githubusercontent.com/118953929/210328023-320e8e97-5e15-4d37-aa31-a28f4e5845a0.png)
+	
+
+</details>
+	
+
+<details><summary><b> Lab 21: MultiCycle path </b></summary>
+
+mcp_check.v
+	
+**a and b will be loaded only if there is valid:
+![image](https://user-images.githubusercontent.com/118953929/210329327-ba1ea61a-17b6-49e5-bae3-fb948730ae22.png)
+
+![image](https://user-images.githubusercontent.com/118953929/210330023-e1d682c8-3bef-4d95-b85c-ea43b2fdcb5f.png)
+
+source the tcl\
+report_timing
+	
+![image](https://user-images.githubusercontent.com/118953929/210330233-1780801a-418a-4d7d-b156-ba3937f88b54.png)
+
+compile_ultra
+report_timing
+
+![image](https://user-images.githubusercontent.com/118953929/210330883-da88bd66-00d9-4f19-9aeb-47904c11dd76.png)
+
+set_multicycle_path -setup 2 -to prod_reg[*]/D -from [all_inputs]
+	
+![image](https://user-images.githubusercontent.com/118953929/210331052-2a95e910-f781-487e-95b2-c34ecb520a69.png)
+	
+set_multicycle_path -hold 1 -from [all_inputs] -to prod_reg[*]/D <- * multiple bit register
+
+![image](https://user-images.githubusercontent.com/118953929/210331697-1f9a725c-16d5-4d5f-87e1-a1fef66f73d8.png)
+
+</details>
+	
+
+# &#x1F537; Day_10
+	
+
+<details><summary><b> Lecture Report Timing </b></summary>
+
+$\fbox{Generate Timing Reports}$
+	
+	- report_timing -from DDF_A/clk
+	- report_timing -from DDF_A/clk -to DDF_A/d
+	- report_timing -fall_from DDF_A/clk
+	- report_timing -rise_from DDF_b/clk
+	- report_timing -delay_type min -to DDF_C/d
+	- report_timing -delay_type min -through INV/a
+	- report_timing -delay_type max -through AND/b
+	- report_timing -rise_from DDF_b/clk -delay_type max -nets -cap -trans -sig 4
+	
+
+** default is delay_type max
+	
+Propagation delay:
+	
+	Propagation delay is the amount of time required for a signal to be received after it has been sent; it is caused by the time it takes for the signal to travel through a medium
+	
+
+![image](https://user-images.githubusercontent.com/118953929/210332925-4eb7740d-d465-4f5d-b273-e8bfd22f708f.png)
+
+Timing paths - Further details
+	
+![image](https://user-images.githubusercontent.com/118953929/210336012-43be5a42-8cba-4013-9c65-3cc13401fcf7.png)
+	
+![image](https://user-images.githubusercontent.com/118953929/210337203-f283f648-b19d-49d5-9d1e-502bef70546e.png)
+
+	
+EG: 
+	
+** report_timing -delay_type max -to DFF_C/d
+	
+here:
+clock period --> 5ns, and setup for DFF_C --> 0.5ns
+Data at DFF_C needs to be stable by 4.5ns **(5-0.5)** --> Arrival time - required time
+	
+Max_paths and nworst path
+	
+***report_timing -to DFF_C/d -max_paths 2 <---- will report out 2
+						
+report_timing -max_paths 2 -nworst 2 <---- this will pick the worst of 2 out of 4 
+	
+
+</details>
+
+
+<details><summary><b> Lab Report Timing </b></summary>
+
+lab8_circuit_modified.v
+	
+![image](https://user-images.githubusercontent.com/118953929/210339169-9cbb2e5a-d5f7-4256-882a-1c5913eaee13.png)
+
+source the lab_cons_modified.tcl
+
+![image](https://user-images.githubusercontent.com/118953929/210339487-1114f589-24ec-4b7a-9632-8d18112e3bdb.png)
+	
+![image](https://user-images.githubusercontent.com/118953929/210339752-6d5dfc17-bba8-4d13-ab8c-d3290415b73d.png)
+
+report_timing -sig 4 -nosplit -trans -cap -nets -inp -from IN_A > report1.rpt\
+report_timing -sig 4 -nosplit -trans -cap -nets -inp -rise_from IN_A -to REGA_reg/D > report2.rpt
+
+
+![image](https://user-images.githubusercontent.com/118953929/210340313-d6382cc8-faa5-4e5b-96b2-a2999a6dd4cb.png)
+	
+report_timing -delay min -from IN_A
+
+![image](https://user-images.githubusercontent.com/118953929/210340757-6a220413-7a72-45da-ae61-dcf0d709f5eb.png)
+	
+![image](https://user-images.githubusercontent.com/118953929/210341134-1640d97c-095c-4fe0-8c88-f68c66aab244.png)
+	
+
+</details>
+
+
+<details><summary><b> Lab Check timing, check design, set_max_capacitance </b></summary>
+	
+![image](https://user-images.githubusercontent.com/118953929/210341541-c7e9a694-380a-4087-963d-36edb93bd358.png)
+
+check_timing
+	
+![image](https://user-images.githubusercontent.com/118953929/210341792-cfd3c491-a1f4-48f7-8e2b-94398b9072ac.png)
+
+report_constraints
+	
+![image](https://user-images.githubusercontent.com/118953929/210342012-e2714a44-0c26-4a77-92e3-540c4f516358.png)
+
+source lab8_cons.tcl and recheck timing and report constraints, observe the differents:
+	
+![image](https://user-images.githubusercontent.com/118953929/210342307-bbd52839-3028-4344-bc9f-d2c41957e815.png)
+	
+![image](https://user-images.githubusercontent.com/118953929/210342392-c98ddbfe-2e4a-49df-a92a-65e1c56c9f40.png)
+
+
+modified the mux_generate.v into as follow:
+	
+![image](https://user-images.githubusercontent.com/118953929/210343112-340248b5-7ff9-40a9-9794-2f9a902daf5c.png)
+
+![image](https://user-images.githubusercontent.com/118953929/210344068-64a8651b-da26-4f4b-b9b8-e48fc1bce9ed.png)
+
+write -f verilog -out mux_generate_modified_net.v
+
+![image](https://user-images.githubusercontent.com/118953929/210344439-c6a8e8b7-a289-4c88-82e9-6eac3519fa6e.png)
+
+report_timing -net -cap
+	
+![image](https://user-images.githubusercontent.com/118953929/210344689-37ff6cf3-9188-4be8-8fd0-6c593157337b.png)
+![image](https://user-images.githubusercontent.com/118953929/210344817-53abb53d-3f07-4a7e-a211-61fcf4f3a4c7.png)
+
+reduce capacitance
+
+![image](https://user-images.githubusercontent.com/118953929/210345009-339ca2bc-9b10-488b-93e5-29cfd393ff00.png)
+
+compile_ultra
+
+![image](https://user-images.githubusercontent.com/118953929/210345123-6662c3cc-9d3e-4dd8-a2cf-7573d697b944.png)
+
+![image](https://user-images.githubusercontent.com/118953929/210345276-b7ddd232-97c7-476e-b97f-0aff90326dca.png)
+	
+report_timing
+
+![image](https://user-images.githubusercontent.com/118953929/210345392-36a5d23a-1520-4874-9bd0-c8fb66d7b370.png)
+
+
+![image](https://user-images.githubusercontent.com/118953929/210345626-b2ab44e4-9d66-46f2-a41a-79fdbf8e555b.png)
+	
+![image](https://user-images.githubusercontent.com/118953929/210345858-a5c7826d-46b3-44f0-a87d-66b05e89290b.png)
+
+write -f ddc -out modified_net.v
+read_ddc modified_net.v
+	
+![image](https://user-images.githubusercontent.com/118953929/210346099-fa740343-12ae-4f41-8945-cdb81b9b1fbb.png)
+
+![image](https://user-images.githubusercontent.com/118953929/210346284-dcf197b4-36ef-4fde-97a6-26080c4a2507.png)
+
+report_constraints
+	
+![image](https://user-images.githubusercontent.com/118953929/210346398-ca893f92-e9ff-4fd1-b307-f268560af28c.png)
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+	
+
+
+
+
+
+
+
+	
+
+
+
+</details>
