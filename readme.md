@@ -11,7 +11,7 @@
 - [Day 7 : Basic of STA](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_7)
 - [Day 8 : Advanced Constraints](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_8)
 - [Day 9 : Optimization](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_9)
-- [Day 10 : Optimization](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_10)
+- [Day 10 : QOR](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_10)
  
 # &#x1F537; Day_0
 
