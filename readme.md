@@ -2410,9 +2410,84 @@ $\fbox{Type of SoC}$
 - Specialized application-specific integrated circuit SoCs designed for specific applications that $\colorbox{violet}{{\color{white}{DO NOT}}}$ fir into the above two 
 	
 
-$\fbox{SoC Structure}$
+$\fbox{Architecture ofSoC}$ - additional notes 
 	
-- 
+- SoC stands for System On Chip. It is a small integrated chip that contains all the required components and circuits of a particular system. The components of SoC include CPU, GPU, Memory, I/O devices, etc. 
+- SoC is used in various devices such as smartphones, Internet of Things appliances, tablets, and embedded system applications.
+
+![image](https://user-images.githubusercontent.com/118953929/210895027-aac905fe-efe3-407f-9865-5bd9e9f29e2a.png)
+	
+Processor:  It is the heart of SoC, usually SoC contains at least one or more than one coprocessor. It can be a microcontroller, microprocessor, or DSP. Most of the time DSP is used in every SoC as a processor.
+
+DSP: DSP stands for Digital Signal Processor. It is included in SoC to perform signal processing operations such as data collection, data processing, etc. it is also used for the purpose of decoding the images.
+
+Memory: Memory is used in SoC for the purpose of storage. It may be a volatile or non-volatile memory. Volatile memory includes RAM there are two types of RAM one is SRAM and another is DRAM. The non-volatile memory includes ROM.
+
+Encoder/Decoder: Used for the purpose of interrupting information and converting it into codes.
+
+Network Interface card: SoC has an internal interface or bus or network to connect all individual blocks. Basically, the Network interface card provides a connection of the network to the system.
+
+GPU: GPU stands for Graphical Processing Unit, used in SoC to visualize the interface. GPU is specially designed to speed up the operations related to image calculations. The basic blocks of the GPU are the Bus interface, Power Management Unit, Video Processing unit, Graphics Memory Controller, Display interface, etc.
+
+Peripheral devices: Externally connected devices/interfaces such as USB, HDMI, Wi-Fi, and Bluetooth are included in peripheral devices. This device is used in SoC to perform various operations.
+
+UART: Universal Asynchronous Receiver Transmitter is included in SoC which is used to transmit or receive serial data. Voltage regulators, Oscillators, clocks, and ADC/DAC are also part of SoC
+
+	
+$\fbox{SoC flow design}$
+	
+
+![image](https://user-images.githubusercontent.com/118953929/210896144-00b800da-d5f7-4ef3-8b08-8bdb82aa0fae.png)
+	
+
+$\fbox{H O W are microchips made ?}$
+	
+- are made by building up layers of interconnected patterns on a silicon wafer.
+	
+$\fbox{Introduction to BabySoC}$
+	
+	
+	
+* Figure from lecture video:
+
+![image](https://user-images.githubusercontent.com/118953929/210896467-33a87fea-cb93-406c-934f-953c5ce59283.png)
+	
+$\fbox{BabySoC Components}$
+	
+	
+	- RVMYTH: RVMYTH core is a simple RISCV - basedCPU
+	- PLL: A phase-locked loop or PLL is a control system that generates an output signal whose phase is related to the phase of an input signal. 
+	- DAC: Adigital-to-analog converter or DAC is a system that converts a digital signal into ananalog signal.
+	
+$\fbox{Introduction to Modelling}$
+
+	is the process of representing a model which includes its construction and working. This model is similar to a real system, which helps the analyst predict the effect of changes to the system. In other words, modelling is creating a model which represents a system including their properties. It is an act of building a model.
+	
+Short Additional notes:
+	
+$\fbox{Simulation is ?}$
+
+
+- Simulation of a system is the operation of a model in terms of time or space, which helps analyze the performance of an existing or a proposed system. 
+- In other words, simulation is the process of using a model to study the performance of a system. It is an act of using a model for simulation.
+
+
+	
+
+
+
+
+	
+
+
+	
+
+	
+
+
+
+	
+
 
 	
 	
