@@ -12,6 +12,7 @@
 - [Day 8 : Advanced Constraints](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_8)
 - [Day 9 : Optimization](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_9)
 - [Day 10 : QOR](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_10)
+- [Day 11 : Introduction to BabySoC](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_11)
  
 # &#x1F537; Day_0
 
@@ -2385,38 +2386,6 @@ report_constraints
 ![image](https://user-images.githubusercontent.com/118953929/210346398-ca893f92-e9ff-4fd1-b307-f268560af28c.png)
 
 
-
-
-
-
-
-
-	
-
-
-	
-
-	
-
-
-
-
-
-
-
-	
-
-	
-	
-
-
-
-
-
-
-
-	
-
-
-
 </details>
+	
+# &#x1F537; Day_11
