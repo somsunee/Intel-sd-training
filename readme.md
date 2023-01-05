@@ -2389,3 +2389,32 @@ report_constraints
 </details>
 	
 # &#x1F537; Day_11
+	
+<details><summary><b> Lecture sessions </b></summary>
+
+$\fbox{W H A T is SoC}$
+	
+SoC - SoC stands for System On Chip. It is a small integrated chip that contains all the required components and circuits of a particular system. The components of SoC include CPU, GPU, Memory, I/O devices, etc. SoC is used in various devices such as smartphones, Internet of Things appliances, tablets, and embedded system applications
+	
+	
+	
+- single die chip that has differents IP cores on it. These IPs could vary from completely DIGITAL to completely ANALOG
+- the design of a SoC includes a central processing unit, memory, ports for input and outputs, secondary storage devices, and peripheral interfaces
+- SoC with equivalent functionality will have increased $\colorbox{violet}{{\color{white}{performance}}}$ and reduced $\colorbox{violet}{{\color{white}{power}}}$ consumption as well as a smaller semiconductor die $\colorbox{violet}{{\color{white}{area}}}$
+
+
+$\fbox{Type of SoC}$
+	
+- SoCs built around a micrcontroller
+- SoCs built around a microprocessor, often found in cell phones
+- Specialized application-specific integrated circuit SoCs designed for specific applications that $\colorbox{violet}{{\color{white}{DO NOT}}}$ fir into the above two 
+	
+
+$\fbox{SoC Structure}$
+	
+- 
+
+	
+	
+</details>
+
