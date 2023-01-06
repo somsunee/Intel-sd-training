@@ -13,6 +13,7 @@
 - [Day 9 : Optimization](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_9)
 - [Day 10 : QOR](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_10)
 - [Day 11 : Introduction to BabySoC](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_11)
+- [Day 12 : BabySoC Modelling](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_12)
  
 # &#x1F537; Day_0
 
@@ -2470,26 +2471,9 @@ $\fbox{Simulation is ?}$
 
 - Simulation of a system is the operation of a model in terms of time or space, which helps analyze the performance of an existing or a proposed system. 
 - In other words, simulation is the process of using a model to study the performance of a system. It is an act of using a model for simulation.
-
-
-	
-
-
-
-
-	
-
-
-	
-
-	
-
-
-
-	
-
-
 	
 	
 </details>
+
+# &#x1F537; Day_12
 
