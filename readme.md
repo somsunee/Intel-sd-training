@@ -2476,4 +2476,27 @@ $\fbox{Simulation is ?}$
 </details>
 
 # &#x1F537; Day_12
+	
+<details><summary><b> Lecture sessions </b></summary>
+
+
+</details>
+	
+
+<details><summary><b> Lab activities </b></summary>
+
+$\fbox{modelling RVMYTH(RISC-V)}$
+
+![image](https://user-images.githubusercontent.com/118953929/210915373-872da35b-8f3d-4894-8e6d-4101449991cd.png)
+![image](https://user-images.githubusercontent.com/118953929/210916272-f4831d0b-b125-457a-92e0-0472eb1eff39.png)
+![image](https://user-images.githubusercontent.com/118953929/210924577-db7ef7b1-d2a5-4e04-9e0d-131e1d8f7ee4.png)
+
+The simulation result:
+	
+![image](https://user-images.githubusercontent.com/118953929/210925718-e88a5bf4-a8cb-4611-a6fe-30cd7ee9ff96.png)
+
+	
+</details>
+
+
 
