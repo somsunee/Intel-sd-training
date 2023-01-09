@@ -14,6 +14,7 @@
 - [Day 10 : QOR](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_10)
 - [Day 11 : Introduction to BabySoC](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_11)
 - [Day 12 : BabySoC Modelling](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_12)
+- [Day 13 : Post-synthesis simulation](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_13)
  
 # &#x1F537; Day_0
 
@@ -2479,6 +2480,32 @@ $\fbox{Simulation is ?}$
 	
 <details><summary><b> Lecture sessions </b></summary>
 
+$\fbox{Simulation and Modelling}$
+	
+Simulation plays an important role in the design of integrated circuits. Using simulation, a designer can determine both the functionality and the performance of a design before the expensive and time-consuming step of manufacture.
+
+
+Modeling plays a significant role in the efficient simulation of VLSI circuits. By simplifying the models used to analyze these circuits, it is possible to perform transient analyses with reasonable accuracy at speeds of one or two orders of magnitude faster than in conventional circuit simulation programs
+
+**Batch Mode**
+	Note:
+The runtime performance reduces if you use -debug,
+-debug_all, or -debug_access(+<option>). Use these
+options only when you require runtime debug abilities.
+
+Differences between debug_pp and debug_access
+	
+![image](https://user-images.githubusercontent.com/118953929/211324284-341c884e-467e-4c79-a182-3b306cbc294d.png)
+
+
+
+-debug_access option enables the dumping of the VPD and FSDB files for post-process debug, and enables reduced debug capabilities
+
+-debug_access+all enables debug capabilities equal to -debug_all (except it does not apply capability inside cells and encrypted modules)
+	
+
+
+
 
 </details>
 	
@@ -2494,9 +2521,68 @@ $\fbox{modelling RVMYTH(RISC-V)}$
 The simulation result:
 	
 ![image](https://user-images.githubusercontent.com/118953929/210925718-e88a5bf4-a8cb-4611-a6fe-30cd7ee9ff96.png)
+	
+$\fbox{modelling DAC(RISC-V)}$
 
+![image](https://user-images.githubusercontent.com/118953929/211228294-291f6168-ecd3-43a1-824b-b6739853da43.png)
+
+tb code:
+	
+![image](https://user-images.githubusercontent.com/118953929/211228378-e026ef7b-e5a1-42bb-93e2-9539e805b64f.png)
+	
+![image](https://user-images.githubusercontent.com/118953929/211228496-8e01e9b4-e232-45a4-9d07-2c0fd0ac9814.png)
+	
+![image](https://user-images.githubusercontent.com/118953929/211228502-dd5a8390-f549-4c84-8ff5-c4c5abe24612.png)
+
+
+$\fbox{modelling PLL}$
+
+![image](https://user-images.githubusercontent.com/118953929/211298488-f979cef3-5e7f-41d0-a541-7a6b9c4aa499.png)
+![image](https://user-images.githubusercontent.com/118953929/211298560-20ee4d1c-235f-464a-bf62-08c5cc7c6ae3.png)
+![image](https://user-images.githubusercontent.com/118953929/211298596-2d1a456e-edd7-4790-8c75-01aa5b5cb860.png)
+
+$\fbox{modelling risc_v and pll}$
+	
+![image](https://user-images.githubusercontent.com/118953929/211304672-c371300e-994b-4d54-bcd6-4d6a2d9aeb67.png)
+![image](https://user-images.githubusercontent.com/118953929/211304842-8aadeaa4-e10a-4911-bfd4-451e7bb8152a.png)
+![image](https://user-images.githubusercontent.com/118953929/211304872-6811bb14-9aa1-4528-8b93-19900acb6906.png)
+
+
+$\fbox{modelling DAC and rvmyth}$
+	
+use 'real' without wire:
+![image](https://user-images.githubusercontent.com/118953929/211309836-68935dc6-fbaf-41c9-bae6-b8b978f4fa74.png)
+![image](https://user-images.githubusercontent.com/118953929/211311252-6603760b-8c1f-4821-b497-a8cc0820b28a.png)
+![image](https://user-images.githubusercontent.com/118953929/211310945-b2eba314-7543-4a3f-956d-72a984bce842.png)
+
+$\fbox{vsdbabysoc}$
+	
+![image](https://user-images.githubusercontent.com/118953929/211315652-b845cea4-584b-4aef-aa7e-b8d84679663d.png)
+![image](https://user-images.githubusercontent.com/118953929/211319595-e255eaa0-da56-4049-b117-0db4af027e2a.png)
+![image](https://user-images.githubusercontent.com/118953929/211319654-a6819370-6cc3-4cbb-89b9-d0d737ed18d2.png)
+
+![image](https://user-images.githubusercontent.com/118953929/211319322-78415321-4bee-419d-90b8-2565a6140974.png)
 	
 </details>
+	
+# &#x1F537; Day_13
+	
+<details><summary><b> Lab activities </b></summary>
+	
+![image](https://user-images.githubusercontent.com/118953929/211334771-1099d776-145a-4068-a1b7-a24990f76505.png)
+![image](https://user-images.githubusercontent.com/118953929/211334870-16ddde60-7e72-442d-a0c2-b5635cc1688b.png)
+![image](https://user-images.githubusercontent.com/118953929/211335892-0cf4f40b-4c37-43c9-8eb2-fccc319b2dc9.png)
+![image](https://user-images.githubusercontent.com/118953929/211337498-d853625d-6cf0-4922-b4f2-927e988472c1.png)
+![image](https://user-images.githubusercontent.com/118953929/211337569-c6367a8e-6d7c-4e13-8ea4-d3c0960d9cd8.png)
+
+The synthesized code:
+	
+![image](https://user-images.githubusercontent.com/118953929/211337861-f9e784c3-c2f6-4371-aec7-1bb584a312de.png)
+
+
+
+	
+
 
 
 
