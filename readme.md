@@ -2567,6 +2567,31 @@ $\fbox{vsdbabysoc}$
 	
 # &#x1F537; Day_13
 	
+<details><summary><b> Lecture sessions </b></summary>
+
+Pre-Synthesis vs Post-synthesis 
+	
+	Main idea:
+	
+	- Pre synthesis simulation: simulation done according to the logic that written. Reports only functionality
+	- Post synthesis simulation/gate level simulation: simulation done after synthesis considering each and every gate delays into account. Reports the violations in both functionality and timing.
+
+	- The basic difference is the post-synthesis one has access to the synthesized netlist information, the pre-synthesis doesn't.
+	- Using the pre-synthesis option, enables you to see the netlist after the RTL elaboration. Whereas the post synthesis option takes the synthesized input as netlist
+	- sing a synthesized netlist as input provides information about clocks and clock-related logic in the design, which enables additional I/O planning capabilities in PinAhead
+
+
+Additional notes:
+	
+- Pre layout netlist: This consists of the information of gate to gate connections according to the logic.
+
+- Post layout netlist: This consists of the gate to gate and pin to pin connection of each gate including buffers.
+	
+	
+	
+
+</details>
+	
 <details><summary><b> Lab activities </b></summary>
 	
 ![image](https://user-images.githubusercontent.com/118953929/211334771-1099d776-145a-4068-a1b7-a24990f76505.png)
@@ -2581,7 +2606,7 @@ The synthesized code:
 
 ** Not able to proceed with the simulation so far, will update it later. 
 
-
+</details>
 	
 
 
