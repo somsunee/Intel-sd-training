@@ -2575,10 +2575,8 @@ Pre-Synthesis vs Post-synthesis
 	
 	- Pre synthesis simulation: simulation done according to the logic that written. Reports only functionality
 	- Post synthesis simulation/gate level simulation: simulation done after synthesis considering each and every gate delays into account. Reports the violations in both functionality and timing.
-
 	- The basic difference is the post-synthesis one has access to the synthesized netlist information, the pre-synthesis doesn't.
 	- Using the pre-synthesis option, enables you to see the netlist after the RTL elaboration. Whereas the post synthesis option takes the synthesized input as netlist
-	- sing a synthesized netlist as input provides information about clocks and clock-related logic in the design, which enables additional I/O planning capabilities in PinAhead
 
 
 Additional notes:
