@@ -2611,12 +2611,136 @@ The synthesized code:
 	
 <details><summary><b> Lecture Notes </b></summary>
 	
-
+R E C A P: 
 	
 
+$\fbox{P V T}$
+
+- PVT is the Process, Voltage, and Temperature. In order to make our chip to work after fabrication in all the possible conditions, we simulate it at different corners of process, voltage, and temperature. These conditions are called corners. All these three parameters directly affect the delay of the cell.
+	
+P R O C E S S:
+	
+- There are millions of transistors on the single-chip as we are going to lower nodes and all the transistors in a chip cannot have the same properties. Process variation is the deviation in parameters of the transistor during the fabrication.
+
+- Process variation is different for different technologies but is more dominant in lower node technologies because transistors are in millions on the chip. Process variations are due to variations in the manufacturing conditions such as temperature, pressure, and dopant concentrations.  As a consequence, the different transistors have different lengths throughout the chip. This makes the different propagation delay everywhere in a chip because a smaller transistor is faster and therefore the propagation delay is smaller.
+
+![image](https://user-images.githubusercontent.com/118953929/211852246-a1fd654d-b807-4349-b140-8baf53073c4d.png)
+	
+V O L T A G E:
+	
+- As we are going to the lower nodes the supply voltage for a chip is also going to less. Let’s say the chip is operating at 1.2V. So, there are chances that at certain instances of time this voltage may vary. It can go to 1.5V or 0.8V. To take care of this scenario, we consider voltage variation.
+
+There are multiple reasons for voltage variation.
+
+	- IR drop is caused by the current flow over the power grid network. 
+	- Supply noise caused by parasitic inductance in combination with resistance and capacitance. when the current is flowing through parasitic inductance (L) it will causes the voltage bounce.
+	
+- Power is distributed to all transistors on the chip with the help of a power grid network. Throughout a chip, the power supply is not constant it will change with the placement of cells. The power grid network is made up of metals and metals have their own resistance and capacitance. So, there is a voltage drop along the power grid.
+
+- The supply voltage reaching the power pins will not be the same for all standard cells and macros because of the resistance variation of the metals.
+	
+FOR EXAMPLE:
+
+- let's say:
+	
+Consider there are two cells, one which is placed closer to the DC power source, and others placed far. As the interconnect length is more for the farther cell, it has more resistance and results in a higher IR drop, and it reduces the supply voltage reaching the farthest cell. As the voltage is less, this cell will take more delay to power on than the cell which is placed closer. If nearer cells get higher voltage then the cell is faster and hence the propagation delay is also reduced. That is the reason because of which, there is variation in delays across the transistors.
+
+The delay of a cell is depending on the saturation current and the saturation current of a cell depends on the power supply. In this way, the power supply affects the propagation delay of a cell.
+
+The self-inductance of a supply line contributes also to a voltage drop. For example, when a transistor is switching to high, it takes a current to charge up the output load. This time-varying current (for a short period of time) causes an opposite self-induced electromotive force. The amplitude of the voltage drop is given by V=L*dI/dt, where L is the self-inductance and I is the current through the line.
+
+![image](https://user-images.githubusercontent.com/118953929/211854362-7b01268d-2136-4a82-8dd1-f11166c8562b.png)
+
+T E M P E R A T U R E:
+	
+- The transistor density is not uniform throughout the chip. Some regions of the chip have higher density and higher switching, resulting in higher power dissipation and Some regions of the chip have lower density and lower switching, resulting in lower power dissipation Hence the junction temperature at these regions may be higher or lower depending upon the density of transistors. Because of the variation in temperature across the chip, it introduces different delays across all the transistors.
+
+** When a chip is operating, the temperature can vary throughout the chip. This is due to the power dissipation in the MOS-transistors. The power consumption in the transistors is mainly due to switching, short-circuit, and leakage power consumption.
+	
+
+*** A higher temperature will decrease the threshold voltage. A lower threshold voltage means a higher current and therefore a better delay performance.
+	
+![image](https://user-images.githubusercontent.com/118953929/211855323-c17b62d3-bb1c-4e92-8aa8-674314485f28.png)
+
+
+$\fbox{WNS AND TNS}$	
+ 
+	
+- Worst Negative Path(WNS) points to the path having the maximum negative slack.
+- Total Negative Slack(TNS) gives the sum of all the negative slacks in the design.
+	
+***From the value of TNS, we can know the severity of the slack in total design and whether to proceed or not with the current design model.
+
+***WNS slack can be negative or zero or positve.
+	- If it is +ve, it means that there are no violations and it is giving the least of the positive slack. In this casee, TNS will be zero. 
+	
 </details>
 	
 <details><summary><b> Lab activities </b></summary>
+
+
+- Get all the .lib files in the work directory:
+git clone https://github.com/Geetima2021/vsdpcvrd.git
+![image](https://user-images.githubusercontent.com/118953929/211857653-31abe17e-2ffb-4e56-8a5c-8e0216d49043.png)
+
+> __WARNING!__  : you won't be able to read the lib file. WHY..? There are some errors. 
+	
+Delete the line from the .lib with the error stated. (REPEAT THIS FOR ALL THE .LIB) 
+![image](https://user-images.githubusercontent.com/118953929/211857690-c990d5f8-3112-4e56-bca3-95c006289946.png)
+	
+After done editing the file, 
+	
+- Load lc_shell and read_lib, the write the lib into db:
+	
+![image](https://user-images.githubusercontent.com/118953929/211858677-0e9b5700-8a41-4820-8930-ea46e70f5c0c.png)
+![image](https://user-images.githubusercontent.com/118953929/211858823-c558935b-f2de-4ec6-9360-11960e11b4d6.png)
+![image](https://user-images.githubusercontent.com/118953929/211859291-49c15183-c24c-4eda-b159-98a9cdeec23b.png)
+![image](https://user-images.githubusercontent.com/118953929/211859366-f49cda5d-c30f-4993-8ab7-1330d28fc7e8.png)
+
+- Add all the .db file that had been converted into the ~/.synopsys_dc.setup to set for the target_library and link_library:
+	
+![image](https://user-images.githubusercontent.com/118953929/211860225-ed376e4a-0961-4b07-a311-f0e96f4a63ea.png)
+
+- Make sure the link files are correct
+![image](https://user-images.githubusercontent.com/118953929/211860979-211237fd-d729-4c9b-bc3b-619e4ede1fe1.png)
+	
+- read_verilog vsdbabysoc.v (current_design is clk_gate) incorrect
+![image](https://user-images.githubusercontent.com/118953929/211861987-c82cbce2-4694-4049-a3d0-1599975f44d0.png)
+
+- read_file {vsdbabysoc.v avsd_pll_1v8.v avsddac.v mythcore_test.v} -autoread -format verilog -top vsdbabysoc
+![image](https://user-images.githubusercontent.com/118953929/211870687-4ba059dd-a31e-46c0-93c8-9c676f254486.png)
+
+- get the in/o:
+	
+![image](https://user-images.githubusercontent.com/118953929/211870805-ac60873e-bfe3-463f-b677-97c9e28526db.png)
+
+-link and compile:
+
+![image](https://user-images.githubusercontent.com/118953929/211870873-4563b6bd-6bf7-4cda-bd0b-9c01aa5ff59e.png)
+![image](https://user-images.githubusercontent.com/118953929/211870926-52f65387-0e6f-411c-8607-9dbb5859f89f.png)
+
+Report_qor before constrainining:
+
+![image](https://user-images.githubusercontent.com/118953929/211870972-b316b9de-9752-4854-b03a-e73606984362.png)
+
+Constraints:
+	
+![image](https://user-images.githubusercontent.com/118953929/211871057-2e778107-d109-42d1-85ca-544d5ea5bf28.png)
+	
+Report_qor:
+![image](https://user-images.githubusercontent.com/118953929/211871317-499038a9-4267-42a1-a81b-db6d815884b1.png)
+
+* cant get as in video, tbd
+
+	
+
+
+
+
+
+
+
+
 	
 
 	
