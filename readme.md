@@ -15,6 +15,7 @@
 - [Day 11 : Introduction to BabySoC](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_11)
 - [Day 12 : BabySoC Modelling](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_12)
 - [Day 13 : Post-synthesis simulation](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_13)
+- [Day 14 : Synopsys DC and timing analysis](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_14)
  
 # &#x1F537; Day_0
 
@@ -2605,6 +2606,23 @@ The synthesized code:
 ** Not able to proceed with the simulation so far, will update it later. 
 
 </details>
+	
+# &#x1F537; Day_14
+	
+<details><summary><b> Lecture Notes </b></summary>
+	
+
+	
+
+</details>
+	
+<details><summary><b> Lab activities </b></summary>
+	
+
+	
+
+</details>
+
 	
 
 
