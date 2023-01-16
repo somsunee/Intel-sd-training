@@ -16,6 +16,7 @@
 - [Day 12 : BabySoC Modelling](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_12)
 - [Day 13 : Post-synthesis simulation](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_13)
 - [Day 14 : Synopsys DC and timing analysis](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_14)
+- [Day 15 : Inception of EDA and PDK](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_15)
  
 # &#x1F537; Day_0
 
@@ -2741,23 +2742,9 @@ summary:
 ** the number doesnt look ok to me, will try with changing the constraint value., again
 
 
-
-
-
-	
-
-
-
-
-
-
-
-
-	
-
-	
-
 </details>
+	
+# &#x1F537; Day_15
 
 	
 
