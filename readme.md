@@ -2697,12 +2697,12 @@ After done editing the file,
 ![image](https://user-images.githubusercontent.com/118953929/211859291-49c15183-c24c-4eda-b159-98a9cdeec23b.png)
 ![image](https://user-images.githubusercontent.com/118953929/211859366-f49cda5d-c30f-4993-8ab7-1330d28fc7e8.png)
 
-- Add all the .db file that had been converted into the ~/.synopsys_dc.setup to set for the target_library and link_library:
+- Add all the .db file that had been converted into the ~/.synopsys_dc.setup to set for the target_library and link_library, separately:
 	
-![image](https://user-images.githubusercontent.com/118953929/211860225-ed376e4a-0961-4b07-a311-f0e96f4a63ea.png)
+- Make sure the link files are correct, separately, each:
+![image](https://user-images.githubusercontent.com/118953929/212579297-cdae8d91-3fe7-40b7-a219-fc9382b821c4.png)
 
-- Make sure the link files are correct
-![image](https://user-images.githubusercontent.com/118953929/211860979-211237fd-d729-4c9b-bc3b-619e4ede1fe1.png)
+
 	
 - read_verilog vsdbabysoc.v (current_design is clk_gate) incorrect
 ![image](https://user-images.githubusercontent.com/118953929/211861987-c82cbce2-4694-4049-a3d0-1599975f44d0.png)
@@ -2714,10 +2714,10 @@ After done editing the file,
 	
 ![image](https://user-images.githubusercontent.com/118953929/211870805-ac60873e-bfe3-463f-b677-97c9e28526db.png)
 
--link and compile:
+-link and compile, each time:
+	
+![image](https://user-images.githubusercontent.com/118953929/212579321-099e3494-5056-418e-88e1-19f00421af89.png)
 
-![image](https://user-images.githubusercontent.com/118953929/211870873-4563b6bd-6bf7-4cda-bd0b-9c01aa5ff59e.png)
-![image](https://user-images.githubusercontent.com/118953929/211870926-52f65387-0e6f-411c-8607-9dbb5859f89f.png)
 
 Report_qor before constrainining:
 
@@ -2728,9 +2728,21 @@ Constraints:
 ![image](https://user-images.githubusercontent.com/118953929/211871057-2e778107-d109-42d1-85ca-544d5ea5bf28.png)
 	
 Report_qor:
-![image](https://user-images.githubusercontent.com/118953929/211871317-499038a9-4267-42a1-a81b-db6d815884b1.png)
 
-* cant get as in video, tbd
+pasted one of db:
+	
+![image](https://user-images.githubusercontent.com/118953929/212579395-8e799ff1-6a20-4b15-8bf3-245c7e08dbe9.png)
+	
+summary:
+	
+	
+![image](https://user-images.githubusercontent.com/118953929/212579890-f9d065df-87ed-4c2b-a81c-30488eccd650.png)
+	
+** the number doesnt look ok to me, will try with changing the constraint value., again
+
+
+
+
 
 	
 
