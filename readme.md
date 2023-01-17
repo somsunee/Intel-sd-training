@@ -17,6 +17,7 @@
 - [Day 13 : Post-synthesis simulation](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_13)
 - [Day 14 : Synopsys DC and timing analysis](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_14)
 - [Day 15 : Inception of EDA and PDK](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_15)
+- [Day 16 : Good Floorplan vs Bad Floorplan and Introduction to library cells](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_16)
  
 # &#x1F537; Day_0
 
@@ -2742,18 +2743,420 @@ summary:
 ** the number doesnt look ok to me, will try with changing the constraint value., again
 
 
+
 </details>
+
 	
 # &#x1F537; Day_15
 	
 <details><summary><b> Lecture : How to talk to computers 
-	-- Introduction to QFN-48 Package, chip, pads, core, die and IPs </b></summary>
+	--> Introduction to QFN-48 Package, chip, pads, core, die and IPs </b></summary>
 	
+	
+![image](https://user-images.githubusercontent.com/118953929/212797814-388f5725-e6a3-4622-90b0-625383c68a2a.png)
+
+$\fbox{H O W is the chip is connected to the package ?}$
+
+![image](https://user-images.githubusercontent.com/118953929/212799685-d7bee61d-32ba-470f-bbdd-2a2b111c3780.png)
+
+$\fbox{I N S I D E the chip}$
+	
+![image](https://user-images.githubusercontent.com/118953929/212807090-56eaa46b-7dbd-472f-b29b-56ec9f1a5c2b.png)
+
+EG: 
+
+RISCV SoC
+
+	
+![image](https://user-images.githubusercontent.com/118953929/212810025-7f10447a-3cf8-4c32-b4ae-8f380e8104a2.png)
 	
 
 </details>
+
+<details><summary><b> Lecture : How to talk to computers --> Introduction to RISC-V </b></summary>
+
+
+$\fbox{RISC-V Instruction Set Architecture (ISA) }$
 	
 
+![image](https://user-images.githubusercontent.com/118953929/212811505-0a19d7ba-118f-40ad-8a27-a9e763cbe108.png)
+
+
+**Additional take aways:
+	
+- An assembly language is a type of low-level programming language that is intended to communicate directly with a computer’s hardware. Unlike machine language, which consists of binary and hexadecimal characters, assembly languages are designed to be readable by humans
+	
+	MAIN POINTS:
+	
+	- An assembly language is a type of programming language that translates high-level languages into machine language.
+	- It is a necessary bridge between software programs and their underlying hardware platforms.
+	- Assembly language relies on language syntax, labels, operators, and directives to convert code into usable machine instruction.
+	- Assembly language may pass through single-pass or multi-pass assemblers, each with specific uses and benefits.
+	- Today, assemble languages are rarely written directly, although they are still used in some niche applications such as when performance requirements are particularly high.
+
+	
+
+</details>
+
+<details><summary><b> Lecture : How to talk to computers --> From software Applications to Hardware </b></summary>
+	
+
+![image](https://user-images.githubusercontent.com/118953929/212911857-3e329b2f-13c6-4327-afd3-402096e22cfd.png)
+
+	
+</details>
+	
+<details><summary><b> SKY_L1 - Introduction to all components of open-source digital asic design </b></summary>
+
+	
+$\fbox{Open Source Digital Asic Design }$
+	
+ASIC 
+- EDA tools 
+	- Qflow
+	- OpenROAD
+	- OpenLANE
+- RTL Designs
+	- librecores.org
+	- opencores.org
+	- github.com
+- PDK Data
+	
+W H A T is PDK ?
+	
+- PDK basically stands for Process Design Kit 
+- Collection of files used to model a fabrication process for the EDA tools used to design an IC 
+	
+Eg:
+
+OpenPDK SkyWater ( Real )
+	
+- The SkyWater Open Source PDK is a collaboration between Google and SkyWater Technology Foundry to provide a fully open source Process Design Kit and related resources, which can be used to create manufacturable designs at SkyWater’s facility.
+
+- As of May 2020, this repository is targeting the SKY130 process node. If the SKY130 process node release is successful then in the future more advanced technology nodes may become available.
+
+
+</details>
+	
+<details><summary><b> SKY_L2 - Simplified RTL2GDS flow </b></summary>
+
+
+$\fbox{Simplified RTL to GDSll Flow}$
+	
+![image](https://user-images.githubusercontent.com/118953929/212916119-3f6487ac-6c0a-472f-bf07-e5fca890cacd.png)
+	
+- Synthesis
+- Floor/Power Planning
+- Placement
+- Clock Tree Synthesis
+- Routing
+- Sign off
+	
+SYNTHESIS:
+	
+- Converts RTL to a circuit out of components from the standard cell library (SCL)
+- Standards cells have regular layout
+- Each cells comes with different views/models 
+	eg:
+	- Electrical, HDL, SPICE, etc
+	
+FLOOR/POWER PLANNING:
+	
+- Chip Floor-planning 
+	- Partition the chip die between different system building blocks and place the I/O pads
+	
+- Macro Floor-planning
+	- Defines the dimensions, pin locations, rows definition, and routing tracks
+	
+- Power Planning
+	- typically shift the power by power pads. 
+	
+PLACEMENT:
+	
+- Place the cells on the floorplan rows, alligned with the sites;
+	- theoretically, should be place close to each other to reduce interconnect delays, and enable successful routing.
+	- usually done in 2 steps;
+		- Global
+		- Detailed
+	
+CTS
+	
+- Create a clock distribution network
+	- To deliver the clock to all sequential elements 
+	- with minimum skew (zero is hard to achieve)
+	- and in a good shape
+
+ROUTE
+	
+- Implement the interconnect using the available metal layers
+- Metal tracks form a routing grid
+- Routing grid is huge
+- Divide and Conquer
+	- Global Routing: Generates routing guides
+	- Detailed Routing: Uses the routing guides to implement the actual wiring
+		
+SIGN OFF
+
+- Physical Verifications
+	- Design Rules Checking (DRC)
+	- Layout vs Schematic (LVS)
+	
+- Timing Verification
+	- Static Timing Analysis (STA)
+	
+	
+</details>
+	
+<details><summary><b> SKY_L3 - Introduction to OpenLANE and Strive Chipsets </b></summary>
+
+$\fbox{Introducing OPENLANE}$
+	
+- Started as an Open-Source Flow for a True Open Source Tape-Out Experiment
+- Strive is a family of open everything SoCs 
+	- Open PDK, Open EDA, Open RTL
+	
+Strive SoC family
+	
+![image](https://user-images.githubusercontent.com/118953929/212922415-e9ae6732-9c44-47d1-a84f-ddc0dfa64390.png)
+
+
+M A I N Goal:
+- Produce a clean GDSll with no human intervention ( no-human-in-the-loop )
+	- CLEAN means:
+		- No LVS violations
+		- No DRC violations
+		- Timing Violations 
+	
+- Can be used to harden Macros and Chips 
+	- Two modes of operation:
+		- Autonomous or Interactive
+	
+- Design Space Exploration:
+	- Find the best set of flow configurations
+	
+- Large number of design examples
+
+
+</details>
+	
+<details><summary><b> SKY_L3 - Introduction to OpenLANE detailed ASIC design flow </b></summary>
+
+_M a c r o Hardening Flow_:
+
+![image](https://user-images.githubusercontent.com/118953929/212925732-7a0b43eb-6728-46f4-9b98-96f9be9a4b57.png)
+	
+	1) RTL Synthesis and STA
+		- The design is synthesized into a gate-level netlist using yosys and static timing analysis is performed on the resulting netlist using OpenSTA
+	2) Insertion of DFT structures
+		- An open-source Design For Testability (DFT) toolchain, Fault, can optionally be used to modify the netlist, inserting scan chains and the necessary IO ports to scan and test the design after fabrication
+	3) Physical Implementation
+		- Advancing with the physical implementation, we note that most of the tools in this stage are used from within the OpenROAD application in combination with other tools, some of them are custom and based on the OpenDB infrastructure, while others are indpendent
+	4) Post routing evaluation of results
+		- DRC and LVS are then performed using magic and netgen. Antenna checking is performed by either OpenROAD’s ARC (Antenna Rule Checker) or using magic. Extraction of parasitics from the routed layout is then done using SPEF EXTRACTOR, followed by another round of static timing analysis to have more accurate timing reports that correspond to the actual physical layout.
+
+	The final outputs of the flow, among various physical views and reports, are mainly GDSII and LEF views, which can be used in bigger designs
 
 
 
+</details>
+	
+<details><summary><b> Get familiar to open-source EDA tools - SKY_L1 - OpenLANE directory in detail </b></summary>
+	
+![image](https://user-images.githubusercontent.com/118953929/212942090-379e8cd0-3311-40a1-a3c7-88de54d54e7c.png)
+![image](https://user-images.githubusercontent.com/118953929/212942183-8a1399d3-029d-4b94-8590-83dcaabb6435.png)
+![image](https://user-images.githubusercontent.com/118953929/212942298-37695fbf-bd41-4754-aab3-05abb8d3b321.png)
+![image](https://user-images.githubusercontent.com/118953929/212942374-740c80c7-0425-491e-999a-c84d438774ac.png)
+![image](https://user-images.githubusercontent.com/118953929/212942467-59ee491f-02e3-4b09-8c6a-995528cb519a.png)
+
+</details>
+	
+<details><summary><b> Get familiar to open-source EDA tools - SKY_L2 - Design Preparation Step </b></summary>
+	
+![image](https://user-images.githubusercontent.com/118953929/212947848-0a680040-7114-4299-89b2-fd209ee1d2c8.png)
+![image](https://user-images.githubusercontent.com/118953929/212947916-56a209ab-c429-4a7e-9d1a-9d1bd4232905.png)
+![image](https://user-images.githubusercontent.com/118953929/212948017-1bda242e-5153-486a-90f2-ddfd36d28de4.png)
+![image](https://user-images.githubusercontent.com/118953929/212948304-44a14a79-f4f5-4f0e-9591-14f47d8c59eb.png)
+
+</details>
+	
+<details><summary><b> Get familiar to open-source EDA tools - SKY_L3 - Review files after design prep and run synthesis </b></summary>
+
+![image](https://user-images.githubusercontent.com/118953929/212953648-16f68d70-c64b-411a-831e-68ed941301ff.png)
+
+</details>
+	
+<details><summary><b> Get familiar to open-source EDA tools - SKY_L4 - OpenLANE Project Git Link Description </b></summary>
+
+Reference links:
+	
+- https://github.com/efabless/openlane
+- https://gitlab.com/gab13c/openlane-workshop
+- https://github.com/efabless/OpenLane#openlane-design-stages
+- https://github.com/efabless/OpenLane/blob/master/docs/source/advanced_readme.md
+	
+	
+
+***RUN IN SEQUENCE:\
+	run_synthesis\
+	run_floorplan\
+	run_placement\
+	run_cts\
+	run_routing\
+	write_powered_verilog followed by set_netlist \
+	::env(DESIGN_NAME).powered.v\
+	run_magic\
+	run_magic_spice_export\
+	run_magic_drc\
+	run_lvs\
+	run_antenna_check
+
+</details>
+	
+<details><summary><b> Get familiar to open-source EDA tools - SKY_L5 - Steps to characterize synthesis results </b></summary>
+		
+![image](https://user-images.githubusercontent.com/118953929/212957604-ebff835e-9f23-48ca-9d2d-6ffe08f3c78e.png)
+![image](https://user-images.githubusercontent.com/118953929/212959719-449894d8-97ac-49f3-83ce-32a67a9bdca8.png)
+![image](https://user-images.githubusercontent.com/118953929/212959770-e4485ae1-6a4b-4d06-8409-2f4c64efa2eb.png)
+![image](https://user-images.githubusercontent.com/118953929/212960310-f5ad163d-2f00-4253-915b-3925ccf35af2.png)
+
+</details>
+	
+	
+# &#x1F537; Day_16
+	
+<details><summary><b> Chip Floor Planning considerations - SKY_L1 - Utilization factor and aspect ratio </b></summary>
+
+$\fbox{HOW do we define Width and Height of Core and Die ?}$
+
+![image](https://user-images.githubusercontent.com/118953929/212966415-64630003-c8ba-4708-8f08-f698798b284b.png)
+![image](https://user-images.githubusercontent.com/118953929/212966504-053e534f-697c-4081-8116-366ebc474ff8.png)
+
+Small R E C A P on die and core 
+	
+![image](https://user-images.githubusercontent.com/118953929/212966626-15394ea5-9577-40d4-8a14-40aed6c94eb9.png)
+
+So now, place all the logical cells inside the 'core'
+
+![image](https://user-images.githubusercontent.com/118953929/212967297-3af75f49-de2d-4f3a-bb16-0f4d61b1f1d8.png)
+
+100 % utilization 
+	
+Utilization Factor = Area Ocupied by Netlist / Total Area of the core
+	
+	So, in our case:
+	
+	UF = (4 x 1 sq unit)/(2 unit x 2 unit)
+	   = 4 sq unit/ 4 sq unit
+	   = 1 
+	
+	--> Utilization Factor is 1 , which means --> core is completedly occupied, no any extra standard cells is allowed to add/ NOT POSSIBLE at all
+	
+****So, in real industry, we always go for 0.5 or 0.6 Utilization Factor ( more logical and realistic )
+
+</details>
+	
+<details><summary><b> Chip Floor Planning considerations - SKY_L2 - Concept of pre-placed cells </b></summary>
+	
+Aspect ratio= Height/Width
+	
+![image](https://user-images.githubusercontent.com/118953929/212970023-896969e3-f07c-4212-954d-e2cbf38cdde2.png)
+
+$\fbox{HOW do we define Locations of Pre-placed cells ?}$
+	
+![image](https://user-images.githubusercontent.com/118953929/212972143-ff56a183-2f16-44c2-8185-1220ee92c5ad.png)
+![image](https://user-images.githubusercontent.com/118953929/212972189-ba984aa5-e42c-4bb4-98c6-cbf63e7630ad.png)
+![image](https://user-images.githubusercontent.com/118953929/212972227-2fc5f4c5-bf8c-428e-8bc2-14ffd29d49f7.png)
+	
+Eg:
+
+- Similarly, ip's available:
+	
+![image](https://user-images.githubusercontent.com/118953929/212972559-ee6daacc-0c30-4233-ada5-b88c48093c2f.png)
+	
+- The arrangement of these IP's in a chip is referred as FLOORPLANNING
+- These IP's/blocks have user-defined location, hence are placed in chip before automated placement-and-routing and are called as _**pre-placed cells**_
+- Automated placement and routing tools places the remaining logical cells in the design onto chip
+
+</details>
+	
+<details><summary><b> Chip Floor Planning considerations - SKY_L3 - De-coupling capacitors </b></summary>
+	
+![image](https://user-images.githubusercontent.com/118953929/212974068-9ae552ee-335a-4ae3-9cdc-7cc6decd2397.png)
+	
+So now,
+	
+$\fbox{HOW do we surround pre-placed cells with Decoupling capacitors ?}$
+
+Consider the amount of the switching current required for a complex circuit something like below:
+	
+![image](https://user-images.githubusercontent.com/118953929/212974477-b8e01cfc-78e5-4538-bea7-b81965f8e239.png)
+	
+1) Consider capacitance to be zero for the discussion. Rdd, Rss,Ldd and Lss are well defined values.
+2) During switching operation, the circuit demands switching current eg, peak current
+3) Now, due to the presence of Rdd, and Ldd, there will be a voltage drop across them anf the voltage at Node 'A' would be Vdd' instead of Vdd
+	
+Scenario:
+	
+- If Vdd' goes below the noise margin, due to Rdd and Ldd, the logic '1' at the output of the circuit wont be detected as logic '1' at the input of the circuit
+
+Noise Margin summary:
+Figure from lecture's video:
+![image](https://user-images.githubusercontent.com/118953929/212976318-cd96a95c-69d9-4d38-ac5a-74a12bc1f666.png)
+
+** For any signal to be considered as logic '0' and logic '1', it should be in the NM(L) and NM(H) ranges, respectively
+	
+S O L U T I O N 
+	
+: Add Decoupling Capacitors
+	
+- Addition of Decoupling Capacitor in parallel with the circuit 
+- Everytime the circuit switches, it draws current from Cd, whereas, the RL network is used to replenish the charge into Cd
+	
+![image](https://user-images.githubusercontent.com/118953929/212977499-b1201d65-3d26-4e29-9d44-06ef3828c70e.png)
+
+</details>
+	
+<details><summary><b> Chip Floor Planning considerations - SKY_L4 - Power Planning </b></summary>
+	
+$\fbox{HOW do we do Power Planning ?}$
+	
+![image](https://user-images.githubusercontent.com/118953929/212978098-9ec27062-da28-46aa-8ca2-86157b324197.png)
+![image](https://user-images.githubusercontent.com/118953929/212978932-10c21dca-df8b-4c2e-bf5d-c0f4025980d0.png)
+![image](https://user-images.githubusercontent.com/118953929/212979703-9e054c2f-1c25-4dfa-8dd8-b39efa9eac84.png)
+
+This meant :
+- all capacitors which were charged to 'V' volts will have to discharge to '0' volts through single 'Ground' tap point. 
+- This will cause a bump in 'Ground' tap point. -- Ground Bounce
+![image](https://user-images.githubusercontent.com/118953929/212979819-69a923ab-7d79-4d06-9e91-3d3a47ebfeaf.png)
+- Also, all capacitors which were '0' volts will have to charge to 'V' volts through single 'Vdd' tap point. 
+- This will cause lowering of the voltage at 'Vdd' tap point.
+- The Voltage droop is happened. 
+
+![image](https://user-images.githubusercontent.com/118953929/212980567-9329bb01-e882-4161-a6ee-0cc277adb860.png)
+
+</details>
+
+<details><summary><b> Chip Floor Planning considerations - SKY_L5 - Pin Placement and logical cell placement blockage </b></summary>
+
+</details>
+
+<details><summary><b> Chip Floor Planning considerations - SKY_L6 - Steps to run floorplan using OpenLANE </b></summary>
+
+</details>
+
+<details><summary><b> Chip Floor Planning considerations - SKY_L7 - Review floorplan files and steps to view floorplan </b></summary>
+
+</details>
+
+<details><summary><b> Chip Floor Planning considerations - SKY_L8 - Review floorplan layout in Magic </b></summary>
+
+</details>
+
+<details><summary><b> Library Binding and Placement - SKY_L1 - Netlist binding and initial place design </b></summary>
+
+</details>
+
+<details><summary><b> Library Binding and Placement - SKY_L2 - Optimize placement using estimated wire-length and capacitance </b></summary>
+
+	
+</details>
