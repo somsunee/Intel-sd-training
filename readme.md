@@ -2745,7 +2745,13 @@ summary:
 </details>
 	
 # &#x1F537; Day_15
+	
+<details><summary><b> Lecture : How to talk to computers 
+	-- Introduction to QFN-48 Package, chip, pads, core, die and IPs </b></summary>
+	
+	
 
+</details>
 	
 
 
