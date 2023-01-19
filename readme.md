@@ -18,6 +18,7 @@
 - [Day 14 : Synopsys DC and timing analysis](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_14)
 - [Day 15 : Inception of EDA and PDK](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_15)
 - [Day 16 : Good Floorplan vs Bad Floorplan and Introduction to library cells](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_16)
+- [Day 17 : Design library cell using Magic layout and ngspice characterization](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_17)
  
 # &#x1F537; Day_0
 
@@ -3138,25 +3139,184 @@ This meant :
 
 <details><summary><b> Chip Floor Planning considerations - SKY_L5 - Pin Placement and logical cell placement blockage </b></summary>
 
+$\fbox{HOW do we do Pin Placement ?}$
+
+![image](https://user-images.githubusercontent.com/118953929/213513844-4cdcd0c0-e4d5-41dd-8346-b6df511e0463.png)
+![image](https://user-images.githubusercontent.com/118953929/213518348-f40b6bcb-ceb6-4cd2-94ef-9fd16e2c21eb.png)
+	
 </details>
 
 <details><summary><b> Chip Floor Planning considerations - SKY_L6 - Steps to run floorplan using OpenLANE </b></summary>
 
+![image](https://user-images.githubusercontent.com/118953929/213522001-75c855b5-31fc-49b5-9991-589699936853.png)
+![image](https://user-images.githubusercontent.com/118953929/213522037-cedf9d09-1b66-4ddd-ae96-753a737172c5.png)
+![image](https://user-images.githubusercontent.com/118953929/213522149-bc7321c5-1876-4da8-8ff8-f2fe0293d750.png)
+![image](https://user-images.githubusercontent.com/118953929/213522190-ce2c4950-b4aa-4506-bd07-d564f303ff27.png)
+![image](https://user-images.githubusercontent.com/118953929/213522230-fb1ab5c9-0077-4b10-8834-89dbadddcb4b.png)
+
+
 </details>
 
 <details><summary><b> Chip Floor Planning considerations - SKY_L7 - Review floorplan files and steps to view floorplan </b></summary>
+	
+![image](https://user-images.githubusercontent.com/118953929/213527358-67b7b0a3-028a-4b19-bae0-31e3e3c44e84.png)
+![image](https://user-images.githubusercontent.com/118953929/213527404-968b8e58-0616-4f66-be78-3c72f5589043.png)
+![image](https://user-images.githubusercontent.com/118953929/213527455-42f92f16-69a2-447c-bd39-ed03415a7744.png)
+![image](https://user-images.githubusercontent.com/118953929/213527595-e5032a89-288d-43ed-bc96-53e323c9b98d.png)
+
 
 </details>
 
 <details><summary><b> Chip Floor Planning considerations - SKY_L8 - Review floorplan layout in Magic </b></summary>
 
+![image](https://user-images.githubusercontent.com/118953929/213529963-dac83f08-8803-45e9-bd57-9b381b880e74.png)
+![image](https://user-images.githubusercontent.com/118953929/213530001-c0f5f221-540b-4bd7-b34e-615ece09e8bf.png)
+![image](https://user-images.githubusercontent.com/118953929/213530045-2d87fb15-176e-4a19-907d-3704ccd2fff9.png)
+
+	
 </details>
 
 <details><summary><b> Library Binding and Placement - SKY_L1 - Netlist binding and initial place design </b></summary>
+
+$\fbox{HOW do we do Placement and Routing ?}$
+	
+First, we must bind the netlist with physical cells
+
+![image](https://user-images.githubusercontent.com/118953929/213533455-2259e9dd-80d5-47c6-85b3-65fc072204b4.png)
+![image](https://user-images.githubusercontent.com/118953929/213533493-ad1fb6b9-7994-410e-a962-e4df35918142.png)
+![image](https://user-images.githubusercontent.com/118953929/213533532-fed5a5af-5a1d-47ab-aea2-f562ae59d5de.png)
+![image](https://user-images.githubusercontent.com/118953929/213533600-b227fa2e-cc90-44c5-9bf3-154e27e11313.png)
 
 </details>
 
 <details><summary><b> Library Binding and Placement - SKY_L2 - Optimize placement using estimated wire-length and capacitance </b></summary>
 
+![image](https://user-images.githubusercontent.com/118953929/213534733-0744067e-ec16-45af-9605-cea308bed7db.png)
+
+OPTIMIZE PLACEMENT
+
+- This is the stage where we estimate wire length and capacitance and, based on that, insert repeaters.
 	
 </details>
+	
+<details><summary><b> Library Binding and Placement - Final placement optimization </b></summary>
+
+
+The placement happens for each stage of the FF condition:
+
+Eg; for the 2nd stage:
+
+![image](https://user-images.githubusercontent.com/118953929/213537358-511e1900-c3bf-4840-9ead-79c6d935bb23.png)
+
+
+</details>
+	
+<details><summary><b> Library Binding and Placement - Need for libraries and characterization </b></summary>
+
+![image](https://user-images.githubusercontent.com/118953929/213540900-fd273e39-9b63-4b25-bce5-d0584ff5ca75.png)
+
+
+
+</details>
+	
+<details><summary><b> Library Binding and Placement - Congestion aware placemnet using Replace </b></summary>
+
+![image](https://user-images.githubusercontent.com/118953929/213540804-b3d632c3-de22-48f4-b001-73862cf229fa.png)
+![image](https://user-images.githubusercontent.com/118953929/213541184-e0f298ec-701a-4a2f-8a0f-9b92e12d5ea7.png)
+![image](https://user-images.githubusercontent.com/118953929/213541205-9b80c7a8-4e08-4a4e-b78d-ed14d21f1954.png)
+![image](https://user-images.githubusercontent.com/118953929/213541237-5a6eaf93-1324-4bf7-a142-a1d3d3d1c2ec.png)
+
+</details>
+	
+<details><summary><b> Cell design and characterization flows - Inputs for cell design flow </b></summary>
+
+![image](https://user-images.githubusercontent.com/118953929/213543184-488cb0c5-bdf8-4ed5-afcc-65eaeac30fd2.png)
+![image](https://user-images.githubusercontent.com/118953929/213543208-a4bfdff4-9a8e-4146-855f-66a35594f84e.png)
+![image](https://user-images.githubusercontent.com/118953929/213543247-536f4c5a-6e18-4a72-97d8-79e25f3b344e.png)
+
+	
+</details>
+
+<details><summary><b> Cell design and characterization flows - Circuit design step </b></summary>
+![image](https://user-images.githubusercontent.com/118953929/213544288-7806aa54-ef2f-4864-8172-4ec58b190f82.png)
+	
+- Supply voltage --> noise margin level ( by top level)
+- Metal layer --> certain lib built on certain metal layer
+- Pin location --> user define
+- Drawn gate-length --> user define
+![image](https://user-images.githubusercontent.com/118953929/213544341-d5acc5b6-6560-4f2c-b458-e98829ff3b6b.png)
+
+	
+</details>
+	
+<details><summary><b> Cell design and characterization flows - Layout design step </b></summary>
+
+![image](https://user-images.githubusercontent.com/118953929/213545811-683299fa-ee68-4373-b5df-250849e1c68e.png)
+![image](https://user-images.githubusercontent.com/118953929/213545926-0e958055-d8b2-44f2-a97e-5d9e8b4f1636.png)
+![image](https://user-images.githubusercontent.com/118953929/213546404-a1c152d9-5cb4-4e2c-95be-91c23b3bdf02.png)
+
+	
+</details>
+	
+<details><summary><b> Cell design and characterization flows - Typical characterization flow </b></summary>
+
+![image](https://user-images.githubusercontent.com/118953929/213547150-314a0bd6-2ad7-4eb8-9397-9c834b2ae5a6.png)
+
+Steps:
+	- Read model file
+	- Read extracted SPICE netlist
+	- Define behaviour of buffer
+	- Read sub circuit of inverter
+	- Attach necessary power sources 
+	- Apply stimulus
+	- Provide commands
+	
+
+	
+</details>
+
+<details><summary><b> General timing characterization parameters - Timing threshold definition </b></summary>
+
+![image](https://user-images.githubusercontent.com/118953929/213548260-64e1647a-cd5c-4b0a-8671-bc6f16413dd2.png)
+![image](https://user-images.githubusercontent.com/118953929/213548311-7b691555-277b-473c-907f-469254a387ef.png)
+![image](https://user-images.githubusercontent.com/118953929/213548360-502436ed-3999-489f-ac44-64b3efce05a0.png)
+![image](https://user-images.githubusercontent.com/118953929/213548420-f9b1b6e4-ea76-40f5-8adc-93735a91063e.png)
+
+** threshold -- 50% of the input
+	
+
+
+</details>
+
+<details><summary><b> General timing characterization parameters - Propagation delay and transition time </b></summary>
+
+H O W to calculate propagation delay?
+
+![image](https://user-images.githubusercontent.com/118953929/213548611-c18b2f33-fa0a-42c3-935a-0befea7ede66.png)
+
+Eg:
+Here, it a positive delay:
+![image](https://user-images.githubusercontent.com/118953929/213548794-f73eb31f-5040-4c5b-a9f5-5e57a73051fa.png)
+
+So, as when the threhold point changes, it becomes negative delay
+![image](https://user-images.githubusercontent.com/118953929/213548914-90bc7faf-71cd-494f-a53f-aec7f1176ea7.png)
+	
+H O W to calculate transition time?
+	
+![image](https://user-images.githubusercontent.com/118953929/213549068-c0b5c6ad-0f7a-4c0e-810a-21511c252b6f.png)
+![image](https://user-images.githubusercontent.com/118953929/213549109-a99b0699-a960-4e04-9bd1-33634cd1fd4b.png)
+
+Eg:
+![image](https://user-images.githubusercontent.com/118953929/213549182-0171ad01-f8f8-4e76-85c4-dfb6755430e9.png)
+
+</details>
+
+# &#x1F537; Day_17
+	
+<details><summary><b> LABS for CMOS inverter ngspice simulations </b></summary>
+
+</details>
+	
+
+
+	
