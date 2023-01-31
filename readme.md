@@ -19,6 +19,10 @@
 - [Day 15 : Inception of EDA and PDK](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_15)
 - [Day 16 : Good Floorplan vs Bad Floorplan and Introduction to library cells](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_16)
 - [Day 17 : Design library cell using Magic layout and ngspice characterization](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_17)
+- [Day 18 : Pre-layout timing analysis and importance of good clock tree](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_18)
+- [Day 19 : Final steps for RTL2GDS](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_19)
+- [Day 20 : Floorplanning and power planning labs](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_20)
+- 
  
 # &#x1F537; Day_0
 
@@ -3312,11 +3316,205 @@ Eg:
 </details>
 
 # &#x1F537; Day_17
-	
-<details><summary><b> LABS for CMOS inverter ngspice simulations </b></summary>
+
+<details><summary><b> Lectures </b></summary>
 
 </details>
 	
+<details><summary><b> LABS </b></summary>
+
+![image](https://user-images.githubusercontent.com/118953929/215629834-8be51aab-588c-4609-ba36-af8a0a8f3597.png)
+
+Inside openlane/configurations:
+
+![image](https://user-images.githubusercontent.com/118953929/215629888-7d276006-2146-4f20-9998-e1ad990d6d60.png)
+![image](https://user-images.githubusercontent.com/118953929/215629904-1052ef64-e7a7-410c-9661-aafb27c78add.png)
+
+Set it in the run and rerun floorplan 
+
+![image](https://user-images.githubusercontent.com/118953929/215629954-8b9f214a-c914-4771-af9e-d1e25d1c901c.png)
+![image](https://user-images.githubusercontent.com/118953929/215629966-b144ddeb-f2b3-4854-8009-e510ae239d09.png)
+
+Run magic full command and observe again:
+
+![image](https://user-images.githubusercontent.com/118953929/215630003-20398a30-76c9-4cb9-bb3c-a488e09bc659.png)
+
+Lab steps to git clone vsdstdcelldegin
+	
+(in openlance directory) git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+	
+![image](https://user-images.githubusercontent.com/118953929/215630042-e5305e15-6d9b-4095-acaa-5764e20e271d.png)
+![image](https://user-images.githubusercontent.com/118953929/215630052-3a8198b3-71ef-44ce-8be4-8f7d71a900a8.png)
+![image](https://user-images.githubusercontent.com/118953929/215630063-6de8b185-7996-4169-84ae-5bc37b4c7592.png)
+
+Copy tech file over 
+![image](https://user-images.githubusercontent.com/118953929/215630084-ccf11d4c-c0eb-4788-ba00-33341973bab3.png)
+	
+Magic command:
+	
+![image](https://user-images.githubusercontent.com/118953929/215630215-95248be9-9fe9-45a7-8077-69c3536adbfa.png)
+![image](https://user-images.githubusercontent.com/118953929/215630227-327220cd-625a-47d3-a7c6-cd403f064a63.png)
+
+	
+Introduction to Sky130 basic layers layout and LEF using inverter
+	
+![image](https://user-images.githubusercontent.com/118953929/215630245-007596cf-9cd0-4ab1-9a9f-edff0054b5a1.png)
+![image](https://user-images.githubusercontent.com/118953929/215630264-ec957972-9d33-4c0d-a1ee-9d7375909fc5.png)
+
+Press s 3 times to see connection:
+
+![image](https://user-images.githubusercontent.com/118953929/215630286-9dd149c5-3465-4e90-b086-c02170104e15.png)
+
+Steps to create std cell layout and extract spice netlist
+
+![image](https://user-images.githubusercontent.com/118953929/215630320-0c6cfa11-df3d-4162-adf0-a59cb3794367.png)
+![image](https://user-images.githubusercontent.com/118953929/215630334-68e315c3-6b36-4756-b02c-632ee3375f10.png)
+DRC next error: zoom to the DRC area:
+
+![image](https://user-images.githubusercontent.com/118953929/215630355-8b299efc-2c1a-4b37-a312-de10a3dd078c.png)
+![image](https://user-images.githubusercontent.com/118953929/215630362-e64a8bba-9202-44cb-97d2-74e6d9f8a950.png)
+![image](https://user-images.githubusercontent.com/118953929/215630369-7a01b7c8-9218-4b5d-ad13-031dee05af40.png)
+![image](https://user-images.githubusercontent.com/118953929/215630378-c826605d-e55d-4b7c-85d8-9244418f3224.png)
+
+	
+Lab Steps to create final SPICE deck using Sky130 tech 
+	
+sky130_inv.spice
+
+![image](https://user-images.githubusercontent.com/118953929/215630430-ca1615ba-1780-49f3-ada8-046ae949dfa9.png)
+![image](https://user-images.githubusercontent.com/118953929/215630438-b282e270-cc46-4c8b-92a9-9c4de74dc196.png)
+
+Pmos and nmos libs
+	
+![image](https://user-images.githubusercontent.com/118953929/215630472-6e07a040-5a6f-4634-a7ba-5f00a08723f4.png)
+
+Nmos lib
+
+![image](https://user-images.githubusercontent.com/118953929/215630530-f7733c29-fd5f-4329-92e5-baa99444781e.png)
+
+	
+Modified inv.spice
+
+![image](https://user-images.githubusercontent.com/118953929/215630562-2a1b0635-114d-4598-8578-cd8e9d92e530.png)
+	
+Steps to characterize inverter using sky130 model files
+
+![image](https://user-images.githubusercontent.com/118953929/215630598-aa910321-0a9d-4151-aeed-548bf0046a94.png)
+	
+Plot y vs time a
+	
+![image](https://user-images.githubusercontent.com/118953929/215631121-27c10b23-02b0-418c-9324-a769acc20634.png)
+
+Rise/Fall/Delay Rise/Delay Fall value:
+
+![image](https://user-images.githubusercontent.com/118953929/215630719-5b591e06-99e0-4d50-af4d-64208e6d584d.png)
+
+![image](https://user-images.githubusercontent.com/118953929/215630733-0b5a6ee9-d9f8-4694-8235-87cdd111d9b7.png)
+
+![image](https://user-images.githubusercontent.com/118953929/215630744-42869336-af48-465f-85e0-239a48f25db1.png)
+
+![image](https://user-images.githubusercontent.com/118953929/215631242-950107d1-e7c0-47cd-bc0a-1347438e3e52.png)
+
+	
+Temperature used:
+
+![image](https://user-images.githubusercontent.com/118953929/215631307-408736cf-6020-44c6-8a5a-9cf67194ec03.png)
+
+
+Introduction to Sky130 pdk's and steps to download labs
+	
+![image](https://user-images.githubusercontent.com/118953929/215631353-8ebe48c7-4b3d-42f8-820a-2a9cfbc724e4.png)
+![image](https://user-images.githubusercontent.com/118953929/215631365-79c9692e-fe23-41a9-af58-2622aebabdcb.png)
+![image](https://user-images.githubusercontent.com/118953929/215631377-35e0b24f-34b9-41e0-add3-e601aad8eb1d.png)
+![image](https://user-images.githubusercontent.com/118953929/215631388-24ac77ad-163e-4668-a0de-4b7c0fd2fff6.png)
+![image](https://user-images.githubusercontent.com/118953929/215631404-13e09f10-3724-4073-a8d0-50e46fd22239.png)
+
+magic -d XR
+![image](https://user-images.githubusercontent.com/118953929/215631452-e07f393f-33f3-4b92-bc95-bc13a4e578a7.png)
+
+![image](https://user-images.githubusercontent.com/118953929/215631467-9f39f350-7eb9-46e4-800c-97d915202ecb.png)
+
+![image](https://user-images.githubusercontent.com/118953929/215631486-cfa03949-110b-4195-95d7-653b24bf407a.png)
+	
+Introduction to Magic and steps to load Sky130 tech-rules
+
+![image](https://user-images.githubusercontent.com/118953929/215631534-7a248ece-a5fa-4506-9cb2-03a5c935d456.png)
+
+
+Fix poly.9 error in Sky130 tech-file
+
+![image](https://user-images.githubusercontent.com/118953929/215631589-3d203e6c-d758-4600-9efa-78af9afbead2.png)
+
+![image](https://user-images.githubusercontent.com/118953929/215631612-e238d257-6b6e-44df-88e0-cd6ccbce25f5.png)
+
+![image](https://user-images.githubusercontent.com/118953929/215631637-11f47afe-72a4-4ff6-8dea-5716db08a3c6.png)
+	
+![image](https://user-images.githubusercontent.com/118953929/215631663-b516bfea-3afc-4365-9332-f4300a25d073.png)
+
+![image](https://user-images.githubusercontent.com/118953929/215631690-84491761-ca31-4b25-a8cd-c7240108c5db.png)
+	
+![image](https://user-images.githubusercontent.com/118953929/215631707-f4cd6fb7-3412-4295-a8cd-6352b1a23320.png)
+
+![image](https://user-images.githubusercontent.com/118953929/215631727-8bf2f147-3ab0-4c70-8aad-918ba1a1c304.png)
+	
+Find missing or incorrect rules and fix them
+	
+![image](https://user-images.githubusercontent.com/118953929/215631770-70308368-53df-42a2-9ca7-9cf1287ac4a4.png)
+	
+![image](https://user-images.githubusercontent.com/118953929/215631787-812983f7-2b9a-4312-8291-fb041f1ad8d3.png)
+
+	
+</details>
+	
+
+
+# &#x1F537; Day_18
+	
+<details><summary><b> LABS </b></summary>
+
+![image](https://user-images.githubusercontent.com/118953929/215631948-d378b7fd-cc13-441a-8b15-3d91b992c1c6.png)
+![image](https://user-images.githubusercontent.com/118953929/215631955-f965fbf8-6214-4db9-8d3d-bda403c6992d.png)
+![image](https://user-images.githubusercontent.com/118953929/215631967-909c2aae-6ce5-46ac-8dbf-54c93df7f784.png)
+![image](https://user-images.githubusercontent.com/118953929/215631995-4e842e88-c12c-41a8-a5c0-a42a380a207a.png)
+![image](https://user-images.githubusercontent.com/118953929/215632013-055cf8cf-e634-4c2e-9581-474b3832ba2d.png)
+![image](https://user-images.githubusercontent.com/118953929/215632036-ff18c7f9-4046-4ea7-9b2c-32a8482bc150.png)
+![image](https://user-images.githubusercontent.com/118953929/215632200-c97cc0ce-3af2-43a7-924c-3a2269c032a8.png)
+![image](https://user-images.githubusercontent.com/118953929/215632222-0341097c-ee95-407e-9580-f7b009552067.png)
+![image](https://user-images.githubusercontent.com/118953929/215632240-efbf8fee-65c7-4b5e-80b0-fa6015960a43.png)
+	
+Introduction to timing libs and steps to include new cell in synthesis
+
+![image](https://user-images.githubusercontent.com/118953929/215632282-a563e7c4-da99-4b79-ad2b-a7a338454282.png)
+![image](https://user-images.githubusercontent.com/118953929/215632294-c7edbe9e-5c22-4659-80a3-4d93454fa7ef.png)
+![image](https://user-images.githubusercontent.com/118953929/215632405-1512e834-0d5a-4633-a778-44a406ed7266.png)
+![image](https://user-images.githubusercontent.com/118953929/215632415-cb47683b-b520-4d29-ba85-920e739693d5.png)
+![image](https://user-images.githubusercontent.com/118953929/215632434-9ba9ec9b-118d-4097-9563-52fd01e71816.png)
+	
+Steps to configure synthesis settings to fix slack and include vsdinv
+
+![image](https://user-images.githubusercontent.com/118953929/215632467-2ec13a07-df84-4a6a-808a-5dacda2de605.png)
+	
+![image](https://user-images.githubusercontent.com/118953929/215632481-51a7bd7d-d181-433d-b44a-3cc134ee8c52.png)
+	
+Rerun synthesis and you will get 0 value
+
+![image](https://user-images.githubusercontent.com/118953929/215632497-0761ed45-9a39-4700-9555-ab58ed092929.png)
+
+![image](https://user-images.githubusercontent.com/118953929/215632518-9de7cf62-cb71-4680-af66-66e0b03c92f9.png)
+
+ Steps to configure OpenSTA for post-synth timing analysis
+	
+
+**will continue to upload from my screenshot
+
+</details>
+
+	
+# &#x1F537; Day_19
+	
+# &#x1F537; Day_20
+	
+
 
 
 	
