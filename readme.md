@@ -3506,8 +3506,17 @@ Rerun synthesis and you will get 0 value
 
 </details>
 
+
 	
 # &#x1F537; Day_19
+
+<details><summary><b> LECTURES </b></summary>
+
+</details>
+	
+<details><summary><b> LABS </b></summary>
+
+</details>
 	
 # &#x1F537; Day_20
 	
