@@ -22,7 +22,7 @@
 - [Day 18 : Pre-layout timing analysis and importance of good clock tree](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_18)
 - [Day 19 : Final steps for RTL2GDS](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_19)
 - [Day 20 : Floorplanning and power planning labs](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_20)
-- 
+- [Day 21 : Placement and CTS](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_21)
  
 # &#x1F537; Day_0
 
@@ -3502,10 +3502,7 @@ Rerun synthesis and you will get 0 value
 
 ![image](https://user-images.githubusercontent.com/118953929/215632518-9de7cf62-cb71-4680-af66-66e0b03c92f9.png)
 
- Steps to configure OpenSTA for post-synth timing analysis
-	
 
-**will continue to upload from my screenshot
 
 </details>
 
@@ -3514,7 +3511,125 @@ Rerun synthesis and you will get 0 value
 	
 # &#x1F537; Day_20
 	
+<details><summary><b> LECTURES </b></summary>
 
+R E C A P:
+	
+PHYSICAL DESIGN FLOW:
+
+- cardinal process of converting synthesized netlist, design curtailment and standard library to a layout as per the design rules provided by the foundry
+
+![image](https://user-images.githubusercontent.com/118953929/217577150-af183779-eaeb-4383-a334-65300aa8052c.png)
+![image](https://user-images.githubusercontent.com/118953929/217577281-97ad7567-c77e-414e-9864-e3635c3e70f6.png)
+
+
+	
+Files extantions:
+
+- lib --> Technology Library source file. Technology libraries contain information about the characteristics and functions of each cell provided in a semiconductor vendor's library. Semiconductor vendors maintain and distribute the technology libraries.
+- tf --> Vendor Technology File. This file contains technology-specific information such as the names, characteristics (physical and electrical) for each metal layer, and design rules. These information are required to route a design.
+- *spef --> Standard Parasitic Exchange Format. File format to save parasitic information extracted by the place and route tool.
+- *def --> Design Exchange Format. This format is often used in Cadence tools to represent physical layout. Synopsys tools normally use Milkyway format to save design.
+- *.lef --> Library Exchange Format. Standard cells are often saved in this format. Cadence tools also often use this format. Synopsys tools normally use Milkyway format for standard cells.
+- *mw( Milkyway database) --> The Milkyway database consists of libraries that contain information about your design. Libraries contain information about design cells, standard cells, macro cells, and so on. They contain physical descriptions, such as metal, diffusion, and polygon geometries. Libraries also contain logical information (functionality and timing characteristics) for every cell in the library. Finally, libraries contain technology information required for design and fabrication.
+- db --> Technology Library. This is a compiled version of * lib in Synopsys database format.
+
+
+
+
+
+</details>
+	
+
+<details><summary><b> LABS </b></summary>
+	
+![image](https://user-images.githubusercontent.com/118953929/217547784-68b189ad-e5a5-451f-a562-d95dfd5064c6.png)
+![image](https://user-images.githubusercontent.com/118953929/217549754-909c2de5-759f-40d7-9cf1-f9e1f0142e7c.png)
+Successfully read rvmyth
+![image](https://user-images.githubusercontent.com/118953929/217549853-b9d752e9-3637-49f1-9a2d-e527e4e15448.png)
+![image](https://user-images.githubusercontent.com/118953929/217550615-48cf3728-f6ca-42a3-9b7f-636c48fefd7a.png)
+read library files
+![image](https://user-images.githubusercontent.com/118953929/217571871-ac91b772-5070-4c21-a4c5-689875c7bde9.png)
+	
+![image](https://user-images.githubusercontent.com/118953929/217573102-47b7a426-1624-41ee-9901-2c8ced58ffd1.png)
+
+read_lib for sky130 lib
+![image](https://user-images.githubusercontent.com/118953929/217573237-983d9a57-7d4d-47e3-86a3-2fc55a2a99af.png)	
+
+![image](https://user-images.githubusercontent.com/118953929/217572105-45cba9f7-96b9-4834-b745-fc3ad72c8983.png)
+
+![image](https://user-images.githubusercontent.com/118953929/217578230-a553d133-b54e-45c9-ae32-d5d89edb81a5.png)
+![image](https://user-images.githubusercontent.com/118953929/217578593-3154a00a-c1a2-441b-adc8-3f0817731bc1.png)
+
+create_clocks, first, get the pins name for a correct one in your design
+	
+![image](https://user-images.githubusercontent.com/118953929/217591811-12c6a26d-a958-4392-9cc5-e59ac280a15e.png)
+![image](https://user-images.githubusercontent.com/118953929/217591884-0b3612c3-a9db-4d0f-b581-be9e6550ee53.png)
+![image](https://user-images.githubusercontent.com/118953929/217593708-2ef9112d-e3dd-424a-a3cc-3b3293d62094.png)
+
+check_design and observe the warning( warnings are ok, without errors)
+	
+![image](https://user-images.githubusercontent.com/118953929/217594205-629a1fba-374d-4fe3-b6fb-b6dd2cf82726.png)
+![image](https://user-images.githubusercontent.com/118953929/217594274-9d5e06b0-5bff-4e4e-888a-db796465aaff.png)
+![image](https://user-images.githubusercontent.com/118953929/217599418-e3469e58-74aa-44bf-9111-e72b430d3d5c.png)
+![image](https://user-images.githubusercontent.com/118953929/217599876-c83e4d5a-610f-453b-9ade-fce15706a335.png)
+![image](https://user-images.githubusercontent.com/118953929/217599536-57142372-48db-4d95-8517-1ccea5c895c9.png)
+
+Writing reports:
+![image](https://user-images.githubusercontent.com/118953929/217601503-a81e06c4-75ff-414b-9257-ffdecb7bee2e.png)
+![image](https://user-images.githubusercontent.com/118953929/217601565-6b5b7028-ff73-470d-9d34-72188de713bd.png)
+
+Checking the reports:
+	
+Area and timing met:
+![image](https://user-images.githubusercontent.com/118953929/217602279-6b77fb31-df36-4912-a45e-61016d4e90ff.png)
+
+Power wise:
+![image](https://user-images.githubusercontent.com/118953929/217602729-b2eccac9-816d-4bbe-a1aa-f2876cea45c5.png)
+
+Schematic views:
+
+![image](https://user-images.githubusercontent.com/118953929/217604138-db1f9422-e983-4d0d-b35d-ecd96c918002.png)
+
+Overall view zooming in:
+	
+![image](https://user-images.githubusercontent.com/118953929/217604476-8d8b1366-779c-4131-a1bd-230bc0f8e37c.png)
+![image](https://user-images.githubusercontent.com/118953929/217604542-cb5dea37-7c3b-42da-a3d8-a1e1f82f1d71.png)
+![image](https://user-images.githubusercontent.com/118953929/217604638-e9011bfd-b81f-4f27-91d1-21ecce6b2d1a.png)
+![image](https://user-images.githubusercontent.com/118953929/217604729-f75a65ac-124f-49ff-a14d-2783bada53b8.png)
+![image](https://user-images.githubusercontent.com/118953929/217604808-9ffa68ee-e8c3-4e2a-b5b1-b99ec5d6bda6.png)
+![image](https://user-images.githubusercontent.com/118953929/217605041-057091c7-724b-4cb8-b156-8834c6cb220c.png)
+
+</details>
+	
+# &#x1F537; Day_21
+
+<details><summary><b> LECTURE </b></summary>
+
+
+PLACEMENT - simple word --> process of determine the location of standard cells
+
+or in details:
+	
+- Placement is the process of finding a suitable physical location for each cell in the block.
+Tool only determine the location of each standard cell on the die. 
+- Placement does not just place the standard cell available in the synthesized netlist, it also optimized the design.
+- The tool determines the location of each of the standard cell on the core.
+	
+Additional knowledge:
+	
+	
+	checks before doing placement:
+	
+	After completion of floorplanning, power planning and placement of physical only cells Endcap cells and Tap cells, we check the base DRC and errors related to floorplanning like vertical spacing error, horizontal spacing error, min site row, vertical site row, and alignment. After inserting the tap cells, check to ensure that a standard cell peaceable area is protected by tap cells. Tap cells are placed correctly or not. Tap cells are typically used when most or all of the standard cells in the library contains no substrate or well taps. Generally, the design rule specifies the maximum distance allowed between every transistor in a standard cells and a well or substrate tap.
+	Advanced nodes often requires the insertion of additional tap cells to manage the substrate and well noise. Before placing the standard cells we add boundary cells (Endcap cells) also, which are added to the ends of the cell rows and around the boundaries of objects such as core and hard macros and we checked that endcap cells are placed or not. After you have done the floorplanning i.e. created the core area, placed the macros and decided the power network structure of your design, it is time to let the tool do standard cell placement
+
+	
+</details>
+	
+<details><summary><b> LABS </b></summary>
+	
+</details>
 
 
 	
