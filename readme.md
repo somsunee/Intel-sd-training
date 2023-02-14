@@ -23,6 +23,9 @@
 - [Day 19 : Final steps for RTL2GDS](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_19)
 - [Day 20 : Floorplanning and power planning labs](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_20)
 - [Day 21 : Placement and CTS](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_21)
+- [Day 22 : CTS Analysis labs](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_22)
+- [Day 23 : Clock gating techniqueS](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_23)
+- [Day 24 : Timing Violations and ECO](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_24)
  
 # &#x1F537; Day_0
 
@@ -3609,6 +3612,32 @@ Overall view zooming in:
 ![image](https://user-images.githubusercontent.com/118953929/217604808-9ffa68ee-e8c3-4e2a-b5b1-b99ec5d6bda6.png)
 ![image](https://user-images.githubusercontent.com/118953929/217605041-057091c7-724b-4cb8-b156-8834c6cb220c.png)
 
+
+source top.tcl
+	
+![image](https://user-images.githubusercontent.com/118953929/218739356-17b71278-1555-4e73-a98f-f727a739fd21.png)
+![image](https://user-images.githubusercontent.com/118953929/218739457-a9a4978e-297d-43ce-a8b8-549e2681e825.png)
+![image](https://user-images.githubusercontent.com/118953929/218739561-2ed73710-e447-4ab7-b154-a94b7c7987d9.png)
+![image](https://user-images.githubusercontent.com/118953929/218739632-0ea7aa1f-a6a6-40b0-81d7-4822401b0a44.png)
+
+in icc2_shell
+
+![image](https://user-images.githubusercontent.com/118953929/218741158-a40f34ae-b7b2-481d-8fee-c1ecbf82dba1.png)
+![image](https://user-images.githubusercontent.com/118953929/218741081-ff751040-7426-486d-bfe3-050d7706834f.png)
+
+Errors:
+![image](https://user-images.githubusercontent.com/118953929/218790193-59fc3146-4051-4cd5-8058-d2cf61a0a55b.png)
+
+
+	
+the edits:
+	
+![image](https://user-images.githubusercontent.com/118953929/218789391-115130f8-2ead-4c05-982c-4c4265f28e11.png)
+![image](https://user-images.githubusercontent.com/118953929/218789551-18349d82-8f1d-4307-8c9e-380d8d59b007.png)
+
+
+
+
 </details>
 	
 # &#x1F537; Day_21
@@ -3639,6 +3668,94 @@ Additional knowledge:
 <details><summary><b> LABS </b></summary>
 	
 </details>
+	
+# &#x1F537; Day_22
+
+<details><summary><b> LECTURE </b></summary>
+
+Clock Tree Synthesis
+	
+- is a technique for distributing the clock equally among all sequential parts of a VLSI design.
+- The purpose of CTS is to reduce skew and delay. 
+
+Inputs required for CTS:
+- Detailed Placement database
+- Buffers or inverters for creating the clock tree
+- Latency target if delay and skew are supplied
+- DRC clock tree (Max Tran, Max Cap, Max fanout, Max number of buffer levels)
+	
+Outputs for CTS:
+- def 
+- spef
+- netlists 
+	
+Effects of CTS:
+- clock buffers get added
+- congestion get increased
+- non-clock cells get relocated to less desirable places
+- timing and maximum tran/cap violations take place
+	
+Limitations of CTS
+- Latency
+- skew
+- Max Tran
+- Max Cap
+- Max fanout
+- buffers and inverters
+
+Example: 
+
+![image](https://user-images.githubusercontent.com/118953929/218802102-7ec85ac9-a7b4-4589-9872-2b529354f036.png)
+
+H-Tree
+In this algorithm Clock routing takes place like the English letter H.\
+It is an easy approach that is based on the equalization of wire length.\
+In H tree-based approach the distance from the clock source points to each of the clock sink points are always the same.\
+In H tree approached the tool trying to minimize skew by making interconnection to subunits equal in length.
+
+This type of algorithm used for the scenario where all the clock terminal points are arranged in a symmetrical manner like as in gate array are arranged in FPGAs.
+	
+![image](https://user-images.githubusercontent.com/118953929/218802718-9efba76a-f6c8-4284-9007-295146d4b86a.png)
+
+In this routing algorithm all the wires connected on the same metal layers, we don’t need to move horizontal to vertical or vertical to horizontal on two layers.
+	
+H tree do not produce corner sharper than 900 and no clock terminals in the H tree approach in close proximity like X tree.
 
 
+Advantages:\
+Exact zero skew in terms of distance (here we are ignoring parasitic delay) due to the symmetry of the H tree.\
+Typically used for very special structures like top-level clock level distribution not for the entire clock then distributed to the different clock sinks.
+
+Disadvantages:\
+Blockages can spoil the symmetry of the H tree because sometimes blockages are present on the metal layers.\
+Non-uniform sink location and varying sink capacitance also complicate the design of the H tree.
+
+</details>
+	
+<details><summary><b> LABS </b></summary>
+	
+</details>
+	
+# &#x1F537; Day_23
+
+<details><summary><b> LECTURE </b></summary>
+	
+
+</details>
+	
+<details><summary><b> LABS </b></summary>
+	
+</details>
+
+	
+# &#x1F537; Day_24
+
+<details><summary><b> LECTURE </b></summary>
+	
+
+</details>
+	
+<details><summary><b> LABS </b></summary>
+	
+</details>
 	
