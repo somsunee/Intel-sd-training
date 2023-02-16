@@ -3747,11 +3747,16 @@ Timing estimation:
 	
 Reports file generated under rpts_icc2 directory in the path:
 vsdbabysoc.post_estimated_timing.rpt
+	
 ![image](https://user-images.githubusercontent.com/118953929/219439729-0762e1b0-1eda-4b97-bb21-461d1b62d2c3.png)
 ![image](https://user-images.githubusercontent.com/118953929/219440002-0af6e677-acf5-45c2-a9c2-2bde62a27826.png)
+	
 vsdbabysoc.post_estimated_timing.qor.sum:
+	
 ![image](https://user-images.githubusercontent.com/118953929/219440389-9befe0e5-7eb3-430f-8b86-da24337b6f2e.png)
+	
 vsdbabysoc.post_estimated_timing.qor
+	
 ![image](https://user-images.githubusercontent.com/118953929/219440920-3f9baae0-dc1d-4b73-9a4b-e553d9741e54.png)
 ![image](https://user-images.githubusercontent.com/118953929/219440983-44403d5b-ccae-4eda-ae2f-cd4be03bc8f5.png)
 	
@@ -3831,6 +3836,7 @@ Non-uniform sink location and varying sink capacitance also complicate the desig
 <details><summary><b> LABS </b></summary>
 
 Place, CTS, Route:
+	
 ![image](https://user-images.githubusercontent.com/118953929/219443077-b19f52da-f4e0-4a49-904d-8cb1db780be4.png)
 
 Check the report of the check_legality--> check_legality.rpt
@@ -3840,6 +3846,7 @@ No violations
 ![image](https://user-images.githubusercontent.com/118953929/219443624-18eae0c0-890a-408f-88bb-ff1f499b3e48.png)
 
 check_clock_tree.rpt
+	
 Having one warning:
 
 ![image](https://user-images.githubusercontent.com/118953929/219443895-479dd7f0-73aa-403a-bc38-5dab7fb280b7.png)
@@ -3919,11 +3926,11 @@ VLSI design and ECO flows figure:
 ![image](https://user-images.githubusercontent.com/118953929/219450985-f985a16c-57af-4fe7-84cb-74810eabe127.png)
 	
 	
-So basically there are the following steps in each ECO cycle.\
+So basically there are the following steps in each ECO cycle.
 
-- Analysis of an issue on the latest database\
-- ECO generation for fixing the issue\
-- ECO Implementation on the analyzed database\
+- Analysis of an issue on the latest database
+- ECO generation for fixing the issue
+- ECO Implementation on the analyzed database
 - Save the database after ECO implementation for the next ECO cycle
 	
 
