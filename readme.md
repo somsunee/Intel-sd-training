@@ -26,7 +26,8 @@
 - [Day 22 : CTS Analysis labs](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_22)
 - [Day 23 : Clock gating techniqueS](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_23)
 - [Day 24 : Timing Violations and ECO](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_24)
- 
+- [Day 25 : RISC-V core RTL2GDS flow](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_25)
+- [Day 26 : Introduction to mixed-signal flow](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_26)
 # &#x1F537; Day_0
 
 
@@ -3634,7 +3635,71 @@ the edits:
 	
 ![image](https://user-images.githubusercontent.com/118953929/218789391-115130f8-2ead-4c05-982c-4c4265f28e11.png)
 ![image](https://user-images.githubusercontent.com/118953929/218789551-18349d82-8f1d-4307-8c9e-380d8d59b007.png)
+	
+grdgenxo -itf2TLUPlus -i /nfs/png/disks/png_mip_gen6p9ddr_0023/sepin/sd_training/new/new2/synopsys_ICC2flow_130nm/synopsys_skywater_flow_nominal/itf_files/skywater130.nominal.itf -o /nfs/png/disks/png_mip_gen6p9ddr_0023/sepin/sd_training/new/new2/synopsys_ICC2flow_130nm/synopsys_skywater_flow_nominal/itf_files/skywater130.nominal.tluplus
 
+![image](https://user-images.githubusercontent.com/118953929/219232692-c1f4d3e0-0d4a-4bd0-830c-152fb03874ff.png)
+![image](https://user-images.githubusercontent.com/118953929/219231086-a69de8ef-0b86-4893-9f05-876538930d38.png)
+	
+After done generating TLUPlus file, include inside this tcl below:
+	
+![image](https://user-images.githubusercontent.com/118953929/219395422-42765210-9bc6-4d82-ba4f-67c01ba0a42d.png)
+
+Sourcing top.tcl again now
+	
+![image](https://user-images.githubusercontent.com/118953929/219407123-820af282-f86b-4535-8a8f-a048ce232e19.png)
+![image](https://user-images.githubusercontent.com/118953929/219406861-d3893ede-56c6-44bc-9756-e0b229302609.png)
+![image](https://user-images.githubusercontent.com/118953929/219412712-f2161039-7938-4c44-84ef-e77a1d768b77.png)
+
+Floorplan view:
+![image](https://user-images.githubusercontent.com/118953929/219413223-8fc62e34-66ca-4ef7-9cd1-f9e9133c4fe1.png)
+
+Closed-up view:
+
+Floorplan:
+![image](https://user-images.githubusercontent.com/118953929/219413959-196917b8-061d-4fb5-9773-0ff69867749f.png)
+
+Filler cells:
+![image](https://user-images.githubusercontent.com/118953929/219415629-d0b88c7a-f2f6-4c1c-95d0-af46989933f4.png)
+	
+DAC
+![image](https://user-images.githubusercontent.com/118953929/219413787-a93ce88d-a26a-45d3-a428-9809fe57ba21.png)
+	
+![image](https://user-images.githubusercontent.com/118953929/219420378-b73af34b-f690-44e1-8136-d31a97e9580b.png)
+
+![image](https://user-images.githubusercontent.com/118953929/219421949-b422679f-fe52-4e0d-b403-c254e38b1bc8.png)
+![image](https://user-images.githubusercontent.com/118953929/219422237-57fcb1c4-387c-4137-8426-6de8ae021711.png)
+
+Total violations:
+![image](https://user-images.githubusercontent.com/118953929/219424226-4ded56eb-82c4-47ee-980d-99c502d61819.png)
+![image](https://user-images.githubusercontent.com/118953929/219424145-371861be-940b-4f1e-a83d-148f2c74ed73.png)
+
+</details>
+	
+
+<details><summary><b> LABS - Experiment changing 7% utilization to 40% </b></summary>
+
+Change from 7% to 40%
+
+![image](https://user-images.githubusercontent.com/118953929/219425852-ed07c31e-9641-4317-8a11-9241fab18d9e.png)
+
+After done, load gui again;
+
+![image](https://user-images.githubusercontent.com/118953929/219429591-0b85fe42-d32d-40bd-bf9a-6557ae8d2c12.png)
+
+Observe that the size is a lot more bigger (DAC)
+
+Full floorplan:
+
+![image](https://user-images.githubusercontent.com/118953929/219432652-6966993d-cfb8-44e2-b90f-84d2277b4899.png)
+![image](https://user-images.githubusercontent.com/118953929/219432999-529da363-935f-4732-b322-7c0bff094086.png)
+
+![image](https://user-images.githubusercontent.com/118953929/219433335-f819f93c-2e64-4304-8c53-d7b0025b6163.png)
+![image](https://user-images.githubusercontent.com/118953929/219433505-61b76c32-219b-4332-88a1-e6b2512b5a77.png)
+Violated slack is lesser
+![image](https://user-images.githubusercontent.com/118953929/219433569-c812cb98-437b-4a26-a5ba-9f05e3fc51a3.png)
+Violations is more lesser than before:
+![image](https://user-images.githubusercontent.com/118953929/219434125-70ad4232-c033-4f20-8859-270e21d00f1a.png)
 
 
 
@@ -3666,6 +3731,37 @@ Additional knowledge:
 </details>
 	
 <details><summary><b> LABS </b></summary>
+	
+Now that the placement stage will occurs:
+	
+![image](https://user-images.githubusercontent.com/118953929/219437313-631c4f9a-d629-49e8-a441-57252998d66d.png)
+![image](https://user-images.githubusercontent.com/118953929/219438428-758c4d3b-63e2-4ffe-9cfe-ecbfe4157c85.png)
+
+
+Timing estimation:
+
+![image](https://user-images.githubusercontent.com/118953929/219437456-0d06131a-6422-471f-8654-6bb2a8d0a438.png)
+	
+![image](https://user-images.githubusercontent.com/118953929/219438219-0e8c5342-1d4d-48fa-bc7e-7702dbace8a3.png)
+![image](https://user-images.githubusercontent.com/118953929/219438306-4c3743b5-e9c6-4062-8b13-9e5e6118ac8d.png)
+	
+Reports file generated under rpts_icc2 directory in the path:
+vsdbabysoc.post_estimated_timing.rpt
+![image](https://user-images.githubusercontent.com/118953929/219439729-0762e1b0-1eda-4b97-bb21-461d1b62d2c3.png)
+![image](https://user-images.githubusercontent.com/118953929/219440002-0af6e677-acf5-45c2-a9c2-2bde62a27826.png)
+vsdbabysoc.post_estimated_timing.qor.sum:
+![image](https://user-images.githubusercontent.com/118953929/219440389-9befe0e5-7eb3-430f-8b86-da24337b6f2e.png)
+vsdbabysoc.post_estimated_timing.qor
+![image](https://user-images.githubusercontent.com/118953929/219440920-3f9baae0-dc1d-4b73-9a4b-e553d9741e54.png)
+![image](https://user-images.githubusercontent.com/118953929/219440983-44403d5b-ccae-4eda-ae2f-cd4be03bc8f5.png)
+	
+check_design.pre_pin_placement:
+
+![image](https://user-images.githubusercontent.com/118953929/219441506-44b7e7ef-0b5d-487e-b3b5-c91385d431bc.png)
+
+report_port_placement.rpt:
+![image](https://user-images.githubusercontent.com/118953929/219441745-e45627b8-b557-4bcc-9a98-90fcc9cc66d9.png)
+
 	
 </details>
 	
@@ -3733,29 +3829,196 @@ Non-uniform sink location and varying sink capacitance also complicate the desig
 </details>
 	
 <details><summary><b> LABS </b></summary>
+
+Place, CTS, Route:
+![image](https://user-images.githubusercontent.com/118953929/219443077-b19f52da-f4e0-4a49-904d-8cb1db780be4.png)
+
+Check the report of the check_legality--> check_legality.rpt
+
+No violations
+![image](https://user-images.githubusercontent.com/118953929/219443555-a6b868a7-4788-4f4f-87eb-1317fba16a3e.png)
+![image](https://user-images.githubusercontent.com/118953929/219443624-18eae0c0-890a-408f-88bb-ff1f499b3e48.png)
+
+check_clock_tree.rpt
+Having one warning:
+
+![image](https://user-images.githubusercontent.com/118953929/219443895-479dd7f0-73aa-403a-bc38-5dab7fb280b7.png)
+	
+Warnings detail:
+![image](https://user-images.githubusercontent.com/118953929/219444137-a7f285dc-efab-4d58-a90b-b757b418a9aa.png)
+
+Clock tree option reports:
+![image](https://user-images.githubusercontent.com/118953929/219444315-8faf04ad-aef3-4f4a-9439-b8a985ce9fdb.png)
+	
+Legalize_placement:
+
+![image](https://user-images.githubusercontent.com/118953929/219444844-d5db8866-0b06-45b4-8b2c-d288f8d1985d.png)
+![image](https://user-images.githubusercontent.com/118953929/219444906-eb3efbd7-18ef-4d6a-a59a-561406c1a06c.png)
 	
 </details>
 	
 # &#x1F537; Day_23
 
 <details><summary><b> LECTURE </b></summary>
+
+Clock tree consume more than 50 % of dynamic power. The components of this power are:\
+1) Power consumed by combinatorial logic whose values are changing on each clock edge\
+2) Power consumed by flip-flops and\
+3) The power consumed by the clock buffer tree in the design.
+
+
+
+$\fbox{Clock Tree Synthesis (clock gating)}$
+- Clock gating is one of the techniques used to save the dynamic power of clock elements in the design.
+
+***Principle behind clock gating: The principle behind clock gating is to stop the clock of those sequential elements whose data is not toggling. RTL level code talks only about data transfer.
+	
+$\fbox{Routing}$
+
+- Routing is the process of creating physical connections based on logical connectivity.
+	
+![image](https://user-images.githubusercontent.com/118953929/219449301-015c471e-88e3-4166-b849-3d0a0fc4b6af.png)
+	
+**Inputs and Outputs of Routing**
+	
+Inputs: 
+- Netlist with location of blocks and locations of pins (CTS completed)
+- Timing budget for critical net
+- Technology File
+- TLU + File
+- SDC
+	
+Outputs:
+- .gds
+- .spef
+- .sdc
 	
 
-</details>
+W H A T to check before we do routing?
 	
-<details><summary><b> LABS </b></summary>
+- Placement completed
+- CTS completed
+- Power and ground nets routed
+- Estimated congestion - acceptable
+- Estimated timing - (~0 ns slack)
+- Estimated max cap/trans - NO violations
 	
 </details>
-
 	
 # &#x1F537; Day_24
 
 <details><summary><b> LECTURE </b></summary>
 	
+$\fbox{ECO - Engineering Change Order}$
+
+-  refers to a practice in the VLSI design flow to accommodate specification changes, to rectify functional errors, or to fix non-functional design requirements, such as timing and power, with minimal disturbance to the existing implementation, to save as much as possible the already-spent optimization efforts
+
+VLSI design and ECO flows figure: 
+(source:https://people.eecs.berkeley.edu/~alanmi/publications/other/date20_eco1.pdf)
+
+![image](https://user-images.githubusercontent.com/118953929/219450985-f985a16c-57af-4fe7-84cb-74810eabe127.png)
+	
+	
+So basically there are the following steps in each ECO cycle.\
+
+- Analysis of an issue on the latest database\
+- ECO generation for fixing the issue\
+- ECO Implementation on the analyzed database\
+- Save the database after ECO implementation for the next ECO cycle
+	
 
 </details>
 	
 <details><summary><b> LABS </b></summary>
 	
+	
+![image](https://user-images.githubusercontent.com/118953929/219445995-f59454b0-8b6c-4c92-a5fe-e1f6357f3bdc.png)
+![image](https://user-images.githubusercontent.com/118953929/219446129-eb74e396-1ef3-4f8f-b18f-71a181400950.png)
+![image](https://user-images.githubusercontent.com/118953929/219446202-453a64d6-658a-4f5e-95e9-2601b19b70c3.png)
+
+slack:
+![image](https://user-images.githubusercontent.com/118953929/219446347-3349d985-9c52-4e84-9b06-5763f289a85b.png)
+
+![image](https://user-images.githubusercontent.com/118953929/219446584-786ae5f6-0e92-4920-876e-c850f0ddf7bc.png)
+
+		
 </details>
+	
+# &#x1F537; Day_25
+
+HAD BEEN COVERED IN PREVIOUS SESSION
+	
+# &#x1F537; Day_26
+
+<details><summary><b> LECTURE </b></summary>
+
+$\fbox{Electronic signal}$
+
+a time-varying voltage that is also an electromagnetic wave carrying information, though it can take on other forms, such as current
+	
+TYPEs of electronics signals
+	
+Analog signal
+- is time-varying and generally bound to a range (e.g. +12V to -12V), but there is an infinite number of values within that continuous range. 
+- An analog signal uses a given property of the medium to convey the signal’s information, such as electricity moving through a wire. 
+- In an electrical signal, the voltage, current, or frequency of the signal may be varied to represent the information
+	
+![image](https://user-images.githubusercontent.com/118953929/219452794-2bf40dc1-af5f-41b3-9e5d-dbab6d0ca7c7.png)
+
+	
+Digital Signal
+	
+- A digital signal is a signal that represents data as a sequence of discrete values. 
+- A digital signal can only take on one value from a finite set of possible values at a given time. With digital signals, the physical quantity representing the information can be many things: 
+
+	- Variable electric current or voltage\
+	- Phase or polarization of an electromagnetic field\
+	- Acoustic pressure\
+	- The magnetization of a magnetic storage media
+	
+![image](https://user-images.githubusercontent.com/118953929/219453074-9e6b7452-e11b-4799-a390-08590099ce34.png)
+	
+$\fbox{W H A T are mixed-signal chips?}$
+
+- that at least partially deal with input signals whose precise values matter
+
+_**AMS - analog and mixed signal(digital and analog)**_
+	
+From lecture slide:
+	
+![image](https://user-images.githubusercontent.com/118953929/219453354-ff78de5e-247f-4410-9e74-a436a619ac0b.png)
+
+![image](https://user-images.githubusercontent.com/118953929/219453540-c6fdd40d-23a2-4f11-9f00-68d66e029ceb.png)
+	
+$\fbox{W H A T are IP cores?}$
+	
+- consists of a block of logic or data that is used in a semiconductor chip. It is usually the intellectual property of a particular person or company. 
+- IP cores are used when making a fieldprogrammable gate array (FPGA) or application-specific integrated circuit (ASIC).
+- IP cores are created throughout the design process and can be turned into components for reuse.There are different categories for IP cores including **hard IP cores** and **soft IP cores**.
+	- The soft IP core , can be customized during the physical design phase and mapped to any process technology.
+	- A hard IP core is one that has the logic implementation and the physical implementation.
+	
+
+HOW it works in semiconductor industry?
+	
+![image](https://user-images.githubusercontent.com/118953929/219454263-0e1f2ee3-d586-4c02-876d-2952a2c80b73.png)
+
+
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+
+</details>
+	
+
 	
