@@ -28,6 +28,10 @@
 - [Day 24 : Timing Violations and ECO](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_24)
 - [Day 25 : RISC-V core RTL2GDS flow](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_25)
 - [Day 26 : Introduction to mixed-signal flow](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_26)
+- [Day 27 : Introduction to crosstalk -Glitch and delta delay](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_27)
+- [Day 28 : Introduction to DRC/LVS](https://github.com/somsunee/Intel-sd-training/blob/main/readme.md#-day_28)
+
+
 # &#x1F537; Day_0
 
 
@@ -4010,22 +4014,258 @@ HOW it works in semiconductor industry?
 	
 ![image](https://user-images.githubusercontent.com/118953929/219454263-0e1f2ee3-d586-4c02-876d-2952a2c80b73.png)
 
-
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-
 </details>
 	
+# &#x1F537; Day_27
+	
+
+<details><summary><b> LECTURE </b></summary>
+
+$\fbox{Introduction to Crosstalk-Glitch and Delta delay}$
+	
+What is signal integrity and crosstalk?
+	
+- Signal integrity is the ability of an electrical signal to carry information reliably and resist the effects of high-frequency electromagnetic interference from nearby signals.
+
+- Crosstalk is a type of noise signal that corrupts the actual signal while transmission through the communication medium.
+	
+Aggressor and victim nets
+	
+- a net that receives undesirable cross-coupling effects from a nearby net is called a victim net
+- a net that causes these effects in a victim net is caleed an aggressor net
+	
+Crosstalk-Glitch
+
+![image](https://user-images.githubusercontent.com/118953929/220734557-0962f4bf-6561-42f1-a25e-17e7bf88b2f2.png)
+
+Performing Crosstalk delay analysis
+
+- Enable PrimeTime SI  set_app_varsi_enable_analysistrue
+- Back-annotate the design with cross-coupling capacitance information in a SPEF or GPD file  read_parasitics -keep_capacitive_coupling file_name.spf
+	
+
+Reporting Crosstalk Settings
+	
+To check your crosstalk settings:
+•report_si_delay_analysis
+•report_si_noise_analysis
+•report_si_aggressor_exclusion
+	
+	
+</details>
+	
+# &#x1F537; Day_28
+
+<details><summary><b> LECTURE </b></summary>
+
+LIVE SESSION:
+
+$\fbox{Introduction to DRC and LVS}$
+
+So from the Physical Design Flow Chart, now it's at $\mathcal{\textcolor{purple}{Physical Verification and Sign off stage}:
+![image](https://user-images.githubusercontent.com/118953929/220624648-0bcfb347-afdf-44e9-a52f-6fc4352e72a4.png)
+
+Design Rule Check (DRC)
+- determine if the layout satisfies a set of rules required for manufacturing
+
+Layout vc Schematic (LVS)
+- Verifying the layout created is functionally same as the shcematic or netlist of the design
+	
+Antenna Rule Check (ARC)
+- Process antenna effect or “plasma induced gate oxide damage” is a manufacturing effect.
+
+Electrical Rule Check (ERC)
+- Involves checking a design for all electrical connections that are considered dangerous
+	
+	
+$\fbox{INTRODUCTION to SkyWater PDK}$
+
+- joint project between Google and the SkyWater Technology Foundry, which provides a fully open source Process Design Kit (PDK), and its related resources
+
+- PDK - Process Design Kit
+- SKY130 - feature size of the process(130nm), where SKY refers to the manucturer ( SkyWater foundry )
+	
+![image](https://user-images.githubusercontent.com/118953929/220634606-6dc5fdd1-ca71-42a1-a9a8-923e78780fe3.png)
+
+The SkyWater open PDK public repository contains the following:
+
+- Documentation
+- PDK Library and files
+- Community
+
+![image](https://user-images.githubusercontent.com/118953929/220631652-dcb4b05c-b0f0-4389-bd64-553397296bc8.png)
+
+**NOTE: The "130" in SKY130 stands for the feature size, which is the length of smallest transistor that can be manufactured in the process.
+
+![image](https://user-images.githubusercontent.com/118953929/220633393-30b09627-1bc2-446a-ba9b-60a4b6d8c58d.png)
+	
+$\fbox{Open Source PDK Tools}$
+	
+- open_pdks - a makefile based installer that takes files from SkyWater PDKs and then reformats them.
+	
+Tools: 
+	
+- Magic
+- Klayout
+- Openlane
+- Xschem
+- Netgen
+- Ngspice
+- IVerilog
+- qflow
+- IRSIM
+- xcircuit
+
+![image](https://user-images.githubusercontent.com/118953929/220639090-1497b827-e297-4b97-99c5-f476c9bdd974.png)
+
+	Steps to install the Sky130 PDK
+	- git clone https://github.com/RTimothyEdwards/open_pdks
+	- cd open_pdks
+	- configure --enable-sky130-pdk
+	- make
+	- sudo make install
+	
+	
+$\fbox{Understanding the SkyWater PDK - Layers}$
+	
+![image](https://user-images.githubusercontent.com/118953929/220647512-ff502023-03db-4b4f-b6a4-03b714bda96a.png)
+![image](https://user-images.githubusercontent.com/118953929/220654602-ccfbb917-2e3a-42c7-8fa1-cc87566947f9.png)
+![image](https://user-images.githubusercontent.com/118953929/220656247-f42f3bad-bb7d-41cf-bfa5-1364d55ae7c6.png)
+![image](https://user-images.githubusercontent.com/118953929/220656359-f9f1cb7d-93a2-41fd-a3c8-aa4ad33476ab.png)
+![image](https://user-images.githubusercontent.com/118953929/220656721-b499540b-a38d-4007-a044-d0a8d6e92249.png)
+![image](https://user-images.githubusercontent.com/118953929/220656873-8cbcd197-3bc4-4e57-a2b4-b823a38afc32.png)
+![image](https://user-images.githubusercontent.com/118953929/220659723-395eb61f-a412-42b5-a34b-6eff16034ee0.png)
+![image](https://user-images.githubusercontent.com/118953929/220659842-7cb0b4fd-4b25-47de-af04-cfde18ae58e1.png)
+![image](https://user-images.githubusercontent.com/118953929/220659999-bc572cd2-59fe-4511-a248-3aa9cf1e770f.png)
+![image](https://user-images.githubusercontent.com/118953929/220661220-62311514-6564-4153-aea3-7577585d66a8.png)
+
+$\fbox{Understanding the SkyWater PDK - Devices}$
+	
+![image](https://user-images.githubusercontent.com/118953929/220661503-357ab4c1-168b-4978-99d2-e35163e95e6e.png)
+![image](https://user-images.githubusercontent.com/118953929/220673116-c3626885-b196-422c-b0da-0f756351f33c.png)
+![image](https://user-images.githubusercontent.com/118953929/220673242-386104d8-5552-41aa-8748-c4a864ec7717.png)
+![image](https://user-images.githubusercontent.com/118953929/220684748-f0fc47db-85eb-4ae0-aaf7-c24253b7a007.png)
+![image](https://user-images.githubusercontent.com/118953929/220684978-08cb78ef-dc30-4942-abd0-175fcca2da5d.png)
+![image](https://user-images.githubusercontent.com/118953929/220685227-aee26eea-e824-4476-a8f7-028e523de0a3.png)
+![image](https://user-images.githubusercontent.com/118953929/220686668-c29f31d8-adbd-4604-a09b-0447cda9512e.png)
+![image](https://user-images.githubusercontent.com/118953929/220686825-1ee6ece5-7756-4984-816e-8debb45b6163.png)
+
+
+$\fbox{Understanding the SkyWater PDK - Libraries}$
+	
+- should contain everything that user needs to work with
+- 3 types of libraries:
+	- Digital standard cells
+	- I/O cells
+	- Primitive devices and models
+	
+Digital standard cells
+![image](https://user-images.githubusercontent.com/118953929/220694239-73dd748a-a9bc-4ab6-b9ae-d491c40404e3.png)
+
+Naming convention:
+sky130_vendor_library -type [_name]
+	
+![image](https://user-images.githubusercontent.com/118953929/220696830-04818663-5e75-42a8-a63c-39f615f1ebdf.png)
+![image](https://user-images.githubusercontent.com/118953929/220697157-25165139-3661-4a14-a5ff-37b9e89e68da.png)
+	
+** double underscore --> separating library name and cell type
+	
+
+I/O cells
+![image](https://user-images.githubusercontent.com/118953929/220698375-8d8f4584-9bf6-4c82-a0d5-3e88600ff4b8.png)
+![image](https://user-images.githubusercontent.com/118953929/220698578-43905909-ae52-4952-89f5-325a6831f45d.png)
+
+Primitive devices and models
+![image](https://user-images.githubusercontent.com/118953929/220699321-c7743706-e675-4210-ade4-9d9a7505144d.png)
+![image](https://user-images.githubusercontent.com/118953929/220700896-ab9bb4cc-d0e9-45b7-8310-bdea9d35d096.png)
+
+Vertical Parallel Plate capacitor:
+![image](https://user-images.githubusercontent.com/118953929/220708881-a605aac6-1165-4d5c-9bd4-b15c8b19fd3f.png)
+
+
+$\fbox{OpenSource Tools and Flows}$
+	
+Example:
+A simple manual design flow
+
+1.Schematic --> export netlist(spice format) to ngspice(simulate) and generate magic
+- xschem 
+	- ngspice (analog simulation)
+	- gaw (waveform viewing)
+	
+2.Layout
+- import magic to initial layout 
+![image](https://user-images.githubusercontent.com/118953929/220711085-30fa7cf4-bbb7-49a3-85f8-136bbd8bcd47.png)
+
+3. LVS
+from schematic --> export to netlist --> schematic capture
+from layout --> export to netlist --> extraction
+
+both imported to LVS(netgen) 
+	
+	
+</details>
+	
+<details><summary><b> Labs </b></summary>
+
+$\fbox{Tool installations and basic DRC/LVS design flow}$
+	
+CHECK TOOL INSTALLATIONS
+
+- Magic: brings up a layout window and a console window that is a stock tcl interpreter used to run commands for layout and actions
+	
+- netgen: run Netgen using the command netgen in the terminal. Its console window is a stock tcl interpreter like magic as well
+
+- Xschem: should bring up a schematics window. xschem has no seperate console window and uses the native command line terminal for tcl commands. Xschem can be run in batch mode with the command xschem --tcl filename.tcl -q.
+
+- Ngspice: has its own prompt and runs its own set of interpreter commands that aren't based on tcl
+	
+CREATING SKY130 DEVICE LAYOUT IN MAGIC
+
+![image](https://user-images.githubusercontent.com/118953929/220715251-12343c1d-6e23-4fc1-9bbe-ba0f93096fe4.png)
+![image](https://user-images.githubusercontent.com/118953929/220716298-6e8f1e54-4b0b-4581-80ed-d6fea589a7eb.png)
+![image](https://user-images.githubusercontent.com/118953929/220717152-5ac633f5-e000-4b7a-a388-a8697a45b97e.png)
+Then, run xschem to load up the display:
+	
+![image](https://user-images.githubusercontent.com/118953929/220717914-828df447-2515-49ad-9436-54bd40ec7c81.png)
+
+When you invoke magic, 2 windows will be popped up:
+	
+![image](https://user-images.githubusercontent.com/118953929/220719640-55c84fd4-b2f4-406b-8bfd-a217e44e4844.png)
+
+
+	Magic shortcuts from videos:
+	
+	Left and right mouse buttons to adjust the cursor box
+	Shift+Z to zoom out
+	Middle mouse button/P to select a layer (also known as painting)
+	E to erase whatever is present in the cursor box (can also be done ny clicking the middle mouse button on an empty part of the layout)
+	V can be used to view the entire layout
+	CTRL+P opens up the parameter options for the selected device
+	S key can be used to select layers
+	Typing the what command in the magic console gives information on the selected layer
+	; key can be used to type commands in the magic console without moving between windows, until the Enter key is 	pressed
+	I key can be used to select a device, and M key is used to move them
+
+![image](https://user-images.githubusercontent.com/118953929/220720808-02549b3e-f0d6-413a-9eff-ccdc6627dec8.png)
+![image](https://user-images.githubusercontent.com/118953929/220721737-ca18ed8b-d377-4254-817a-1ae71ff1f4e1.png)
+No more rings, when you unchecked the ring box
+	
+![image](https://user-images.githubusercontent.com/118953929/220721954-4c2bc2aa-7db1-4481-80f7-d9b4ee651c14.png)
+![image](https://user-images.githubusercontent.com/118953929/220722367-77a5fc6b-6f0e-47e7-88bc-18ab432f11e8.png)
+
+
+CREATING SIMPLE SCHEMATIC IN XSCHEM
+	
+![image](https://user-images.githubusercontent.com/118953929/220731745-93b4ee34-cca8-4e3f-bd42-aee769756f7e.png)
+![image](https://user-images.githubusercontent.com/118953929/220731849-e1eeeb4c-6aa1-4ee9-85ca-c9431d96bd73.png)
+
+![image](https://user-images.githubusercontent.com/118953929/220731643-0365f8b8-fbec-4108-be10-50f5ca12ba57.png)
+	
+CREATING SYMBOL AND EXPORTING SCHEMATIC IN XSCHEM
+	
+	
+</details>
+
 
 	
