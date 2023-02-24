@@ -4202,7 +4202,8 @@ from schematic --> export to netlist --> schematic capture
 from layout --> export to netlist --> extraction
 
 both imported to LVS(netgen) 
-	
+
+
 	
 </details>
 	
@@ -4261,10 +4262,124 @@ CREATING SIMPLE SCHEMATIC IN XSCHEM
 ![image](https://user-images.githubusercontent.com/118953929/220731849-e1eeeb4c-6aa1-4ee9-85ca-c9431d96bd73.png)
 
 ![image](https://user-images.githubusercontent.com/118953929/220731643-0365f8b8-fbec-4108-be10-50f5ca12ba57.png)
+![image](https://user-images.githubusercontent.com/118953929/221194898-fa29e9c6-131c-495c-adca-3db4c02932b8.png)
+
 	
 CREATING SYMBOL AND EXPORTING SCHEMATIC IN XSCHEM
 	
+![image](https://user-images.githubusercontent.com/118953929/221197931-d8e7e6d9-f21c-48b7-9776-2d3330882e31.png)
+![image](https://user-images.githubusercontent.com/118953929/221198543-45d4afce-992b-4a01-896b-067946641ff1.png)
+the Plotting is not able to successfully generate
+![image](https://user-images.githubusercontent.com/118953929/221199709-30e054ff-fbeb-4367-84f0-1bd708832d35.png)
 	
+	
+IMPORTING SCHEMATIC TO LAYOUT AND INVERTER LAYOUT STPES
+
+![image](https://user-images.githubusercontent.com/118953929/221211493-ef24a8a5-cf9c-4146-bfac-feacef8381f4.png)
+you can move around by click "s" and "m" to select and move 
+![image](https://user-images.githubusercontent.com/118953929/221211619-3d1e7bb1-7c10-4dc0-b44f-eefcd9e3f833.png)
+	
+
+
+	
+</details>
+
+<details><summary><b> LECTURE </b></summary>
+
+$\fbox{OpenSource Tools and Flows}$	
+	
+![image](https://user-images.githubusercontent.com/118953929/221217134-626e4151-2276-4808-b589-a17a4e1d2bef.png)
+![image](https://user-images.githubusercontent.com/118953929/221217181-914b249f-dd8e-4d2e-aa35-9a9e77dddc9d.png)
+![image](https://user-images.githubusercontent.com/118953929/221217268-a61d1b39-0c75-4541-b103-17a567af0811.png)
+![image](https://user-images.githubusercontent.com/118953929/221217699-4f6f480d-7d55-4b6f-a502-b834c61976dd.png)
+![image](https://user-images.githubusercontent.com/118953929/221217778-5d7bbd8f-7b15-4c5e-b8fa-bf0f13b172af.png)
+![image](https://user-images.githubusercontent.com/118953929/221217845-49d92009-fce7-4037-86a8-701a1e5be469.png)
+![image](https://user-images.githubusercontent.com/118953929/221217883-3353c2c9-cc23-4ffa-801a-4d1f7b4d9c40.png)
+![image](https://user-images.githubusercontent.com/118953929/221217935-290f9616-e3a8-4f0d-a768-311de62b05f6.png)
+![image](https://user-images.githubusercontent.com/118953929/221218013-7bb55689-ec04-41f9-90ba-89c038192dc3.png)
+![image](https://user-images.githubusercontent.com/118953929/221218130-80e38bcc-aab0-4c26-aeea-8d8dead34502.png)
+![image](https://user-images.githubusercontent.com/118953929/221218165-e90b9b0f-0201-408f-9b95-3c9dec35ffe4.png)
+![image](https://user-images.githubusercontent.com/118953929/221218219-0a5b0422-6e7e-4e77-b16b-207904fed6e2.png)
+![image](https://user-images.githubusercontent.com/118953929/221218327-91a88171-3257-4304-a1cf-0992a357330a.png)
+![image](https://user-images.githubusercontent.com/118953929/221218414-5eb3e8f1-43f4-4e61-b6d5-4421940f5ddf.png)
+![image](https://user-images.githubusercontent.com/118953929/221218476-774f8681-b9c9-4550-a2c3-fe3329bae2f3.png)
+![image](https://user-images.githubusercontent.com/118953929/221218522-099aa891-c1c0-4079-a523-da9c994a55aa.png)
+![image](https://user-images.githubusercontent.com/118953929/221218594-d66aea3c-e13c-4073-b033-f9d3da4d454f.png)
+![image](https://user-images.githubusercontent.com/118953929/221218663-c8be61a3-6267-4e5f-a421-7c446d81195f.png)
+
+
+	
+</details>
+	
+<details><summary><b> LAB </b></summary>
+
+
+
+![image](https://user-images.githubusercontent.com/118953929/221219609-48c627b2-4559-4c24-8772-63fc7c77e537.png)
+![image](https://user-images.githubusercontent.com/118953929/221219897-060fed24-732a-4e7d-b8e3-7f153c59e1b0.png)
+![image](https://user-images.githubusercontent.com/118953929/221222621-d0c8ef74-deb1-460f-b47a-780b078397e0.png)
+![image](https://user-images.githubusercontent.com/118953929/221222671-f02b99ab-44f3-491c-b44d-5c506857f8f1.png)
+![image](https://user-images.githubusercontent.com/118953929/221222935-99cc2be7-ff6f-4ce1-9bec-79bea58a3e48.png)
+![image](https://user-images.githubusercontent.com/118953929/221223026-0e7ae876-e28b-4c71-95ee-8fb5a33a0bbe.png)
+![image](https://user-images.githubusercontent.com/118953929/221223502-b2355b57-4e9f-4b7d-9b5e-e25c40531c69.png)
+![image](https://user-images.githubusercontent.com/118953929/221223645-470b0ab1-c87c-455f-a927-aec9a5ab22b1.png)
+![image](https://user-images.githubusercontent.com/118953929/221223984-869ddfee-d745-4d46-8519-675e7d460f1e.png)
+![image](https://user-images.githubusercontent.com/118953929/221224108-963ccc09-d770-4fe4-8f57-bab3c3cb04dd.png)
+![image](https://user-images.githubusercontent.com/118953929/221224300-c9cb6b70-7559-4122-863a-482476f67f1c.png)
+![image](https://user-images.githubusercontent.com/118953929/221224538-d4c09bc1-4343-4464-aae6-d50090cb32bf.png)
+![image](https://user-images.githubusercontent.com/118953929/221224824-74484e46-78a5-4126-b4f4-da48a0821b81.png)
+
+
+
+![image](https://user-images.githubusercontent.com/118953929/221225279-6db43421-1b63-4e6a-bfa0-88705f6c4cb2.png)
+![image](https://user-images.githubusercontent.com/118953929/221226956-468f3828-fd50-49b8-b733-04e5e0973677.png)
+![image](https://user-images.githubusercontent.com/118953929/221228510-1ad538b8-8c75-4dd6-bbf9-16855b536940.png)
+![image](https://user-images.githubusercontent.com/118953929/221228644-9e61f9b1-7c30-40c7-9522-b246b97e59ca.png)
+![image](https://user-images.githubusercontent.com/118953929/221228841-dede137a-dcd2-4cd8-9818-baf4d2d35a49.png)
+![image](https://user-images.githubusercontent.com/118953929/221229899-0e089798-aede-4876-9cf3-96a2ff771e1c.png)
+![image](https://user-images.githubusercontent.com/118953929/221229839-1153ad8e-f454-4354-8512-af2530d32368.png)
+
+
+	
+![image](https://user-images.githubusercontent.com/118953929/221230729-c01df19a-ad39-441e-90a6-2db2d4ab5dab.png)
+![image](https://user-images.githubusercontent.com/118953929/221231087-9a4799dd-dd83-46b5-8261-8a1297b0be9e.png)
+![image](https://user-images.githubusercontent.com/118953929/221231867-6fef0840-234f-4e37-b2d5-598031200400.png)
+![image](https://user-images.githubusercontent.com/118953929/221232536-b42fc46e-5f53-4be4-aad8-39c9371d2d8e.png)
+![image](https://user-images.githubusercontent.com/118953929/221232689-50cfccf7-3a51-4df8-9bc4-ff79f1bbc1c3.png)
+Magic cannot write abstraction view to gds , thats why its not load properly
+![image](https://user-images.githubusercontent.com/118953929/221232865-3266b513-4700-4e69-af7a-1f16efe81505.png)
+![image](https://user-images.githubusercontent.com/118953929/221232934-30e1fdbb-09fd-4d92-b93e-1ec471d0b479.png)
+![image](https://user-images.githubusercontent.com/118953929/221233397-63b8b885-4680-4384-a547-4d0f7cb088c3.png)
+![image](https://user-images.githubusercontent.com/118953929/221233698-2e3e58f2-c07e-4af2-b1c4-45a77802ea81.png)
+![image](https://user-images.githubusercontent.com/118953929/221233754-e756a934-c3a8-41d0-8f32-601b71694360.png)
+![image](https://user-images.githubusercontent.com/118953929/221233786-920b873e-46be-4567-b6b9-0ebcf8390cd5.png)
+
+
+	
+![image](https://user-images.githubusercontent.com/118953929/221235153-a0cfb120-bf81-4c99-892d-33f3687333aa.png)
+![image](https://user-images.githubusercontent.com/118953929/221235317-a7d90619-4ed9-4533-98dd-b9d8fb25581b.png)
+![image](https://user-images.githubusercontent.com/118953929/221235706-7839b4fd-ac3a-4557-b5f3-71ce1b6c1b64.png)
+![image](https://user-images.githubusercontent.com/118953929/221235602-1e9ccd75-2dfa-4c73-aa25-bff58ec9191e.png)
+load magic
+	
+![image](https://user-images.githubusercontent.com/118953929/221236046-a08466ab-10d2-4c1d-8c39-ffc0d9245272.png)
+![image](https://user-images.githubusercontent.com/118953929/221236219-4591d4c0-3fc3-4f8c-82d5-6e99021b8543.png)
+![image](https://user-images.githubusercontent.com/118953929/221236752-feae232d-86dd-45fb-afd3-e35c8d3a2229.png)
+![image](https://user-images.githubusercontent.com/118953929/221236888-ad2a7d3f-1512-4ebb-878f-f2ff6ca20cc8.png)
+![image](https://user-images.githubusercontent.com/118953929/221237538-6a348685-6826-4f57-80dc-5f2b6748e70a.png)
+
+	
+![image](https://user-images.githubusercontent.com/118953929/221239014-301e75b5-942d-471c-913c-b6623604c2c2.png)
+Remove anything from the cell
+![image](https://user-images.githubusercontent.com/118953929/221239079-93fc3747-2a28-46ae-9a84-cb387a0ac848.png)
+![image](https://user-images.githubusercontent.com/118953929/221239403-f768e1cc-6373-4cd8-bf9a-2bb83f2832cb.png)
+
+
+
+
+
+
+
 </details>
 
 
