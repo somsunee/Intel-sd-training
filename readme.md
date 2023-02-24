@@ -4375,11 +4375,6 @@ Remove anything from the cell
 ![image](https://user-images.githubusercontent.com/118953929/221239403-f768e1cc-6373-4cd8-bf9a-2bb83f2832cb.png)
 
 
-
-
-
-
-
 </details>
 
 
