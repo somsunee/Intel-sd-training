@@ -4288,14 +4288,14 @@ you can move around by click "s" and "m" to select and move
 
 $\fbox{OpenSource Tools and Flows}$	
 	
-![image](https://user-images.githubusercontent.com/118953929/221217134-626e4151-2276-4808-b589-a17a4e1d2bef.png)
+
 ![image](https://user-images.githubusercontent.com/118953929/221217181-914b249f-dd8e-4d2e-aa35-9a9e77dddc9d.png)
 ![image](https://user-images.githubusercontent.com/118953929/221217268-a61d1b39-0c75-4541-b103-17a567af0811.png)
 ![image](https://user-images.githubusercontent.com/118953929/221217699-4f6f480d-7d55-4b6f-a502-b834c61976dd.png)
 ![image](https://user-images.githubusercontent.com/118953929/221217778-5d7bbd8f-7b15-4c5e-b8fa-bf0f13b172af.png)
 ![image](https://user-images.githubusercontent.com/118953929/221217845-49d92009-fce7-4037-86a8-701a1e5be469.png)
 ![image](https://user-images.githubusercontent.com/118953929/221217883-3353c2c9-cc23-4ffa-801a-4d1f7b4d9c40.png)
-![image](https://user-images.githubusercontent.com/118953929/221217935-290f9616-e3a8-4f0d-a768-311de62b05f6.png)
+
 ![image](https://user-images.githubusercontent.com/118953929/221218013-7bb55689-ec04-41f9-90ba-89c038192dc3.png)
 ![image](https://user-images.githubusercontent.com/118953929/221218130-80e38bcc-aab0-4c26-aeea-8d8dead34502.png)
 ![image](https://user-images.githubusercontent.com/118953929/221218165-e90b9b0f-0201-408f-9b95-3c9dec35ffe4.png)
