@@ -4435,6 +4435,54 @@ Remove anything from the cell
 ![image](https://user-images.githubusercontent.com/118953929/221239079-93fc3747-2a28-46ae-9a84-cb387a0ac848.png)
 ![image](https://user-images.githubusercontent.com/118953929/221239403-f768e1cc-6373-4cd8-bf9a-2bb83f2832cb.png)
 
+</details>
+	
+<details><summary><b>LABS for DRC RULE</b></summary>
+	
+git clone the github link
+![image](https://user-images.githubusercontent.com/118953929/221399452-5662aeb2-caa5-4154-9b44-ae44ca939f5f.png)
+Run magic by ./run_magic command:
+![image](https://user-images.githubusercontent.com/118953929/221399498-d646e140-080b-4049-aeba-b70c2c56ba33.png)
+Open up exercise 1:
+![image](https://user-images.githubusercontent.com/118953929/221399538-0704897b-e5aa-43c2-b458-a54a1f11da97.png)
+![image](https://user-images.githubusercontent.com/118953929/221399556-c0f5dae2-a410-4fac-8ba3-6e44e7c1c650.png)
+Moves the cursor to the area then click drc --> drc report
+	
+![image](https://user-images.githubusercontent.com/118953929/221399655-a4a46256-4868-45b0-bde9-9d958ed692ed.png)
+So, its report out that the drc at the area is metal2 width < 0.14um
+![image](https://user-images.githubusercontent.com/118953929/221399688-2fa0aa84-6b21-460f-ad1e-a8147db01baa.png)
+![image](https://user-images.githubusercontent.com/118953929/221399827-ee530444-8b99-4c3e-9339-9e8194bfbb7c.png)
+![image](https://user-images.githubusercontent.com/118953929/221399931-10dd4594-8160-4693-91e5-67d78f528145.png)
+![image](https://user-images.githubusercontent.com/118953929/221400091-f4e31708-a64c-492b-a8b4-f4458ae4e457.png)
+![image](https://user-images.githubusercontent.com/118953929/221400126-5ad38059-fd3d-454f-bbf5-f178806381d2.png)
+![image](https://user-images.githubusercontent.com/118953929/221400165-951b7ca8-04ff-4afc-9ebf-8f0e82650c41.png)
+![image](https://user-images.githubusercontent.com/118953929/221400175-1749802a-bf25-450a-b253-4f16318b2bd7.png)
+
+Width spacing:
+![image](https://user-images.githubusercontent.com/118953929/221400239-81c10a0b-6631-4030-8c49-00cbc3826034.png)
+![image](https://user-images.githubusercontent.com/118953929/221400265-0cc1abfe-0c65-4c3f-96a0-6b7b1bd4c7fd.png)
+![image](https://user-images.githubusercontent.com/118953929/221400508-fe1cc062-ce64-4161-89b0-08fea5f613c6.png)
+
+								    
+Via 
+Stret it 
+![image](https://user-images.githubusercontent.com/118953929/221400789-1d691aee-d645-4144-a638-4228e18457c2.png)
+Get layer name:
+![image](https://user-images.githubusercontent.com/118953929/221400895-1f836fa6-0123-4fe7-acd4-e60111fb5adb.png)
+![image](https://user-images.githubusercontent.com/118953929/221401095-b9d48a7f-af93-44a5-861f-e2669b42758f.png)
+The size of the box is actually getting a bit bigger
+![image](https://user-images.githubusercontent.com/118953929/221401168-7a98e5a9-026f-433b-b48e-bdc017efc85e.png)
+Holding the space bar on keyboard and playing around on the via , do cif see for more
+![image](https://user-images.githubusercontent.com/118953929/221401314-85fe3536-e673-4301-83e8-2132cc5708bf.png)
+
+Minimum area, minimum hole rule:
+![image](https://user-images.githubusercontent.com/118953929/221401380-c967d219-1dd4-40db-a7e9-e2919d5bb7bc.png)
+
+
+
+		
+
+
 
 </details>
 
