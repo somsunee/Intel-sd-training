@@ -4440,18 +4440,26 @@ Remove anything from the cell
 <details><summary><b>ALL LABS for DRC RULE</b></summary>
 	
 git clone the github link
+	
 ![image](https://user-images.githubusercontent.com/118953929/221399452-5662aeb2-caa5-4154-9b44-ae44ca939f5f.png)
 
 Run magic by ./run_magic command:
 
 ![image](https://user-images.githubusercontent.com/118953929/221399498-d646e140-080b-4049-aeba-b70c2c56ba33.png)
+	
 Open up exercise 1:
+	
 ![image](https://user-images.githubusercontent.com/118953929/221399538-0704897b-e5aa-43c2-b458-a54a1f11da97.png)
 ![image](https://user-images.githubusercontent.com/118953929/221399556-c0f5dae2-a410-4fac-8ba3-6e44e7c1c650.png)
+	
 Moves the cursor to the area then click drc --> drc report
 	
+	
+	
 ![image](https://user-images.githubusercontent.com/118953929/221399655-a4a46256-4868-45b0-bde9-9d958ed692ed.png)
+	
 So, its report out that the drc at the area is metal2 width < 0.14um
+								    
 ![image](https://user-images.githubusercontent.com/118953929/221399688-2fa0aa84-6b21-460f-ad1e-a8147db01baa.png)
 ![image](https://user-images.githubusercontent.com/118953929/221399827-ee530444-8b99-4c3e-9339-9e8194bfbb7c.png)
 ![image](https://user-images.githubusercontent.com/118953929/221399931-10dd4594-8160-4693-91e5-67d78f528145.png)
@@ -4461,32 +4469,47 @@ So, its report out that the drc at the area is metal2 width < 0.14um
 ![image](https://user-images.githubusercontent.com/118953929/221400175-1749802a-bf25-450a-b253-4f16318b2bd7.png)
 
 Width spacing:
+								    
 ![image](https://user-images.githubusercontent.com/118953929/221400239-81c10a0b-6631-4030-8c49-00cbc3826034.png)
 ![image](https://user-images.githubusercontent.com/118953929/221400265-0cc1abfe-0c65-4c3f-96a0-6b7b1bd4c7fd.png)
 ![image](https://user-images.githubusercontent.com/118953929/221400508-fe1cc062-ce64-4161-89b0-08fea5f613c6.png)
 
 								    
 Via 
+	
+								    
 Stret it 
+								    
 ![image](https://user-images.githubusercontent.com/118953929/221400789-1d691aee-d645-4144-a638-4228e18457c2.png)
+								    
 Get layer name:
+								    
 ![image](https://user-images.githubusercontent.com/118953929/221400895-1f836fa6-0123-4fe7-acd4-e60111fb5adb.png)
 ![image](https://user-images.githubusercontent.com/118953929/221401095-b9d48a7f-af93-44a5-861f-e2669b42758f.png)
+								    
 The size of the box is actually getting a bit bigger
+								    
 ![image](https://user-images.githubusercontent.com/118953929/221401168-7a98e5a9-026f-433b-b48e-bdc017efc85e.png)
+								    
 Holding the space bar on keyboard and playing around on the via , do cif see for more
+								    
 ![image](https://user-images.githubusercontent.com/118953929/221401314-85fe3536-e673-4301-83e8-2132cc5708bf.png)
 
 Minimum area, minimum hole rule:
+								    
 ![image](https://user-images.githubusercontent.com/118953929/221401380-c967d219-1dd4-40db-a7e9-e2919d5bb7bc.png)
 ![image](https://user-images.githubusercontent.com/118953929/221401661-67e3a4fa-b6f7-4dda-89db-0f9917437326.png)
+								    
 Erase of the drc, will no longer there:
+								    
 ![image](https://user-images.githubusercontent.com/118953929/221401708-a5f896ba-6470-49ca-9ac4-76fd07898729.png)
 
 								    
 Wells and Deep n-well
 								    
 Paint the nwell
+								    
+								    
 ![image](https://user-images.githubusercontent.com/118953929/221401985-222a0506-a6ba-4943-b589-ae89e4663fed.png)
 ![image](https://user-images.githubusercontent.com/118953929/221402102-4c044f6b-6ad1-4299-8848-ea51dfe9e198.png)
 ![image](https://user-images.githubusercontent.com/118953929/221402159-1ef07b10-9fc2-4cff-86b8-3dd7a7c2e728.png)
@@ -4500,27 +4523,36 @@ Derived layers
 ![image](https://user-images.githubusercontent.com/118953929/221403239-d0c66b09-16bd-46e9-8a4d-4cbef43b8b93.png)
 ![image](https://user-images.githubusercontent.com/118953929/221403273-fc8ee5c7-2fef-40b4-862d-2534fde18b42.png)
 ![image](https://user-images.githubusercontent.com/118953929/221403302-af967edd-92da-42d8-a94b-8ec99cafa5de.png)
+								    
 Doing for this:
+								    
 ![image](https://user-images.githubusercontent.com/118953929/221403623-1b00b160-a2c3-49d5-89ea-045da3da0d46.png)
+								    
 ![image](https://user-images.githubusercontent.com/118953929/221403614-1b881b56-9c14-4639-abde-ed0792b75a60.png)
 								    
 Doing cif see NPC- automated layer generation betwwen the 2 shapes:
+								    
 ![image](https://user-images.githubusercontent.com/118953929/221403675-77471277-2f24-4efe-b27b-657fe02d2725.png)
 
 Paramterized and PDK services:
 								    
 ![image](https://user-images.githubusercontent.com/118953929/221403748-02b20008-96bc-4e66-8670-9d2b25b3b488.png)
 ![image](https://user-images.githubusercontent.com/118953929/221404005-84103b28-d830-4b0f-baa0-9a18b3101ab3.png)
+								    
 Painting the minumim area , as the error will no longer there
+								    
 ![image](https://user-images.githubusercontent.com/118953929/221404317-3fd6686a-b1c3-4637-b058-ab1cf4d447fa.png)
 ![image](https://user-images.githubusercontent.com/118953929/221404758-e121ceab-fb76-41fa-85ee-2a5657bc7c88.png)
 
 								    
 Unimplemented rule
+								    
 ![image](https://user-images.githubusercontent.com/118953929/221404804-505e82d5-5dcc-4a14-90e9-a7429a3a2907.png)
 ![image](https://user-images.githubusercontent.com/118953929/221404922-7639a183-99c4-4f7a-8d90-c0a3be12196a.png)
 ![image](https://user-images.githubusercontent.com/118953929/221405086-e42c5399-cb57-4440-9cdf-04d1c255dbea.png)
+								    
 Notice that you can see the property even when you type for it:
+								    
 ![image](https://user-images.githubusercontent.com/118953929/221405125-eefb84d8-434e-41f7-a814-5edfd99f9e38.png)
 ![image](https://user-images.githubusercontent.com/118953929/221405185-553748d0-e8f0-43aa-af5a-91abdde5bbd8.png)
 ![image](https://user-images.githubusercontent.com/118953929/221405198-02955ff6-525d-415f-be76-38750c9c9d9f.png)
@@ -4528,16 +4560,21 @@ Notice that you can see the property even when you type for it:
 ![image](https://user-images.githubusercontent.com/118953929/221405355-fdf27048-1621-49e5-9cc5-af87d4ddb77a.png)
 ![image](https://user-images.githubusercontent.com/118953929/221405369-6a79bd27-0031-4310-a1ea-f7fb65a5b7d7.png)
 ![image](https://user-images.githubusercontent.com/118953929/221405396-92bec639-7f83-44bd-badf-96f3413dca43.png)
+								    
 gds read <gds seal file>
+	
 ![image](https://user-images.githubusercontent.com/118953929/221405667-e39ee7c2-53f9-423a-968f-28e6db11ffd9.png)
 ![image](https://user-images.githubusercontent.com/118953929/221405679-2be6636b-8f3b-44f2-9ca2-b805e96cbda0.png)
 
 
 Density rules:
+	
 ![image](https://user-images.githubusercontent.com/118953929/221405725-06e9f6c6-0e9c-49e6-82d3-a7223a49ecb2.png)
 ![image](https://user-images.githubusercontent.com/118953929/221405765-c6190d2d-4f83-430f-88a6-669dbabea07e.png)
 ![image](https://user-images.githubusercontent.com/118953929/221405850-7bf8f1c8-e814-452a-abd5-b4390a8da09c.png)
+	
 do exercise_11.gds
+	
 ![image](https://user-images.githubusercontent.com/118953929/221405918-7e6710fa-006b-440f-a45b-74042433c194.png)
 
 ![image](https://user-images.githubusercontent.com/118953929/221405906-56607c6b-a362-4983-82b7-13b6ecdfc888.png)
@@ -4549,8 +4586,12 @@ do exercise_11.gds
 ![image](https://user-images.githubusercontent.com/118953929/221406434-97cba18e-67a2-44a9-9be3-2d830402a68a.png)
 ![image](https://user-images.githubusercontent.com/118953929/221406697-f090af75-54f4-4c48-930b-188df6874c27.png)
 ![image](https://user-images.githubusercontent.com/118953929/221406723-96f04341-cf15-45df-a8b7-23a2e23c28be.png)
+	
 ![image](https://user-images.githubusercontent.com/118953929/221406873-dc9d1e54-a73c-4f82-8035-9b86b1284612.png)
+	
+	
 the zoom in pattern:
+	
 ![image](https://user-images.githubusercontent.com/118953929/221406912-1bdbec96-4f29-4768-acf6-ab6898814d07.png)
 
 
