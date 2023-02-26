@@ -4441,7 +4441,9 @@ Remove anything from the cell
 	
 git clone the github link
 ![image](https://user-images.githubusercontent.com/118953929/221399452-5662aeb2-caa5-4154-9b44-ae44ca939f5f.png)
+
 Run magic by ./run_magic command:
+
 ![image](https://user-images.githubusercontent.com/118953929/221399498-d646e140-080b-4049-aeba-b70c2c56ba33.png)
 Open up exercise 1:
 ![image](https://user-images.githubusercontent.com/118953929/221399538-0704897b-e5aa-43c2-b458-a54a1f11da97.png)
