@@ -3520,11 +3520,72 @@ Rerun synthesis and you will get 0 value
 
 <details><summary><b> LECTURES </b></summary>
 
+Routing and Design Rule Check (DRC) - Introduction to Maze Routing Lee's Algorithm
+
+
+What is Lee's Algorithm?
+- is one possible solution for maze routing problems. It always gives an optimal solution, if one exists, but is slow and requires large memory for dense layout.
+	
+How does it works?
+
+The algorithm is a breadth-first based algorithm that uses queues to store the steps. It usually uses the following steps:
+	
+
+- Choose a starting point and add it to the queue.
+- Add the valid neighboring cells to the queue.
+- Remove the position you are on from the queue and continue to the next element.
+- Repeat steps 2 and 3 until the queue is empty.
+	
+So , going deeper on the route stage
+
+![image](https://user-images.githubusercontent.com/118953929/221397389-ef845648-6409-4216-b049-f31950569ac6.png)
+![image](https://user-images.githubusercontent.com/118953929/221397416-68a738d8-7c8c-4a9e-9a12-c2849104d54d.png)
+
+now that the routing occurs:
+![image](https://user-images.githubusercontent.com/118953929/221397462-3aa65cc5-c2d6-426b-b5fa-c5a1401a7555.png)
+
+Design Rule Checking
+	
+![image](https://user-images.githubusercontent.com/118953929/221398196-e62ddcc8-7e18-4283-926a-8caa021f1031.png)
+
+Types of DRC :
+	
+![image](https://user-images.githubusercontent.com/118953929/221398277-77f1b8f3-fc60-48d7-95be-612c0ebbc926.png)
+![image](https://user-images.githubusercontent.com/118953929/221398288-d77e1367-2122-435b-8150-f26b747223b2.png)
+![image](https://user-images.githubusercontent.com/118953929/221398723-521a6551-7d7d-497e-a7de-9819c911d112.png)
+
+Example of DRC:
+
+![image](https://user-images.githubusercontent.com/118953929/221398765-0a30d272-b011-4692-a0f9-f45b7d174fe0.png)
+![image](https://user-images.githubusercontent.com/118953929/221398791-c0176afc-e531-4bd3-9671-0baf8f5c29df.png)
+![image](https://user-images.githubusercontent.com/118953929/221398800-74694d97-89a9-4506-be22-20b576f2b9df.png)
+
+Parasitics Extraction:
+	
+![image](https://user-images.githubusercontent.com/118953929/221399069-844aa806-af9e-483a-b026-a686ac74b46d.png)
+Path Components :
+Din2_net : Wire/Net (SPEF : *D_NET)
+▪Driver : Port “Din2” (SPEF : *P)
+▪Driver Type : Not Specified (SPEF : *D)
+▪Receiver :  Internal Pin “Buf1/a” (SPEF : *I)
+▪Lumped Capacitance▪3 Distributed Resistance (SPEF : *RES)
+▪3 Distributed Capacitance (SPEF : *CAP)
+
+SPEF Equivalent 
+*NAME_MAP
+*1 Din2
+*2 Din2_net
+*D_NET *2 0.15
+*CONN
+*P *1 I
+*I Buf1:a *L 0.15
+
+Quick revision:
+![image](https://user-images.githubusercontent.com/118953929/221399165-35d25751-6473-4f28-bd01-f95133aee36a.png)
+
+	
 </details>
 	
-<details><summary><b> LABS </b></summary>
-
-</details>
 	
 # &#x1F537; Day_20
 	
